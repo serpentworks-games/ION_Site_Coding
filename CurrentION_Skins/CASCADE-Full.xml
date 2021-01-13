@@ -2,7 +2,7 @@
 		<skin>
 
 		<skinname>CASCADE</skinname>
-		<date>Tuesday 12th of January 2021 11:01:56 PM</date>
+		<date>Wednesday 13th of January 2021 03:19:31 AM</date>
 
 		<stylesheet>
 		/*=============================================== *
@@ -1470,7 +1470,9 @@ padding-left: 175px;
 <script type="text/javascript" src="http://voidpc.jcink.net/uploads/voidpc/brownie.js?v=2.1"></script>
 <script src="http://elegantexpressions.us/black/cfs.min.js"></script>
 <script src="https://kit.fontawesome.com/73d8fb96f8.js" crossorigin="anonymous"></script>
+
     </head> 
+
     <body>
 <div id="bwrap">
 
@@ -1482,10 +1484,19 @@ padding-left: 175px;
 
 <div id="sidecont">
 
-<p><b>Welcome</b> to <b>In Our Name</b>, an AU Sailor Moon Roleplay!</p>
+<p><b>Welcome</b> to <b>In Our Name</b>, an AU Sailor Moon Roleplay!</p></div>
 
-<span id='sub_bar_2' style="display:none;">
-<% SUBACCOUNTS %>
+
+<div id="staffsection">
+<span style="text-align: left; margin: 0px; border-bottom: 1px solid #f5f5f5; font-family: helvetica; color: #888; font-size: 11px; line-height: 20px; text-transform: lowercase;">
+<span style ="color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px;">
+<b>Updates and Announcements:</b></span>
+<div id="getCurrentEvents"></div>
+</span></div>
+
+
+<div id="sidecont">
+<span id='sub_bar_2' style="display:none;"><% SUBACCOUNTS %>
 </span>
 <span id='subacct_link_2'> · <a href='javascript:void(0);'  onclick="document.getElementById('subacct_link_2').innerHTML=document.getElementById('sub_bar_2').innerHTML;">Switch Account</a></span>
 
@@ -1501,22 +1512,16 @@ padding-left: 175px;
 </div>
 
 <div id="staffsection">
-<p><b>Our Staff</b><br>
-<b>Site Admins:</b><br>
-<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=9">Scowling Dragon</a> & <a href="http://inourname.net/index.php?showuser=6">daekie</a></span>
-<br>
-<b>Community Care Liasons</b><br>
-<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=106">Fiction1119</a></span><br>
-<b>Shop Keeper:</b><br>
-<span style="padding:20px; width: 80%"><a href="///">N/A</a></span><br>
-<b>Project Managers:</b> <br>
-<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=15">Meighei</a></span><br>
-<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=x">N/a</a></span><br>
-<b>Lore Leads:</b><br> 
-<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=212">ivynian</a> (Order), <a href="http://inourname.net/index.php?showuser=10">AMItotic</a> (Chaos) & <a href="http://inourname.net/index.php?showuser=296">Carhop Cavalier</a> (Civilian)</span><br>
-</p>
+<span style ="padding: 20px 35px; text-align: left; margin: 0px; border-bottom: 1px solid #f5f5f5; font-family: helvetica; color: #888; font-size: 11px; line-height: 20px; text-transform: lowercase;">
+<span style ="color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px;"><b>Our Staff</b></span><br>
+<span style ="color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px;">Site Admins:</span>
+<div id="siteAdmins">test</div><br>
+<span style ="color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px;">Community Care Liasons</span><div id="communityCares">test</div><br>
+<span style ="color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px;">Shop Keeper:</span><div id="pointShopManager">test</div><br>
+<span style ="color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px;">Project Managers:</span><div id="projectManagers">test</div><br>
+<span style ="color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px;">Lore Leads:</span><div id="loreLeads">test</div></span>
 </div><div id="sidecont">
-<p style="border-top: 1px solid #f5f5f5;">Our <b>skins</b> are by <a href="http://bonbonskins.com/index.php">bonbon</a>. Mini Profile was modified by <b>ScowlingDragon</b>. Main Profile created by <b>ScowlingDragon</b>. Sailor Moon is copyrighted to <b>Naoko Takeuchi</b>. </p>
+<p style="border-top: 1px solid #f5f5f5;">Our <b>skins</b> are by <a href="http://bonbonskins.com/index.php">bonbon</a>. Mini Profile was modified by <b>Scowl</b>. Main Profile created by <b>Scowl</b>. Sailor Moon is copyrighted to <b>Naoko Takeuchi</b>. </p>
 
 </div>
 
@@ -1592,6 +1597,7 @@ if (/Replying in|Posting New Topic/i.test(document.title)) {
    }
 }
 </script>
+<% ionsiteinfo %>
 	    </div>
 	</div>
     </body> 

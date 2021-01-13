@@ -2,7 +2,7 @@
 		<skin>
 
 		<skinname>transparent sky</skinname>
-		<date>Tuesday 12th of January 2021 11:01:58 PM</date>
+		<date>Wednesday 13th of January 2021 03:19:34 AM</date>
 
 		<stylesheet>
 				/*=============================================== *
@@ -756,6 +756,7 @@ border-bottom: 1px solid var(--accent1);
     <head> 
 <link href="//dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0aa5a1a5e2.js" crossorigin="anonymous"></script>
 
 	<title><% TITLE %></title> 
 <link rel="icon" href="http://placehold.it/50.png" />
@@ -773,17 +774,17 @@ border-bottom: 1px solid var(--accent1);
 
 <div id="sitename-userlinks-menu"></div>
 <div id="sitename-userlinks-menu">
-<label for="userlinksmenu" title="User Menu" style="cursor: pointer;">user controls<span class="alert-<!-- |new_alerts| -->-<!-- |new_msg| -->"><i class="th th-bell" style="margin-left: 5px;"></i></span>
+<label for="userlinksmenu" title="User Menu" style="cursor: pointer;">user controls<span class="alert-<!-- |new_alerts| -->-<!-- |new_msg| -->"><i class="fas fa-bell" style="margin-left: 5px;"></i></span>
 <input type="checkbox" id="userlinksmenu"><div class="sitename-hold-menu">
 
 <div class="sitename-hold-menu-links">
   <dropdownsection class="m-<!-- |g_id| -->" >
-  <a href="/index.php?act=UserCP"><i class="th th-settings"></i> settings </a>
-  <a href="/index.php?act=UserCP&CODE=alerts"><i class="th th-star-1"></i> alerts (<!-- |new_alerts| -->)</a>
-  <a href="/index.php?act=Msg&CODE=01"><i class="th th-envelope"></i> messages (<!-- |new_msg| -->)</a>
-  <span class="staffonly"><a href="/admin.php" target="_blank"><i class="th th-diamond"></i> acp </a></span>
-  <span class="staffonly"><a href="/index.php?act=modcp" target="_blank"><i class="th th-diamond"></i> mcp </a></span>
-  <a href="/index.php?act=Login&CODE=03&key=<!-- |auth_key| -->"><i class="th th-logout"></i> log out </a>
+  <a href="/index.php?act=UserCP"><i class="fas fa-cog"></i> settings </a>
+  <a href="/index.php?act=UserCP&CODE=alerts"><i class="fas fa-bell"></i> alerts (<!-- |new_alerts| -->)</a>
+  <a href="/index.php?act=Msg&CODE=01"><i class="fas fa-envelope"></i> messages (<!-- |new_msg| -->)</a>
+  <span class="staffonly"><a href="/admin.php" target="_blank"><i class="fas fa-external-link-alt"></i> acp </a></span>
+  <span class="staffonly"><a href="/index.php?act=modcp" target="_blank"><i class="fas fa-external-link-alt"></i> mcp </a></span>
+  <a href="/index.php?act=Login&CODE=03&key=<!-- |auth_key| -->"><i class="fas fa-sign-in-alt"></i> log out </a>
   <% SUBACCOUNTS %>
 </dropdownsection><dropdownsection  class="g-<!-- |g_id| -->" style="display: none;">
   <a href="/index.php?act=Login&CODE=00"><i class="th th-login"></i> log in </a>
@@ -820,22 +821,22 @@ border-bottom: 1px solid var(--accent1);
 <label for="tshdrtab5">site credits</label>
 
 <div class="cont1">
-<b>in our name</b> is a <b>AU Sailor Moon RP</b> site. We are a <b>E/T</b> rated <b>character</b> driven site with fun events and a lot of chaos. it is set in <b>new providence, Massachusetts</b>. 
+<b>in our name</b> is a <b>AU Sailor Moon RP</b> site. We are a <b>E/T/M</b> rated <b>character</b> driven site with fun events and a lot of chaos. it is set in <b>new providence, Massachusetts</b>. 
 </div>
 <div class="cont2">  
-<h1>//</h1>No events yet!
+<div id="getCurrentEvents"></div>
 
 </div>
 <div class="cont3">
 <div class="staff-blurb">
 <div class="staff-blurb-inner">
-<span class="staff-tit">(click an image for more info!)</span>
+<span class="staff-tit"></span>
 </div></div>
-<div class="staff-img staff1"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_siteadmin.png"></div>
-<div class="staff-img staff2"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_projectmanagers.png"></div>
-<div class="staff-img staff3"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_ccl.png"></div>
-<div class="staff-img staff4"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_shopkeeper.png"></div>
-<div class="staff-img staff5"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_loreteam.png"></div>
+<b>Site Admins:</b> <div style="padding-left:10px;" id="siteAdmins"></div>
+<b>Project Managers:</b> <div style="padding-left:10px;" id="projectManagers"></div>
+<b>Point Shop Manager:</b> <div style="padding-left:10px;" id="pointShopManager"></div>
+<b>Community Care Liasons:</b> <div style="padding-left:10px;" id="communityCares"></div>
+<b>Lore Leads:</b> <div style="padding-left:10px;" id="loreLeads"></div>
 <div style="clear: both;"></div>
 </div>
 <div class="cont4">
@@ -984,19 +985,19 @@ window.onclick = function(event) {
 <script>
 $(document).ready(function() {
 $('.staff1').on('click', function(){
-$('.staff-blurb-inner').html('<span class="staff-tit">Scowling Dragon - daekie</span>');
+$('.staff-blurb-inner').html('<span class="staff-tit"><div id="siteAdmins"></div></span>');
 });
 $('.staff2').on('click', function(){
-$('.staff-blurb-inner').html('<span class="staff-tit">Meighei - N/A</span>');
+$('.staff-blurb-inner').html('<span class="staff-tit"><div id="projectManagers"></div></span>');
 });
 $('.staff3').on('click', function(){
-$('.staff-blurb-inner').html('<span class="staff-tit">Fiction1119</span>');
+$('.staff-blurb-inner').html('<span class="staff-tit"><div id="communityCares"></div></span>');
 });
 $('.staff4').on('click', function(){
-$('.staff-blurb-inner').html('<span class="staff-tit">N/A</span>');
+$('.staff-blurb-inner').html('<span class="staff-tit"><div id="pointShopManager"></div></span>');
 });
 $('.staff5').on('click', function(){
-$('.staff-blurb-inner').html('<span class="staff-tit">ivynian - AMItotic - Carhop Cavalier</span>');
+$('.staff-blurb-inner').html('<span class="staff-tit"><div id="loreLeads"></div></span>');
 });
 });
 </script>
@@ -1049,6 +1050,7 @@ if (/Replying in|Posting New Topic/i.test(document.title)) {
    }
 }
 </script>
+<% ionsiteinfo %>
 </html>
 		
 		</wrappers>
@@ -1181,10 +1183,10 @@ if (/Replying in|Posting New Topic/i.test(document.title)) {
 </table>
 <div class="tsprbttm">
 <div class="prcons">
-<div class="prcon"><a href="<!-- |field_14| -->"><i class="th th-id-card-2" title="profile"></i></a></div>
-<div class="prcon"><a href="<!-- |field_15| -->"><i class="th th-newspaper" title="plot thread"></i></a></div>
-<div class="prcon"><a href="<!-- |field_16| -->"><i class="th th-list" title="tracker"></i></a></div>
-<div class="prcon"><a href="http://inourname.jcink.net/index.php?act=Msg&CODE=04&MID=<!-- |poster_id| -->" title="send message"><i class="th th-envelope"></i></a></div>
+<div class="prcon"><a href="<!-- |field_14| -->"><i class="fas fa-address-card" title="profile"></i></a></div>
+<div class="prcon"><a href="<!-- |field_15| -->"><i class="fas fa-book-open" title="plot thread"></i></a></div>
+<div class="prcon"><a href="<!-- |field_16| -->"><i class="fas fa-list" title="tracker"></i></a></div>
+<div class="prcon"><a href="http://inourname.jcink.net/index.php?act=Msg&CODE=04&MID=<!-- |poster_id| -->" title="send message"><i class="fas fa-envelope"></i></a></div>
 </div>
 
 <div class="prquote"><b>quote:</b> <!-- |field_19| --></div>
@@ -1546,10 +1548,10 @@ text-align: center; padding: 30px 0px; display: flex; flex-flow:row wrap; align-
 <td><info>registered members</info></td>
 
 </tr></table>
-<table style="position: absolute; top: 0px; right: 10px;"><tr><td><inf><a href="/index.php?act=Online&amp;CODE=listall&amp;sort_key=click"><span class="th th-mushroom" title="last clicked"></span></a></inf></td>
-<td><inf><a href="/index.php?act=Members&max_results=10&sort_key=posts&sort_order=desc"><span class="th th-sunflower" title="top posters"></span></a></inf></td>
-</tr><tr><td><inf><a href="/index.php?act=Stats&CODE=leaders"><span class="th th-rose" title="mod team"></span></a></inf></td>
-<td><inf><a href="/index.php?act=Members"><span class="th th-aloe-vera" title="member list"></span></a></inf></td></tr></table>
+<table style="position: absolute; top: 0px; right: 10px;"><tr><td><inf><a href="/index.php?act=Online&amp;CODE=listall&amp;sort_key=click">last click</a></inf></td>
+<td><inf><a href="/index.php?act=Members&max_results=10&sort_key=posts&sort_order=desc">top posters</a></inf></td>
+</tr><tr><td><inf><a href="/index.php?act=Stats&CODE=leaders">mod team</a></inf></td>
+<td><inf><a href="/index.php?act=Members">member list</a></inf></td></tr></table>
 </div>
   
 <div class="tsbs4"><div class="bstatita">recent topics</div><div class="tsbsbox"><div id='recent-topics-clip'></div>
@@ -1582,7 +1584,7 @@ width: 300px; height: 110px; text-align: center;
 }
 .tsbs3 inf {
 width: 22px; height: 22px; color: var(--accent1);
-font: 18px/100% poppins; padding: 10px; background: var(--dark); 
+font: 15px/100% poppins; padding: 10px; background: var(--dark); 
 display: inline-block; text-align: center;
 }
 .tsbs3 info {
@@ -1591,7 +1593,7 @@ font: 12px/100% poppins; padding: 10px; background: var(--dark);
 display: inline-block; text-align: center;
 }
 .tsbs3 inf a {
-color: var(--accent1); text-decoration: none; font-size: 24px; 
+color: var(--accent1); text-decoration: none; font-size: 14px; 
 }
 .tsbs4 {
 position: absolute; bottom: 20px; right: 20px; 

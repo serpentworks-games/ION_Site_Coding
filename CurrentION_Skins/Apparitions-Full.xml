@@ -2,7 +2,7 @@
 		<skin>
 
 		<skinname>Apparitions</skinname>
-		<date>Tuesday 12th of January 2021 11:01:54 PM</date>
+		<date>Wednesday 13th of January 2021 03:19:31 AM</date>
 
 		<stylesheet>
 		/*=============================================== *
@@ -1031,14 +1031,14 @@ text-transform: uppercase;
 
 .hsab-buttons {
    width: 54px;
-   height: 25px;
+   height: 30px;
    background: #032A31;
    float: left;
    margin:6px;
    border: 1px solid #030305;
    color: #36A99A;
    font-size: 20px;
-   padding-top: 5px;
+   padding-top: 0px;
    outline: 2px solid #032A31;
 }
 
@@ -1524,13 +1524,58 @@ text-align: center;
 
 .updates-box {
  width: 100px;
- height: 100px;
+ height: 200px;
  border: 2px solid #032A31;
  margin-bottom: 15px;
  margin-top: -5px;
 }
 
 .updates-boxtext {
+ font-family: 'latoregular', sans-serif;
+ color: #F2FDF7;
+ line-height: 150%;
+ overflow: auto;
+ text-align: justify;
+ font-size: 9px;
+ height: 180px;
+ width: 80px;
+ position: relative;
+ top: 10px;
+ left: 10px;
+ padding-right: 5px;
+}
+
+.updates-boxtext::-webkit-scrollbar {width: 4px;}
+.updates-boxtext::-webkit-scrollbar-track {display: none;}
+.updates-boxtext::-webkit-scrollbar-thumb {background: #032A31;}
+.updates-boxtext::-webkit-scrollbar-thumb:hover {background: #36A99A;}
+
+/***********************************
+Site Credits
+************************************/
+
+#credits {
+ width: 105px;
+ background: #030305;
+ height: 185px;
+ padding: 10px;
+padding-top: 5px;
+z-index: 1;
+position: relative;
+float: right;
+text-align: center;
+
+}
+
+.credits-box {
+ width: 100px;
+ height: 100px;
+ border: 2px solid #032A31;
+ margin-bottom: 15px;
+ margin-top: -5px;
+}
+
+.credits-boxtext {
  font-family: 'latoregular', sans-serif;
  color: #F2FDF7;
  line-height: 120%;
@@ -1545,10 +1590,10 @@ text-align: center;
  padding-right: 5px;
 }
 
-.updates-boxtext::-webkit-scrollbar {width: 4px;}
-.updates-boxtext::-webkit-scrollbar-track {display: none;}
-.updates-boxtext::-webkit-scrollbar-thumb {background: #032A31;}
-.updates-boxtext::-webkit-scrollbar-thumb:hover {background: #36A99A;}
+.credits-boxtext::-webkit-scrollbar {width: 4px;}
+.credits-boxtext::-webkit-scrollbar-track {display: none;}
+.credits-boxtext::-webkit-scrollbar-thumb {background: #032A31;}
+.credits-boxtext::-webkit-scrollbar-thumb:hover {background: #36A99A;}
 
 
 /***********************************
@@ -2311,6 +2356,7 @@ border-bottom: 1px solid #36A99A;
 <script type="text/javascript" src="http://voidpc.jcink.net/uploads/voidpc/brownie.js?v=2.1"></script>
 <link href="https://fonts.googleapis.com/css?family=Vidaloka|Lato" rel="stylesheet">
 <link href="//dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0aa5a1a5e2.js" crossorigin="anonymous"></script>
 <script>
 $(function(){
 
@@ -2343,10 +2389,10 @@ $(".slide").hide();
 
     </head> 
 
-<div class="g-<!-- |g_id| -->" style="display: none;" align='left'><div id='tb'><div class='guestlinks' style="margin-top:-3px;"><a href='/index.php?act=Login&CODE=00' target="_blank"><span class="sf sf-enter-o"></span> LOG IN</a> <a href='/index.php?act=Reg&CODE=00'><span class="sf sf-pencil"></span> REGISTER</a></div></div><% NAVIGATION %></div>
+<div class="g-<!-- |g_id| -->" style="display: none;" align='left'><div id='tb'><div class='guestlinks' style="margin-top:-3px;"><a href='/index.php?act=Login&CODE=00' target="_blank"><span class="fas fa-sign-in-alt"></span> LOG IN</a> <a href='/index.php?act=Reg&CODE=00'><span class="sf sf-pencil"></span> REGISTER</a></div></div><% NAVIGATION %></div>
 
 <div class="m-<!-- |g_id| -->" align='left'><div id='tb'>
-<div class='adminlinks' style="margin-top:-3px;"><a href="admin.php" target="_blank" class="acp-<!-- |g_access_cp| -->" style="display: none;"><span class="sf sf-wrench-1-o"></span> admin</a> <a href="index.php?act=modcp" class="mcp-<!-- |g_is_supmod| -->" style="display: none;"><span class="sf sf-magic-wand-o"></span> mod</a> <span style="margin-left:20px;"><span class="sf sf-arrow-right"></span> Logged in as:<a href='index.php?showuser=<!-- |id| -->'><!-- |name| --></a></span> <div class='namestuff' style="margin-top:-3px; margin-left: 0px;"><span style="margin-left:10px;"><span class='subaccounts'><% SUBACCOUNTS %></span></div> <a href="index.php?act=Login&CODE=03&key=<!-- |auth_key| -->"><span class="sf sf-exit-o"></span> log out</a></div>
+<div class='adminlinks' style="margin-top:-3px;"><a href="admin.php" target="_blank" class="acp-<!-- |g_access_cp| -->" style="display: none;"><span class="fas fa-cog"></span> admin</a> <a href="index.php?act=modcp" class="mcp-<!-- |g_is_supmod| -->" style="display: none;"><span class="fas fa-cog"></span> mod</a> <span style="margin-left:20px;"><span class="fas fa-arrow-right"></span> Logged in as:<a href='index.php?showuser=<!-- |id| -->'><!-- |name| --></a></span> <div class='namestuff' style="margin-top:-3px; margin-left: 0px;"><span style="margin-left:10px;"><span class='subaccounts'><% SUBACCOUNTS %></span></div> <a href="index.php?act=Login&CODE=03&key=<!-- |auth_key| -->"><span class="fas fa-external-link-alt"></span> log out</a></div>
 
 <div class='linkstuff' align='right' style="margin-top:-3px; margin-left:0px; margin-right: 30px;"><a href='index.php?act=Msg&CODE=01'><span class="sf sf-envelope-3-o"></span> (<!-- |new_msg| -->) messages</a> <a href="index.php?act=Search&CODE=getnew"><span class="sf sf-new-label"></span> new posts</a> <a href="/index.php?act=UserCP&amp;CODE=alerts"><span class="sf sf-bell-o"></span> <!-- |new_alerts| --> alerts</a><a href='index.php?act=UserCP'><span class="sf sf-cog-o"></span> Controls</a> </div>
 </div><% NAVIGATION %>
@@ -2389,37 +2435,17 @@ $(".slide").hide();
 </div>
 
 
-<div id="staff-links"><div style="position: relative"><div class="img-box">
-<div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/SiteAdminImage.png)">
-<div class="img-overlay"><a href="http://inourname.net/index.php?showuser=157" title="All purpose account for staff to use">ION CREW</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/SiteAdminImage.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=9" title="Site Admin">Scowling</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/SiteAdminImage.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=6" title="Site Admin">Daekie</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/CCLImage.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=106" title="Community Care Liaison">Fiction1119</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ShopkeeperImage.png)">
-    <div class="img-overlay"><a href="///" title="Shopkeeper">N/A</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ProjectManagerImage.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=15" title="Project Manager">Meighei</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ProjectManagerImage.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=x" title="Project Manager">N/A</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/OrderLeadImage.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=212" title="Order Lead">Ivynian</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ChaosLeadImage.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=10" title="Chaos Lead">AMItotic</a>
-  </div></div>
-  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/CivilianLead.png)">
-    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=296" title="Civilian Lead">Carhop Cavalier</a>
-  </div></div>
+<div id="staff-links"><div style="position: relative;  border: 2px solid #032A31;"><div class="img-box"><span align="center"><div style="margin-top:15px; margin-left:1px; margin-right:5px;">
+<b>SITE ADMINS:</b>
+<div id="siteAdmins">test</div><hr>
+<b>PROJECT MANAGERS:</b>
+<div id="projectManagers">test</div><hr>
+<b>POINT SHOP KEEPER:</b>
+<div id="pointShopManager">test</div><hr>
+<b>COMMUNITY CARE LIASONS:</b>
+<div id="communityCares">test</div><hr>
+<b>LORE LEADS:</b>
+<div id="loreLeads">test</div></div></span>
   <div class="staff-undertext">Staff</div>
 </div></div></div>
 
@@ -2430,17 +2456,11 @@ $(".slide").hide();
             </div>
 <div id="updates">
   <div class="updates-box"><div class="updates-boxtext">
+	<span style="font-size:10px"><div id="getCurrentEvents"></div></span>
+</div></div>
+  <div class="staff-undertext" style="top:210px; left:15px;">Updates</div>
 
-
-    
-  </div></div>
-  <div class="staff-undertext" style="top:102px; left:30px;">Plot</div>
-  <div class="updates-box" style="margin-top:16px;"><div class="updates-boxtext">
-
-  </div></div>
-  <div class="staff-undertext" style="top:222px; left:15px;">Updates</div>
-
-<div class="updates-box" style="margin-top:16px;"><div class="updates-boxtext">
+<div class="credits-box" style="margin-top:20px;"><div class="credits-boxtext">
     
     Skin credits go to Monty @ Candyland Couture, Caution to the Wind, Shadowplay, and Shine. Cbox toggle credits go to hobgoblin @ CTTW, and code toggle credits go to Nicole @ CTTW. Header Image: <a href="https://www.freepik.com/free-photos-vectors/background">kjpargeter - www.freepik.com</a>
     
@@ -2564,7 +2584,7 @@ if (/Replying in|Posting New Topic/i.test(document.title)) {
    }
 }
 </script>
-
+<% ionsiteinfo %>
 </html>
 
 		
@@ -2716,10 +2736,10 @@ if (/Replying in|Posting New Topic/i.test(document.title)) {
   </div> </div></div>
   
 <div class="hsab-factionstuff"><!-- |field_13| --> <!-- |field_27| --></div>
-    <a href="<!-- |field_14| -->" title="PROFILE"><div class="hsab-buttons" style="margin-left: 2px;"><span class="sf sf-diamond-o"></span></div></a>
-<a href="<!-- |field_15| -->" title="PLOT THREAD"><div class="hsab-buttons"><span class="sf sf-lightbulb-o"></span></div></a>
-<a href="<!-- |field_16| -->" title="TRACKER"><div class="hsab-buttons"><span class="sf sf-flame-o"></span></div></a>
-<a href="" title=""><div class="hsab-buttons" style="margin-right: 0px;"><span class="sf sf-beating-heart-o"></span></div></a>
+    <a href="<!-- |field_14| -->" title="PROFILE"><div class="hsab-buttons" style="margin-left: 2px;"><span class="fas fa-address-card"></span></div></a>
+<a href="<!-- |field_15| -->" title="PLOT THREAD"><div class="hsab-buttons"><span class="fas fa-book-open"></span></div></a>
+<a href="<!-- |field_16| -->" title="TRACKER"><div class="hsab-buttons"><span class="fas fa-list"></span></div></a>
+<a href="http://inourname.net/index.php?act=Msg&CODE=04&MID=<!-- |poster_id| -->" title="MESSAGE"><div class="hsab-buttons" style="margin-right: 0px;"><span class="fas fa-envelope"></span></div></a>
 
 </center></item>
  <item name='post_row'><div id="postheader">

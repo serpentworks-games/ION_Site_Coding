@@ -1,0 +1,220 @@
+/***********
+Site Set CSS
+***********/
+
+/*TODO: VARIABLES FOR THIS SHIT*/
+
+/*Skin Variables
+Use these to set the colors*/
+
+
+
+/************************
+CSS Code
+************************/
+
+.ion-site * {   box-sizing: border-box; }
+
+.ion-site {
+
+  margin: 2px auto;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  color: #000;
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: none;
+
+}
+
+.ion-site h1 {
+  color: #0f686b;
+  letter-spacing: normal;
+line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+  text-align: left;
+}
+
+.ion-site h2 {
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 3px;
+  text-align: right;
+  text-transform: none;
+}
+
+.ion-post-content {
+  padding: 10px;
+  font-size: 13px;
+  font-family: 'Arial';
+  margin: 10px;
+  text-align: justify;
+  line-height: 120%;
+  width:95%;
+}
+
+.ion-post-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ion-site h3 {
+  padding: 2px;
+  text-transform: lowercase;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-color: #000;
+  font-style: italic;
+  text-align: center;
+  line-height: 80%;
+}
+
+.ion-site h4 {
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #0f686b;
+  font-style:bold;
+}
+
+.profile-name {
+  color: #0f686b;
+  letter-spacing: normal;
+line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.ion-site b {
+  color: #0f686b;
+}
+
+.ion-post-content p:last-child {
+  margin-bottom: 0;
+}
+
+.ion-halfwidth {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.ion-fullwidth {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.ion-triwidth {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.ion-site a {
+  font-weight: bold;
+color:  #00b359;
+}
+
+.ion-site ul {
+  list-style: none;
+}
+.ion-site li {
+ line-height: 150%;
+}
+
+.ion-site ul li::before {
+  content: "x";
+  color: #0f686b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+}
+
+.ion-site ol {
+	list-style:none;
+	counter-reset: ion-counter;
+}
+
+.ion-site ol li {
+	counter-increment: ion-counter;
+}
+
+.ion-site ol li::before{
+	content: counter(ion-counter) ". ";
+	color: #0f686b;
+	font-weight: bold;
+}
+
+.ion-toc{
+ max-width: 400px;
+ text-align: justify;
+padding-left: 175px;
+}
+
+.ion-site hr {
+  border: 1px;
+  height: 1px;
+  margin: 10%;
+  background-color: #0f686b;
+}
+
+.ion-site.ion-response {
+  max-width: 400px;
+}
+
+.textblock {
+  padding-left: 20px;
+}
+.ion-site table {
+border-collapse: separate;
+border-spacing: 5px 10px;
+table-layout: auto;
+width: 90%;
+text-align: left;
+}
+.ion-site td {
+padding: 5px;
+border-bottom: 1px solid #0f686b;
+
+}
+
+
+.ion-site-headimg img {
+	width: 100%;
+	height: auto;
+}
+
+
+/****** Spoiler Code *****/
+.ion-spoiler-border 
+{
+	background: #C0C0C0;
+}
+
+.ion-spoiler-toggle
+{
+	align: left;
+	padding: 5px;
+	background: #0f686b;
+	color: #fff;
+}
+
+.ion-spoiler-content
+{
+	display:none;
+	background: #EFEFEF;
+	padding: 10px;
+}

@@ -1,0 +1,27 @@
+/*************************************
+/* Dice Roller Styles
+*************************************/
+
+/*TODO: VARIABLES FOR THIS SHIT*/
+
+/*Skin Variables
+Use these to set the colors*/
+
+
+
+/************************
+CSS Code
+************************/
+
+.dice-roll{ 
+  display: grid;
+  grid: 5px;
+  white-space: nowrap; 
+  font-family: 'Arial', sans-serif; 
+  font-size: 14px; 
+  color: #000!important; 
+  text-align: center;
+  border: 0px; 
+  padding:  5px;
+  border: 2px solid #0f686b!important; 
+  margin-top: 2px; }

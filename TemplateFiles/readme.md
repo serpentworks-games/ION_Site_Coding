@@ -1,0 +1,3 @@
+These files are relating specifically to the CSS for the custom templates Scowl (me) created. Eventually this will be broken into a master file (probably on a webpage) with a simple selection of variables added at the top of each skin's CSS file to handle the different colors and adjustments.
+
+This is also where the conversion of the doHTML to BBCode for the on forum templates will happen for ease of reference and issue tracking.
