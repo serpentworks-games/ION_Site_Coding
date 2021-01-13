@@ -1,0 +1,1855 @@
+<?xml version="1.0"?>
+		<skin>
+
+		<skinname>transparent sky</skinname>
+		<date>Tuesday 12th of January 2021 11:01:58 PM</date>
+
+		<stylesheet>
+				/*=============================================== *
+ transparent sky was skinned by jen.
+ do not remove the credit or take 
+ parts of the code to use for your own.
+ please ask her if you have any questions.
+ *=============================================== */
+
+
+/****************************************
+ Body Background & Text Style
+*****************************************/
+
+body { 
+font: 12px/110% poppins; color: var(--light); margin: 0px;
+background: linear-gradient(var(--background), var(--background)), url(https://k.nickpic.host/BqRS65.jpg);
+text-align: center; background-size: cover; background-attachment: fixed;
+--dark: rgba(41,41,41,.7);
+--darken: rgba(10,10,10,.7);
+--light: rgba(223,223,223,.8);
+--lighten: rgba(105,105,105,.8);
+--accent1: #ab674b;
+--accent2: #d48b6d;
+--background: rgba(47,44,48,.8);
+--backgrounded: rgba(30,30,30,.8);
+}
+
+body b { color: var(--accent1); }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--accent1); border: 2px solid rgba(41,41,41); }
+::-webkit-scrollbar-thumb { background: var(--accent1); }
+
+@font-face {
+font-family: hijrnotes;
+src: url(https://files.jcink.net/uploads/inourname/sittella.ttf);
+}
+/****************************************
+Board wrappers
+*****************************************/
+
+#wrapper { 
+text-align: left; width: 850px; margin: 50px auto; background: var(--dark);
+box-shadow: 0 5px 10px rgba(0,0,0,.5); padding: 50px; border: 1px solid var(--dark);
+}
+
+#innerwrapper { 
+padding: 0 10px;
+}
+
+/****************************************
+Link colors
+*****************************************/
+
+a:link, a:visited, a:active { 
+text-decoration: none; color: var(--accent1); 
+}
+a:hover { 
+color: var(--accent2); text-decoration: none; 
+}
+
+/****************************************
+  header codes
+*****************************************/
+#tshd {
+width: 850px; height: 350px; box-sizing: border-box; position: relative; overflow: hidden;
+}
+.tshd {
+width: 850px; height: 350px; box-sizing: border-box; transition: 1s ease-in-out;
+}
+#tshd:hover .tshd {
+width: 850px; height: 350px; box-sizing: border-box; opacity: .3; transition: 1s ease-in-out;
+}
+#tshd:hover #tshdrtab { opacity: 1; transition: 1s ease-in-out;}
+#tshdrtab {
+height: 310px; width: 805px; margin: auto; position: absolute; top: 20px; left: 23px; opacity: 0;
+border: 1px solid transparent; background: var(--background); box-sizing: border-box; transition: 1s ease-in-out;
+}
+#tshdrtab input {display: none;}
+#tshdrtab label {
+height: 30px; background: none; position: relative; top: 30px; left: 25px; border-bottom: 5px solid var(--accent1); 
+color: var(--light); text-align: left; font: 13px/300% poppins; text-transform: uppercase; display: block; 
+width: 225px; clip-path: polygon(0 0, 52% 0, 100% 100%, 0% 100%); margin: 10px 0px;
+}
+#tshdrtab .cont1, #tshdrtab .cont2, #tshdrtab .cont3, #tshdrtab .cont4, #tshdrtab .cont5 {
+height: 250px; width: 500px; position: absolute; bottom: 20px; right: 0px; background: none; border: 15px solid transparent; 
+box-sizing: border-box; font:12px/120% poppins; overflow: auto; text-align: justify; padding-right: 10px; 
+opacity: 0; text-transform: lowercase; 
+}
+#tshdrtab input:checked+label {
+color: var(--accent1); 
+}
+#tshdrtab #tshdrtab1:checked+label ~ .cont1 {opacity: 1; z-index: 5;}
+#tshdrtab #tshdrtab2:checked+label ~ .cont2 {opacity: 1; z-index: 5;}
+#tshdrtab #tshdrtab3:checked+label ~ .cont3 {opacity: 1; z-index: 5;}
+#tshdrtab #tshdrtab4:checked+label ~ .cont4 {opacity: 1; z-index: 5;}
+#tshdrtab #tshdrtab5:checked+label ~ .cont5 {opacity: 1; z-index: 5;}
+
+.cont2 h1 {
+color: var(--accent1); text-transform: uppercase; display: inline-block; 
+font: 700 13px/100% poppins; margin-bottom: -2px; margin-right: 5px;
+}
+.cont1 b {color: var(--accent1);}
+
+.staff-img, .spot-img {
+margin-right: 5px; display: inline-block;
+}
+.staff-img img, .spot-img img {
+width: 80px; height: 150px;
+}
+.staff-blurb, .spot-blurb {
+height: 60px; text-align: center; font: 10px/140% poppins; text-transform: lowercase; color: var(--accent1);  
+}
+.staff-tit {
+font: 16px/120% poppins; text-transform: uppercase; color: var(--accent1); letter-spacing: 1px; margin-left: -20px;
+}
+.staff-tit a, .spot-tit a {
+color: var(--accent1);
+}
+.staff-blurb a, .spot-blurb a {
+letter-spacing: 1px; color: var(--accent1);
+}
+.spot-tit {
+font: 14px/120% poppins; text-transform: uppercase; color: var(--accent1); letter-spacing: 1px;
+}
+
+
+/****************************************
+  Navigation Bar
+*****************************************/
+
+#navi br { display: none; }
+
+#navstrip  { 
+position: fixed; left: 450px; top: 15px; text-transform: uppercase; font: 14px/120% poppins;
+}
+
+.topbar {
+position: fixed; top: 0px; left: 0px; width: 100%; height: auto; padding: 10px; 
+background: rgba(41,41,41); color: var(--light); display: inline-block; z-index: 9;
+}
+.sdbrmg {
+top: 5px; position: absolute; left: 5px; z-index: 100; 
+}
+.sdbrmg img {
+height: 50px; width: 50px; background-image: url("http://placehold.it/50");
+}
+.usrnme {
+width: 250px; text-align: left; border-bottom: 1px solid var(--light);
+text-transform: uppercase; font: 12px/120% arial; padding: 5px 5px 5px 50px;
+}
+
+/**************************************************
+ User Links Menu (Messages / View new posts / etc )
+***************************************************/
+
+#userlinks { 
+background: transparent; list-style: none; width: 960px; margin: 0 auto; color: var(--light); 
+}
+
+#userlinks a { 
+text-decoration: none; padding: 1px; 
+}
+
+#userlinks a:hover { 
+text-decoration: none; 
+}
+
+
+/****************************************
+Topic View styles
+*****************************************/
+
+
+.normalname { 
+font-size: 12px; font-weight: bold; color: #003; 
+}
+
+.normalname a { 
+font-size: 12px;
+}
+
+.unreg { 
+font-size: 11px; 
+font-weight: bold; 
+color: #900; 
+}
+.postdetails { 
+font-size: 10px; 
+}
+
+.signature{ 
+font-size: 10px; color: #339; line-height:150%;  
+}
+
+/*******************************
+ new posts/topics
+*******************************/
+
+.pformleft {
+width: 25%; 
+}
+.pformright {
+width: 75%;
+}
+.pformstrip {
+height: 30px; background: transparent; border-bottom: 5px solid transparent; 
+}
+
+/*******************************
+ Pagination e.g. [1],2,3 ...
+*******************************/
+
+.pagination .pagination_current, .pagination a {
+padding: 2px 5px;
+}
+
+.pagination a:link, .pagination a:visited, .pagination a:active {
+border-radius: 3px; background: var(--dark); padding: 0px 6px;
+color: var(--light); text-decoration:none; box-shadow: 0pt 2px 3px rgba(0,0,0,.4);
+}
+
+.pagination a:hover {
+text-decoration: none; color: var(--light); box-shadow: 0pt 2px 3px rgba(0,0,0,.4); background: var(--dark);}
+
+.pagination .pagination_current {
+border-radius:3px; padding-left:6px; padding-right:6px; background: var(--dark);
+}
+
+.pagination_first, .pagination_last, .pagination_page {
+background: var(--dark);
+}
+
+.pagination_pagetxt {
+display:none;
+}
+
+/****************************************
+Global general table/div row styles
+*****************************************/
+
+.row1,.row3,.row4,.row2 { 
+background: transparent; padding: 0px 20px;
+}
+
+#boardstats .row2 { 
+text-align: center; 
+}
+
+.darkrow1 { 
+background: transparent; color: var(--light); text-align: right;
+}
+#topic-list .darkrow1 { display: none; }
+.pinned-topic-row { background-color: #EFEFEF; padding: 5px; }
+
+
+.darkrow2 { 
+background: transparent; color: var(--light);  
+}
+
+td.darkrow2 { 
+display: none; 
+}
+
+.darkrow3 { 
+background: transparent; color: var(--light); padding: 3px; 
+}
+
+/****************************************
+Top table bars / gradient holders 
+*****************************************/
+
+.maintitle { 
+font-weight: bold; padding: 20px; color: var(--light); font: 26px/100% poppins; text-transform: uppercase;
+}
+
+.maintitle a:link, .maintitle  a:visited, .maintitle  a:active { 
+text-decoration: none; color: #FFF !important; 
+}
+
+.maintitle a:hover { 
+text-decoration: underline;  
+}
+
+
+/****************************************
+  QUOTE boxes
+*****************************************/
+
+#QUOTE { 
+white-space: normal; font: 11px/120% Arial; color: var(--light); background: var(--dark);
+padding: 20px; border: 1px solid var(--light); box-sizing: border-box;
+}
+
+/****************************************
+CODE AREA CSS
+*****************************************/
+
+#CODE  {
+white-space: normal; font: 11px/120% Courier New;  color: var(--light);
+background: var(--dark); padding: 20px; border: 1px solid var(--lighten);
+border-top: none; word-break: break-word; box-sizing: border-box;
+}
+
+.code-scroll {
+max-height: 250px; overflow: auto; padding-right: 5px;
+}
+
+.code-top {
+background: var(--dark); border: 1px solid var(--lighten); border-bottom: none;
+text-align: center; overflow: hidden; color: var(--light); margin-bottom: -2px;
+}
+.code-highlight {
+font: 8px/100% calibri; padding: 4px 6px 2px; margin: 0px; background: var(--lighten);
+text-align: center; color: var(--light); cursor: crosshair; text-transform: uppercase; letter-spacing: 5px;
+}
+
+.code-top .code-title {
+margin: 20px; font: italic 20px/100% calibri; text-transform: lowercase;
+}
+
+.code-toggle {
+cursor: crosshair;
+}
+
+.code-scroll.auto-code {
+height: auto; max-height: none;
+}
+
+#CODE-WRAP.nicole-code { 
+max-width: 300px;
+}
+
+
+/**********************************************
+  Input buttons, e.g. submit, text input, etc
+***********************************************/
+
+.button-large {
+padding: 5px; text-align:center; margin: 0px 5px 0px 5px;
+color: var(--light); font-weight: bold; min-width: 50px;
+display: inline-block; text-transform: uppercase;
+}
+
+
+.button-small {
+color: var(--accent1); font-weight: bold; font-size: 11px; margin: 3px; 
+padding: 4px; text-decoration: none; min-width: 50px; max-width: 80px;
+}
+.post-buttons-top { position: relative; top: 0px; right: -35px; margin-bottom: 20px; }
+
+
+.button-large.closed {
+background: var(--dark); padding: 7px 12px; text-align:center; margin: 0px 5px; 
+box-shadow: 1px 1px 2px var(--darken); color: var(--light); font-weight: bold;
+}
+
+.forminput, .codebuttons, .textinput, .radiobutton, .checkbox {
+border-radius: 2px; background: var(--dark); color: var(--light); border: none;
+font-family: Arial, sans-serif; font-size: 12px; padding: 2px;
+vertical-align: middle; box-shadow: 0 1px 3px var(--darken) inset;
+}
+
+
+input[type=submit], input[type=button], input[type=reset] {
+background: var(--dark); border-radius: 3px; box-shadow: 1px 1px 2px var(--darken);
+color: var(--light); font-size: 11px; font-weight: bold; margin: 3px;
+padding: 2px 6px; text-decoration: none; border: none; 
+}
+
+.codebuttons  { 
+font-size: 10px; 
+}
+
+
+/***********************************
+ Copyright: Removal is against Terms
+************************************/
+
+.copyright { 
+font-size: 10px; line-height: 12px; 
+}
+
+/*********************************
+display none
+************************************/
+#submenu { display: none;}
+#logostrip { display: none;}
+#delcookiesrow, #mark-as-read-subto {display: none;}
+#mark-as-read-subto {display: none;}
+.postlinksbar {display: none;}
+
+
+/****************************************
+TOGGLE BY NICOLE'S TOGGLE GENERATOR
+nicolescodes.tumblr.com/togglegenerator
+*****************************************/
+ 
+#n-toggle {
+word-break: break-word; display: inline-block; cursor: crosshair; text-align: center;
+z-index: 99; font-size: 30px; background: transparent; color: var(--light);
+padding: 5px; position: fixed; top: 5px; left: 325px;
+}
+ 
+#n-cbox {
+position: fixed; display: none; background: var(--dark); top: 100px; right: auto; left: 0px; 
+bottom: auto; width: 200px; padding: 10px; font: 10px/120% poppins; text-transform: uppercase;
+}
+
+
+/****************************************
+dropdown user links by yuno
+*****************************************/
+#sitename-userlinks-menu input[type=checkbox] {display: none;}
+#sitename-userlinks-menu label {
+position: absolute; right: 50px; top: 5px; padding: 10px; background: var(--backgrounded); 
+color: var(--light); display: inline-block; z-index: 100; font: 11px/150% poppins;
+}
+#sitename-userlinks-menu label:hover {
+color: var(--accent1);
+}
+.sitename-hold-menu {
+position: absolute; right: 0px; top: 40px; z-index: 99; height: 0px; width: 150px; overflow: hidden; 
+-webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out; transition: all .3s ease-in-out;
+}
+.sitename-hold-menu-links a {
+display: block; background: var(--dark); color: var(--light); text-decoration: none; 
+padding: 12px; text-align: right; border-bottom: 1px solid var(--accent1); 
+font: 11px/150% poppins; text-transform: uppercase; pointer-events: auto;
+}
+.sitename-hold-menu-links a:hover {
+background: var(--darken);
+}
+.sitename-hold-menu-links a i {
+display: block; float: left; background: var(--dark); border: 1px solid var(--accent1);
+padding: 6px; margin: -7px; color: var(--light); font-size: 15px; 
+}
+.sitename-hold-menu select {
+display: block; background: var(--background); color: var(--light); 
+text-decoration: none; padding: 12px; text-align: right; 
+border-bottom: 1px solid var(--accent1); font: 11px/150% poppins; 
+width: 150px; text-transform: uppercase; border-radius: 0px;
+pointer-events: auto; border-top: 1px solid var(--dark);
+border-left: 1px solid transparent; border-right: 1px solid transparent;
+}
+ #sitename-userlinks-menu input[type=checkbox]:checked ~ .sitename-hold-menu {
+height: 500px; pointer-events: none;
+}
+.alert-0-0 {display:none;}
+#userlinks { display: none; }
+.mcp-0, .acp-0, .m-2 { display: none!important; } .g-2 { display: block !important; }
+.staffonly {display:none} #id4 .staffonly {display:inline}
+
+
+/****************************************
+dropdown quick nav links
+*****************************************/
+.dropbtn {
+position: fixed; right: 135px; top: 5px; background: var(--backgrounded);
+border: 1px solid transparent; color: var(--light); font: 10px/150% poppins;
+padding: 10px; width: 200px; text-transform: lowercase; letter-spacing: 1px;
+-webkit-transition: 0.25s ease-in-out; -moz-transition: 0.25s ease-in-out;
+transition: 0.25s ease-in-out; z-index: 9;
+}
+.dropbtn:hover, .dropbtn:focus {
+color: var(--accent1);
+}
+.dropdown {
+position: absolute; display: inline-block;
+}
+.dropdown-content {
+display: none; position: fixed; top: 45px; right: 125px;
+background: transparent; width: 200px; border-top: none;
+z-index: 1; -webkit-transition: 0.25s ease-in-out;
+-moz-transition: 0.25s ease-in-out; transition: 0.25s ease-in-out;
+}
+.dropdown-content a {
+display: block; color: var(--light); text-decoration: none; 
+}
+.dropdown-content i {
+color: var(--accent1); margin-right: 5px; text-align: left;
+}
+.dropdown-content li {
+list-style: none; background: var(--dark); height: 30px;
+border-bottom: 1px solid var(--accent1); line-height: 30px;
+padding-left: 10px; padding-right: 10px; text-align: left;
+-webkit-transition: 0.25s ease-in-out; -moz-transition: 0.25s ease-in-out;
+transition: 0.25s ease-in-out;
+}
+.dropdown-content a:hover {
+color: var(--accent2);
+}
+.dropdown-content li:hover {
+background: var(--darken);
+}
+.show {
+display: block;
+}
+
+
+
+.awards { 
+	margin: 10px 0px 0px; 
+	text-align: center; 
+	color: #f9f9f9; 
+	font-size: 0px;
+	overflow: auto;
+ }
+.awards img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+	padding: 0px 2px; 
+	transition: all, 1s; 
+	-webkit-transition: all, 1s; 
+	-moz-transition: all, 1s;
+}
+
+.awards img:hover { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+
+
+/***********
+Site Set CSS
+***********/
+
+
+.ion-site * {   box-sizing: border-box; }
+
+.ion-site {
+
+  margin: 2px auto;
+  font: 12px/110% poppins; color: var(--light);
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: none;
+
+}
+
+.ion-site h1 {
+  color: var(--accent1); 
+  letter-spacing: normal;
+  line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+  text-align: left;
+}
+
+.ion-site h2 {
+  font: 12px/110% poppins; color: var(--light);
+  letter-spacing: 3px;
+  text-align: right;
+  text-transform: none;
+}
+
+.ion-post-content {
+  padding: 10px;
+  font: 12px/110% poppins; color: var(--light);
+  margin: 10px;
+  text-align: justify;
+  line-height: 120%;
+  width:95%;
+}
+
+.ion-post-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ion-site h3 {
+  padding: 2px;
+  text-transform: lowercase;
+  font: 20px poppins; color: var(--light);
+  font-style: italic;
+  text-align: center;
+  line-height: 80%;
+}
+
+.ion-site h4 {
+  font: 15px poppins; color: var(--light);
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--accent1); 
+  font-style:bold;
+}
+
+.profile-name {
+  color: var(--accent1); 
+  letter-spacing: normal;
+line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.ion-site b {
+  color: var(--accent1); 
+}
+
+.ion-post-content p:last-child {
+  margin-bottom: 0;
+}
+
+.ion-halfwidth {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.ion-fullwidth {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.ion-triwidth {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.ion-site a {
+  font-weight: bold;
+color:  var(--accent2);
+}
+
+.ion-site ul {
+  list-style: none;
+}
+.ion-site li {
+ line-height: 150%;
+}
+
+.ion-site ul li::before {
+  content: "x";
+  color: var(--accent1); 
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+}
+
+.ion-site ol {
+	list-style:none;
+	counter-reset: ion-counter;
+}
+
+.ion-site ol li {
+	counter-increment: ion-counter;
+}
+
+.ion-site ol li::before{
+	content: counter(ion-counter) ". ";
+	color: var(--accent1); 
+	font-weight: bold;
+}
+
+.ion-toc{
+ max-width: 400px;
+ text-align: justify;
+padding-left: 100px;
+}
+
+.ion-site hr {
+  border: 1px;
+  height: 1px;
+  margin: 10%;
+  background-color: var(--accent1); 
+}
+
+.ion-site.ion-response {
+  max-width: 400px;
+}
+
+.textblock {
+  padding-left: 20px;
+}
+.ion-site table {
+border-collapse: separate;
+border-spacing: 5px 10px;
+table-layout: auto;
+width: 90%;
+text-align: left;
+}
+
+.ion-site td {
+padding: 5px;
+border-bottom: 1px solid var(--accent1); 
+
+}
+.ion-site-headimg img {
+	width: 100%;
+	height: auto;
+}
+
+.ion-spoiler-border 
+{
+	background: #f0f0f0;
+}
+
+.ion-spoiler-toggle
+{
+	align: left;
+	padding: 5px;
+	background: var(--backgrounded);
+}
+
+.ion-spoiler-content
+{
+	padding: 10px;
+	display:none;
+	background: var(--background);
+}
+
+
+/*************************************
+/* Dice Roller Styles
+*************************************/
+
+.dice-roll{ 
+	display: grid;
+	grid: 5px;
+	white-space: nowrap; 
+	font: 15px poppins; color: var(--light);
+	text-align: center;
+	background-color: var(--backgrounded); 
+	border: 0px; 
+	padding:  5px;
+	border: 2px solid var(--accent1)!important; 
+	margin-top: 2px; }
+
+		
+		</stylesheet>
+
+		<wrappers>
+				<!DOCTYPE html>
+<html>
+    <head> 
+<link href="//dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+	<title><% TITLE %></title> 
+<link rel="icon" href="http://placehold.it/50.png" />
+
+	<% CSS %> 
+	<% JAVASCRIPT %> 
+<script type="text/javascript" src="http://voidpc.jcink.net/uploads/voidpc/brownie.js?v=2.1"></script>
+    </head> 
+    <body ID="id<!-- |g_id| -->">
+<div class="topbar">
+
+ <div class="usrnme"><a href="/index.php?showuser=<!-- |id| -->"><!-- |name| --></a></div>
+
+<div id="navi"><% NAVIGATION %></div>
+
+<div id="sitename-userlinks-menu"></div>
+<div id="sitename-userlinks-menu">
+<label for="userlinksmenu" title="User Menu" style="cursor: pointer;">user controls<span class="alert-<!-- |new_alerts| -->-<!-- |new_msg| -->"><i class="th th-bell" style="margin-left: 5px;"></i></span>
+<input type="checkbox" id="userlinksmenu"><div class="sitename-hold-menu">
+
+<div class="sitename-hold-menu-links">
+  <dropdownsection class="m-<!-- |g_id| -->" >
+  <a href="/index.php?act=UserCP"><i class="th th-settings"></i> settings </a>
+  <a href="/index.php?act=UserCP&CODE=alerts"><i class="th th-star-1"></i> alerts (<!-- |new_alerts| -->)</a>
+  <a href="/index.php?act=Msg&CODE=01"><i class="th th-envelope"></i> messages (<!-- |new_msg| -->)</a>
+  <span class="staffonly"><a href="/admin.php" target="_blank"><i class="th th-diamond"></i> acp </a></span>
+  <span class="staffonly"><a href="/index.php?act=modcp" target="_blank"><i class="th th-diamond"></i> mcp </a></span>
+  <a href="/index.php?act=Login&CODE=03&key=<!-- |auth_key| -->"><i class="th th-logout"></i> log out </a>
+  <% SUBACCOUNTS %>
+</dropdownsection><dropdownsection  class="g-<!-- |g_id| -->" style="display: none;">
+  <a href="/index.php?act=Login&CODE=00"><i class="th th-login"></i> log in </a>
+  <a href="/index.php?act=Reg&CODE=00"><i class="th th-leaf-1"></i> register </a></dropdownsection>
+</div>
+
+</div></div></label>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">quick navigation</button>
+<div id="myDropdown" class="dropdown-content">
+<li><a href="http://inourname.net/index.php?showtopic=27"><i class="th th-forward"></i> site rules</a> </li>
+<li><a href="http://inourname.net/index.php?showforum=28"><i class="th th-forward"></i> setting</a> </li>
+<li><a href="http://inourname.net/index.php?showforum=27"><i class="th th-forward"></i> factions</a> </li>
+<li><a href="http://inourname.net/index.php?showtopic=23"><i class="th th-forward"></i> application</a> </li>
+<li><a href="http://inourname.net/index.php?showforum=15"><i class="th th-forward"></i> plot threads</a> </li>
+<li><a href="http://inourname.net/index.php?act=store"><i class="th th-forward"></i> store</a> </li>
+<li><a href="http://inourname.net/index.php?showtopic=110"><i class="th th-forward"></i> masterlist</a> </li>
+<li><a href="https://discord.gg/W3NrdCB"><i class="th th-forward"></i> discord</a> </li>
+</div></div>
+</div>
+	<div id="wrapper">
+<div id="tshd">
+<img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_headerimage.png" class="tshd">
+<div id="tshdrtab">
+<input type="radio" id="tshdrtab1" name="temptabs"checked>
+<label for="tshdrtab1">welcome</label>
+<input type="radio" id="tshdrtab2" name="temptabs">
+<label for="tshdrtab2">site events</label>
+<input type="radio" id="tshdrtab3" name="temptabs">
+<label for="tshdrtab3">the staff</label>
+<input type="radio" id="tshdrtab5" name="temptabs">
+<label for="tshdrtab5">site credits</label>
+
+<div class="cont1">
+<b>in our name</b> is a <b>AU Sailor Moon RP</b> site. We are a <b>E/T</b> rated <b>character</b> driven site with fun events and a lot of chaos. it is set in <b>new providence, Massachusetts</b>. 
+</div>
+<div class="cont2">  
+<h1>//</h1>No events yet!
+
+</div>
+<div class="cont3">
+<div class="staff-blurb">
+<div class="staff-blurb-inner">
+<span class="staff-tit">(click an image for more info!)</span>
+</div></div>
+<div class="staff-img staff1"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_siteadmin.png"></div>
+<div class="staff-img staff2"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_projectmanagers.png"></div>
+<div class="staff-img staff3"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_ccl.png"></div>
+<div class="staff-img staff4"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_shopkeeper.png"></div>
+<div class="staff-img staff5"><img src="http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/transparentsky_loreteam.png"></div>
+<div style="clear: both;"></div>
+</div>
+<div class="cont4">
+<div class="spot-img spot1"><img src="http://via.placeholder.com/100x150"></div>
+<div class="spot-img spot2"><img src="http://via.placeholder.com/100x150"></div>
+<div class="spot-img spot3"><img src="http://via.placeholder.com/100x150"></div>
+<div class="spot-img spot4"><img src="http://via.placeholder.com/100x150"></div>
+<div style="clear: both;"></div>
+<div class="spot-blurb">
+<div class="spot-blurb-inner">
+<span class="spot-tit">(click an image for more info!)</span>
+</div></div>
+</div>
+<div class="cont5">
+transparent sky was coded by jen of <a href="https://shadowplayers.jcink.net/index.php?showuser=166">shadowplay</a>, <a href="http://cttw.jcink.net/index.php?showuser=6547">caution</a>, <a href="http://thecodebox.jcink.net/index.php?showuser=120">the code box</a>, and <a href="http://atfjcink.jcink.net/index.php?showuser=81">a thousand fireflies</a>. she would also like to thank <a href="http://cttw.jcink.net/index.php?showuser=6">nicole</a> (toggle box and highlight codes) and yuno of <a href="http://thecodebox.jcink.net/index.php?showuser=1">The Code Box</a> & <a href="http://cttw.jcink.net/index.php?showuser=3623">CTTW</a> (userlinks menu) for their codes used here. <p>
+
+this is where you can add your own site credits, for templates, graphics, and such.<p>
+
+all posts are credited to their creator. this site is designed for entertainment purposes only. no infringement is intended.
+
+</div>
+</div></div>
+	    <% BOARD HEADER %>
+	    <div id="innerwrapper"> 
+	    	<% BOARD %> 
+	    	<div id="skin_selector">
+	    	    <% SKIN_SELECTOR %>
+	    	</div>
+	    	<% COPYRIGHT %>
+	    </div>
+	</div>
+</body> 
+<script type='text/javascript'>
+// toggle by nicole/thunderstruck of cttw.jcink.net 
+$(document).ready(function () {   
+    var cookieName = 'tFxFQ512019n';
+
+    function setCookie(key, value) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + 31536000000); //1 year 
+        document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+    }
+
+    function getCookie(key) {
+        var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+        return keyValue ? keyValue[2] : null;
+    }
+    if (getCookie(cookieName) === '1') {
+        $('#n-cbox').show();
+    } else if (getCookie(cookieName) === '0') {
+        $('#n-cbox').hide();
+    } else {
+        setCookie(cookieName, '1');
+        $('#n-cbox').show();
+    }
+    $('#n-toggle').on('click', function () {
+        if ($('#n-cbox').is(':visible')) {
+            $('#n-cbox').fadeOut(300);
+            setCookie(cookieName, '0');
+        } else {
+            $('#n-cbox').fadeIn(300);
+            setCookie(cookieName, '1');
+        }
+    });
+});
+</script>
+
+<script type="text/javascript">
+// CODE AREA SCRIPT BY NICOLE/THUNDERSTRUCK OF CTTW @ JCINK
+// thank you to stackoverflow for the selectText function
+
+$('table#CODE-WRAP').addClass('nicole-code');
+$('table#CODE-WRAP').attr('cellpadding', '0');
+$('table#CODE-WRAP #CODE').wrapInner('<div class="code-scroll"></div>');
+$('table.nicole-code #CODE').parent('tr').prev('tr').children('td').html('<div class="code-top"><div class="code-title">Code <span class="code-toggle">• toggle height</span></div> <div class="code-highlight">highlight code</div></div>');
+
+$('table.nicole-code .code-scroll').each(function() {
+if ($(this).height() < 250) {
+   $(this).closest('tr').prev('tr').children('td').children('.code-top').children('.code-title').children('.code-toggle').hide();
+} else {}
+});
+
+$('table.nicole-code .code-toggle').click( function () {
+   if ($(this).closest('tr').next('tr').children('td').children('.code-scroll').hasClass('auto-code')) {
+       $(this).closest('tr').next('tr').children('td').children('.code-scroll').removeClass('auto-code');
+   } else {
+       $(this).closest('tr').next('tr').children('td').children('.code-scroll').addClass('auto-code');
+   }
+});
+
+jQuery.fn.selectText = function(){
+var doc = document
+   , element = this[0]
+   , range, selection
+;
+if (doc.body.createTextRange) {
+   range = document.body.createTextRange();
+   range.moveToElementText(element);
+   range.select();
+} else if (window.getSelection) {
+   selection = window.getSelection();        
+   range = document.createRange();
+   range.selectNodeContents(element);
+   selection.removeAllRanges();
+   selection.addRange(range);
+}
+};
+
+$(function() {
+$('table.nicole-code .code-highlight').click(function() {
+   $(this).closest('tr').next('tr').children('td').children('.code-scroll').selectText();
+});
+});
+
+// END CODE AREA SCRIPT
+</script>
+<script>
+/* Clip the Recent Topic Activity display to another location
+Add to the footer below the copyright
+*/
+$("#recent-topics").appendTo("#recent-topics-clip");
+</script>
+</ DROP DOWN NAV SCRIPT >
+<script type="text/javascript">
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script>
+$(document).ready(function() {
+$('.staff1').on('click', function(){
+$('.staff-blurb-inner').html('<span class="staff-tit">Scowling Dragon - daekie</span>');
+});
+$('.staff2').on('click', function(){
+$('.staff-blurb-inner').html('<span class="staff-tit">Meighei - N/A</span>');
+});
+$('.staff3').on('click', function(){
+$('.staff-blurb-inner').html('<span class="staff-tit">Fiction1119</span>');
+});
+$('.staff4').on('click', function(){
+$('.staff-blurb-inner').html('<span class="staff-tit">N/A</span>');
+});
+$('.staff5').on('click', function(){
+$('.staff-blurb-inner').html('<span class="staff-tit">ivynian - AMItotic - Carhop Cavalier</span>');
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+$('.spot1').on('click', function(){
+$('.spot-blurb-inner').html('<span class="spot-tit">top male: <a href="link">name</a> - played by member</span>');
+});
+$('.spot2').on('click', function(){
+$('.spot-blurb-inner').html('<span class="spot-tit">top female: <a href="link">name</a> - played by member</span>');
+});
+$('.spot3').on('click', function(){
+$('.spot-blurb-inner').html('<span class="spot-tit">top couple: <a href="link">name 1</a> - played by member</span>');
+});
+$('.spot4').on('click', function(){
+$('.spot-blurb-inner').html('<span class="spot-tit">top couple: <a href="link">name 2</a> - played by member</span>');
+});
+$('.spot5').on('click', function(){
+$('.spot-blurb-inner').html('<span class="spot-tit">top thread: <a href="link">thread name</a> - members threading</span>');
+});
+});
+</script>
+<script>
+$(document).ready(function(){$(".tableborder:has(.maintitle:contains('Member List')) tr").each(function(){$(this).children().eq(1).remove();$(this).children().last().remove()})});
+
+</script>
+
+<script>
+/* Jcink Dice Roll BBCode Button */
+$("#bbcode-buttons").append('<input type="button" class="codebuttons" onclick="jBBCode.addTag(\'[roll]1d6[/roll]\');" value="DICE" title="Roll Dice" />');
+</script>
+
+
+<script type="text/javascript">
+//MULTI QUOTE CODE
+// By VoidPC
+var quote = "<img src='http://voidpc.jcink.net/uploads/voidpc/plus.gif' />",
+   noquote = "<img src='http://voidpc.jcink.net/uploads/voidpc/minus.gif' />";
+if (/showtopic=|act=ST/i.test(location.href)) {
+    brownie.mod('http://voidpc.jcink.net/uploads/voidpc/multiquote_2_0.js');
+}
+if (/Replying in|Posting New Topic/i.test(document.title)) {
+   var m = brownie.get('multiquote');
+   if (m) {
+       for (var i = 0, a = m.split(','), b = a.length; i < b; i++) {
+           document.REPLIER.Post.value += brownie.get('multiquote-p' + a[i]);
+           brownie.del('multiquote-p' + a[i]);
+       }
+       brownie.del('multiquote');
+   }
+}
+</script>
+</html>
+		
+		</wrappers>
+
+		<macros>
+		<item name='A_LOCKED_B'><div class='button-large closed'>Closed</div></item>
+			<item name='A_MOVED_B'><div class='button-large closed'>Moved</div></item>
+			<item name='A_POLLONLY_B'><div class='button-large closed'>Closed</div></item>
+			<item name='A_POST'><div class='button-large'>New Topic</div></item>
+			<item name='A_REPLY'><div class='button-large'>Add Reply</div></item>
+			<item name='A_POLL'><div class='button-large'>New Poll</div></item>
+			<item name='A_STAR'><img src='//files.jcink.net/themes/default/red-pip.png' /></item>
+			<item name='B_HOT'><img alt="No New Posts" title="No New Posts" src="//files.jcink.net/themes/default/red-cube-small.png" /></item>
+			<item name='B_HOT_NN'><img alt="No New Posts" title="No New Posts" src="//files.jcink.net/themes/default/white-cube-small.png" /></item>
+			<item name='B_LOCKED'><img alt="Closed" title="Closed" src="//files.jcink.net/themes/default/closed.png" /></item>
+			<item name='B_MOVED'><img alt="Moved Topic" title="Moved Topic" src='//files.jcink.net/themes/default/red-moved.png' /></item>
+			<item name='B_NEW'><img alt="New Posts" title="New Posts" src="//files.jcink.net/themes/default/red-cube-small.png" /></item>
+			<item name='B_NORM'><img alt="No New Posts" title="No New Posts" src="//files.jcink.net/themes/default/white-cube-small.png" /></item>
+			<item name='B_PIN'><img alt="Pinned" title="Pinned" src="http://files.b1.jcink.com/themes/default/white-cube-small.png" /></item>
+			<item name='B_POLL'><img alt="New Votes / Posts" title="New Votes / Posts" src="//files.jcink.net/themes/default/red-cube-small.png" /></item>
+			<item name='B_POLL_NN'><img alt="No New Votes / Posts" title="No New Votes / Posts" src="//files.jcink.net/themes/default/white-cube-small.png" /></item>
+			<item name='B_HOT_DOT'><img alt="New Posts" title="New Posts" src="//files.jcink.net/themes/default/red-cube-small.png" /></item>
+			<item name='B_NEW_DOT'><img alt="New Posts" src="//files.jcink.net/themes/default/red-cube-small.png"></item>
+			<item name='B_HOT_NN_DOT'><img alt="New Posts" title="New Posts"  src="//files.jcink.net/themes/default/white-cube-small.png"></item>
+			<item name='B_NORM_DOT'><img alt="No New Posts" title="No New Posts"  src="//files.jcink.net/themes/default/white-cube-small.png"></item>
+			<item name='B_POLL_DOT'><img alt="New Posts" title="New Posts" src="//files.jcink.net/themes/default/red-cube-small.png"></item>
+			<item name='B_POLL_NN_DOT'><img alt="No New Posts" alt="No New Posts" src="//files.jcink.net/themes/default/white-cube-small.png"></item>
+			<item name='C_LOCKED'><img alt="Read Only" title="Read Only" src="//files.jcink.net/themes/default/red-read-only.png" /></item>
+			<item name='C_OFF'><img alt="No New Posts" title="No New Posts" src="//files.jcink.net/themes/default/white-cube-large.png" /></item>
+			<item name='C_OFF_CAT'><img alt="No New Posts" title="No New Posts" src="//files.jcink.net/themes/default/white-cube-large.png" /></item>
+			<item name='C_OFF_RES'><img alt="No New Posts" title="No New Posts" src="//files.jcink.net/themes/default/white-cube-large.png" /></item>
+			<item name='C_ON'><img alt="New Posts" title="New Posts" src="//files.jcink.net/themes/default/red-cube-large.png" /></item>
+			<item name='C_ON_CAT'><img alt="New Posts" title="New Posts" src="//files.jcink.net/themes/default/red-cube-large.png" /></item>
+			<item name='C_ON_RES'><img alt="New Posts" title="New Posts" src="//files.jcink.net/themes/default/red-cube-large.png" /></item>
+			<item name='F_ACTIVE'><img alt="Users" title="Users" src="//files.jcink.net/themes/default/active-users.png" /></item>
+			<item name='F_NAV_SEP'>&nbsp;&rarr;&nbsp;</item>
+			<item name='F_NAV'> &raquo; </item>
+			<item name='F_STATS'><img alt="Statistics" title="Statistics" src="//files.jcink.net/themes/default/statistics.png" /></item>
+			<item name='NO_PHOTO'><img src='//files.jcink.net/themes/default/active-users.png'></item>
+			<item name='CAMERA'>View</item>
+			<item name='M_READ'><img alt="Read Message" title="Read Message" src="//files.jcink.net/themes/default/white-cube-small.png" /></item>
+			<item name='M_UNREAD'><img alt="Unread Message" title="Unread Message" src="//files.jcink.net/themes/default/red-cube-small.png" /></item>
+			<item name='P_AOL'><span class='button-small'>AIM</span></item>
+			<item name='P_DELETE'><span class='button-small'>delete</span></item>
+			<item name='P_EDIT'><span class='button-small'>edit</span></item>
+			<item name='P_EMAIL'><span class='button-small'>Email</span></item>
+			<item name='P_ICQ'><span class='button-small'>GTalk</span></item>
+			<item name='P_MSG'><span class='button-small'>PM</span></item>
+			<item name='P_QUOTE'><span class='button-small'>quote</span></item>
+			<item name='P_WEBSITE'><span class='button-small'>Website</span></item>
+			<item name='P_YIM'><span class='button-small'>YIM</span></item>
+			<item name='P_REPORT'><span class='button-small'>report</span></item>
+			<item name='P_MSN'><span class='button-small'>MSN</span></item>
+			<item name='CAT_IMG'></item>
+			<item name='NEW_POST'><img src="//files.jcink.net/themes/default/double-arrow.gif" /></item>
+			<item name='LAST_POST'><img src="//files.jcink.net/themes/default/double-arrow.gif" /></item>
+			<item name='BR_REDIRECT'><img alt="Redirect" title="Redirect" src="//files.jcink.net/themes/default/red-redirect.png" /></item>
+			<item name='INTEGRITY_MSGR'><span class='button-small'>Skype</span></item>
+			<item name='ADDRESS_CARD'><span class='button-small'>Card</span></item>
+			<item name='T_QREPLY'><div class='button-large'>Fast Reply</div></item>
+			<item name='T_OPTS'><div class='button-large'>Topic Options</div></item>
+			<item name='CAL_NEWEVENT'><div class='button-large'>Add Event</div></item>
+			<item name='F_RULES'><img src='//files.jcink.net/html/acp/rules.png' alt='Forum Rules'></item>
+			<item name='WARN_0'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_1'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_2'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_3'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_4'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_5'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> </item>
+			<item name='WARN_ADD'><img src='//files.jcink.net/themes/default/red-block-plus.png'></item>
+			<item name='WARN_MINUS'><img src='//files.jcink.net/themes/default/red-block-minus.png'></item>
+			<item name='LOGO'><img width='207' height='57' src="style_images/1/spacer.gif" /><!-- You can insert a logo image here in place of the white spacer --></item>
+			<item name='CUST_PROF'><div class="postbit"><div align='center'><!-- |avatar| --><br><!-- |title| --><br></div></div><div class="postbit"><img src='//files.jcink.net/themes/default/users.png'> Group: <!-- |member_group| --> </div><div class="postbit"><img src='//files.jcink.net/themes/default/posts.png'> Posts: <!-- |posts| --></div><div class="postbit"><img src='//files.jcink.net/themes/default/joined.png'> Joined: <!-- |member_joined| --></div><div class="postbit">Age: <!-- |age| --><br>Location: <!-- |location| --><br>Status: <!-- |status| --><br></div><br><div style="margin-left: 14px;"><!-- |warn_text| --> <!-- |warn_minus| --><!-- |warn_img| --><!-- |warn_add| --></div></item>
+			<item name='B_PLUS_SHOW'><img alt='Expand' title='Expand' src='//files.jcink.net/themes/default/cat-expand.png' /></item>
+			<item name='B_MINUS_HIDE'><img alt='Collapse' title='Collapse' src='//files.jcink.net/themes/default/cat-collapse.png' /></item>
+			
+		</macros>
+
+		<templates>
+		 <item name='redirect_row'></item>
+ <item name='subf_head'><div class="tableborder" id="subforum-list">
+  <table border="0" cellpadding="4" cellspacing="1" width="100%">
+  <tbody><tr class="forum-subheader"> 
+	<td class="titlemedium" align="center"><img src="style_images/1/spacer.gif" alt="" height="1" width="28"></td>  </tr>       
+
+	<% FORUM_ROWS %>
+
+	  <td class="darkrow2" colspan="5">&nbsp;</td>
+	</tr>
+  </tbody></table>
+</div>
+<br /><br /></item>
+ <item name='topic_list_head'><div class="tableborder" id="topic-list">
+<div class='maintitle'><{CAT_IMG}>&nbsp;<!-- |forum_name| --></div>
+ 
+<table width='100%' border='0' cellspacing='1' cellpadding='4'>
+ 
+  
+ <% ANNOUNCEMENTS %>
+ <% TOPIC_ROWS %>
+ 
+</table>
+<!-- |mod_form_end| -->
+<!-- |forum_active| -->
+<!-- |sort_options| -->
+</div></item>
+ <item name='memberlist_head'></item>
+ <item name='memberlist_row'></item>
+ <item name='post_row'><!--Begin Msg Number <!-- |pid| -->-->
+<span class='<!-- |post_class| --> group<!-- |g_id| -->-<!-- |post_class| -->'>
+ <div class="tsprtop"><a name='entry<!-- |pid| -->'></a>
+<div class="prtpnme"><!-- |name| --></div> <div class="prline">
+<img src="<!-- |field_18| -->" class="prmg1"></div> 
+<div class="prchar"><div class="prcharinf"><!-- |field_26| --></div> <div class="prcharinf"><!-- |field_24| --></div> <div class="prcharinf"><!-- |field_6| --> years old</div> <div class="prcharinf"><!-- |field_27| --></div> <div class="prcharinf"><!-- |field_11| --></div> <div class="prcharinf"><!-- |field_12| --></div> <div class="prcharinf"><!-- |field_13| --></div></div>
+
+</div></td>
+
+<table width='100%' cellspacing='0' cellpadding='0' style="background: var(--dark);">
+<tr>
+<td valign='top' class='<!-- |post_css| --> miniprofile'>
+<span class='postdetails'>
+<!-- |mini_profile| -->
+</span></td>
+<td><!-- THE POST <!-- |pid| --> -->
+<div class="thepost"><div align='right' class='post-buttons-top'>
+<!-- |post_date| --> | <a title="" href="#" onclick="link_to_post(<!-- |pid| -->); return false;"> get link </a>  | <!-- |report_link| -->  | <!-- |edit_button| --> | <!-- |quote_button| --> | <!-- |delete_button| --> <!-- |mod_checkbox| --><div class="prliner"></div>
+</div><div id="pid_<!-- |pid| -->"><!-- THE POST <!-- |pid| --> --><div class='postcolor'><!-- |post| --></div><!-- |signature| --><!-- THE POST --><!-- |attachments| --> </div></div><!-- siggy was here --></div>
+</td>
+</tr>
+</table>
+<div class="tsprbttm">
+<div class="prcons">
+<div class="prcon"><a href="<!-- |field_14| -->"><i class="th th-id-card-2" title="profile"></i></a></div>
+<div class="prcon"><a href="<!-- |field_15| -->"><i class="th th-newspaper" title="plot thread"></i></a></div>
+<div class="prcon"><a href="<!-- |field_16| -->"><i class="th th-list" title="tracker"></i></a></div>
+<div class="prcon"><a href="http://inourname.jcink.net/index.php?act=Msg&CODE=04&MID=<!-- |poster_id| -->" title="send message"><i class="th th-envelope"></i></a></div>
+</div>
+
+<div class="prquote"><b>quote:</b> <!-- |field_19| --></div>
+
+</div>
+<div class="pstspcr"></div>
+</span>
+
+
+<style>
+.tsprtop, .tsprbttm {
+width: 850px; height: 110px; background: var(--dark); position: relative;
+}
+
+.prtpnme {
+font: 36px/0% hijrnotes; position: absolute; top: 45px; left: 10px; z-index: 1;
+}
+.prline {
+height: 1px; width: 750px; background: var(--lighten); position: absolute; top: 62px; left: 0px;
+}
+.prliner {
+height: 1px; width: 555px; background: var(--lighten); position: absolute; top: 25px; right: 0px;
+}
+
+.prmg1 {
+border-radius: 100%; width: 75px; height: 75px; position: absolute; top: -55px; right: -97px; background-image: url(http://placehold.it/75.png); border: 1px solid var(--lighten); padding: 10px; background: transparent; 
+}
+.pstspcr {
+height: 20px; width: 100px;
+}
+.prchar {
+width: 650px; position: absolute; bottom: 10px; right: 60px; display: flex; flex-flow:row wrap; align-content: center;
+}
+.prcharinf {
+background: var(--dark); padding: 5px; margin: 0px 2px;  
+}
+.tsprbttm {
+height: 100px; background: var(--backgrounded); border-top: 1px solid var(--lighten);
+}
+.prcons {
+box-sizing: border-box; position: absolute; top: 15px; left: 10px; width: 400px;
+}
+.prcon {
+font-size: 40px; display: inline-block; padding: 15px 10px;
+}
+.prcon a {
+color: var(--light); text-decoration: none; 
+}
+.prmg2 {
+position: absolute; top: 20px; left: 225px; background-image: url("http://placehold.it/200x110.png"); width: 200px; height: 110px;
+}
+.prquote {
+box-sizing: border-box; position: absolute; top: 15px; right: 25px; font: 13px/130% poppins; 
+background: var(--dark); height: 70px; width: 520px;border: 10px solid transparent; overflow: auto;
+}
+.prquote b {
+color: var(--accent1); 
+}
+
+.prtrig::-webkit-scrollbar { width: 7px; height: 2px; }
+.prtrig::-webkit-scrollbar-track { background: var(--accent1); border: 2px solid var(--light); }
+.prtrig::-webkit-scrollbar-thumb { background: var(--accent1); }
+
+.prmg3 {
+position: absolute; top: 20px; right: 25px; background-image: url("http://placehold.it/185x110.png"); width: 185px; height: 110px;
+}
+.prcharship {
+position: absolute; top: 90px; right: 25px; background: var(--dark); width: 185px; text-align: center; 
+padding: 5px 0px; text-transform: uppercase; font: 11px/100% poppins; color: var(--light);
+}
+
+.thepost {
+width: 558px; min-height: 460px; box-sizing: border-box; border: 20px solid transparent; padding: 10px 20px 10px 10px; background: var(--backgrounded); 
+}
+</style></item>
+ <item name='mini_profile'><div class="tsmin0">
+
+	<div class="tsmin1">
+		<div class="tsming"><img src="<!-- |field_5| -->" class="tsminmg"></div>
+		<div class="tsmin3"> 
+			<div class="tsminathr">written by <span><!-- |field_21| --></span></div>
+			<div class="tsminathp"><!-- |posts| --> posts</div>
+			<div class="tsming1">
+				<div class="tsming2">
+					<div class="tsming3"><img src="<!-- |field_18| -->"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tsmin2">
+		<div class="tsmin2c"><div class="tsmin2a">timezone</div><div class="tsmin2b"><!-- |field_22| --></div>
+		<div class="tsmin2a">pronouns</div><div class="tsmin2b"><!-- |field_20| --></div>
+		<div class="tsmin2a">rating</div><div class="tsmin2b"><!-- |field_4| --></div>  </div>
+		</div>
+
+	</div>
+	<div class="tsminawardsbox"><div class="tsminawards"><!-- |awards| --></div></div>
+</div>
+
+
+<style>
+
+.tsminawardsbox {
+	box-sizing: border-box; 
+	position: absolute; 
+	margin-top: 10px;
+	background: var(--backgrounded); 
+	height: 115px; 
+	width: 250px;
+	border: 10px solid transparent; 
+	overflow: auto;
+}
+
+.tsminawards{
+	text-align: center; 
+	color: #f9f9f9; 
+	font-size: 0px;
+}
+
+.tsminawards img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+	padding: 0px 2px; 
+	transition: all, 1s; 
+	-webkit-transition: all, 1s; 
+	-moz-transition: all, 1s;
+}
+
+.tsminawards img:hover { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+
+
+
+.tsmin0 {
+margin-right: 10px; width: 250px; height: 525px; padding: 15px; border: 1px solid var(--lighten);
+}
+.tsmin1 {
+width: 250px; height: 400px; overflow: hidden; position: relative;
+}
+.tsming {
+width: 225px;
+height: 400px;
+transition: 0.6s;
+}
+.tsminmg {
+-webkit-filter: brightness(100%) blur(0px) grayscale(0%);
+height: 400px;
+transition: 1s ease-in-out;
+}
+.tsmin0:hover .tsminmg {
+-webkit-filter: brightness(100%) blur(2px) grayscale(100%);
+transition: 1s ease-in-out;
+}
+.tsmin2 {
+background: var(--backgrounded); width: 250px; height: 250px;
+position: absolute; bottom: -200px; right: 0px;
+color: var(--light); padding: 40px 20px 20px 20px;
+opacity: 0; transition: .5s ease-in-out;
+box-sizing: border-box; 
+}
+.tsmin0:hover .tsmin2 {
+opacity: 1; transition: 1s ease-in-out 1.3s; position: absolute; bottom: 0px; right: 0px;
+}
+.tsmin2a {
+text-transform: uppercase; font: 900 9px/100% poppins; letter-spacing: 1.5px; opacity: .5; padding-top: 20px; 
+text-align: left; margin-left: 20px; color: var(--accent2); 
+}
+.tsmin2b {
+text-transform: lowercase; font: 9px/100% poppins; letter-spacing: 2px; padding-top: 10px; text-align: right; 
+margin-right: 20px; color: var(--light); border-top: 1px solid var(--light); margin-top: 5px;
+}
+.tsmin2c {
+position: absolute; bottom: 20px; right: 0px; width: 90%;
+}
+.tsmin3 {
+position: absolute; top: -200px; left: 0px; opacity: 0; background: var(--light);
+}
+.tsmin0:hover .tsmin3 {
+opacity:1; transition: 1s ease-in-out 2s;
+height: 150px; transition: 1s ease-in-out 1s;
+position: absolute; top: 0px; right: 0px; 
+}
+
+.tsming1 {
+position: absolute; top: 100px; left: 75px;
+width: 75px; height: 75px; padding: 5px;
+border: 1px solid var(--accent1); z-index: 1;
+transform: rotate(45deg) translateX(10px);
+-moz-transform: rotate(45deg) translateX(10px);
+-webkit-transform: rotate(45deg) translateX(10px);
+-ms-transform: rotate(45deg) translateX(10px);
+-o-transform: rotate(45deg) translateX(10px);
+}
+ .tsming2 {
+width: 75px; height: 75px; overflow: hidden; z-index: 1;
+}
+ .tsming3 {
+width: 125px; height: 125px; background-size: 100px; background-position: center; z-index: 1; background: cover;
+transform: rotate(-45deg) translate(10px, -30px); background-image: url("http://placehold.it/100.png");
+-moz-transform: rotate(-45deg) translate(10px, -30px);
+-webkit-transform: rotate(-45deg) translate(10px, -30px);
+-ms-transform: rotate(-45deg) translate(10px, -30px);
+-o-transform: rotate(-45deg) translate(10px, -30px);
+}
+.tsming3 img {
+width: 110px; height: auto; 
+}
+.tsminathr {
+margin-top: 25px; font: 10px/120% poppins; text-transform: uppercase; letter-spacing: 2px; color: var(--dark); 
+text-align: left; box-sizing: border-box; padding: 20px 30px; width: 225px;
+}
+.tsminathr span {
+display: block; margin-top: -35px; margin-right: 20px; font: 45px/150% hijrnotes; text-transform: lowercase; letter-spacing: 1px; color: var(--accent1); text-align: right; 
+}
+.tsminathp {
+margin-top: -25px; font: 10px/120% poppins; text-transform: lowercase; letter-spacing: 2px; color: var(--dark); 
+text-align: left; box-sizing: border-box; padding: 20px 30px; width: 225px;
+}
+
+</style></item>
+ <item name='profile'><div class="tsmainp0">
+  
+<table><tr><td><img src="<!-- |field_5| -->" class="tsminmg"></td><td>
+  
+<div class="tsmain1"><!-- |field_27| --> <span style="font: 12px/14px poppins; color: var(--light);">aka</span> <!-- |name| --></div><div class="tsmainline"></div>
+  
+<div class="tsmain2"><table cellpadding="3" cellspacing="3"><tr><td>
+<div class="tsmain3">Age</div><div class="tsmain4"><!-- |field_6| --></div>
+</td><td>
+<div class="tsmain3">Pronouns</div><div class="tsmain4"><!-- |field_26| --></div>
+</td></tr><tr><td>
+<div class="tsmain3">status</div><div class="tsmain4"><!-- |field_23| --></div>
+</td><td>
+<div class="tsmain3">sexuality</div><div class="tsmain4"><!-- |field_24| --></div>
+</td></tr><tr><td>
+<div class="tsmain3">faction</div><div class="tsmain4"><!-- |field_11| --></div>
+</td><td>
+<div class="tsmain3">stage</div><div class="tsmain4"><!-- |field_12| --></div>
+</td></tr><tr><td>
+<div class="tsmain3">specialization</div><div class="tsmain4"><!-- |field_13| --></div>
+</td>
+<td>
+<div class="tsmain3">occupation</div><div class="tsmain4"><!-- |field_25| --></div>
+</td>
+</td></tr></table>
+
+<table cellpadding="0" cellspacing="0" style="margin-top: 20px; margin-left: 50px;"><tr><td>
+<div class="tsmain5"><!-- |field_21| --></div>
+<div class="tsmain6"><!-- |field_20| --> - <!-- |field_22| --> - <!-- |field_4| --></div>
+</td><td><div class="tsmain8">
+<div class="tsmain9"><a href="<!-- |field_14| -->"><i class="th th-id-card-2" title="profile"></i></a></div>
+<div class="tsmain9"><a href="<!-- |field_15| -->"><i class="th th-newspaper" title="plot thread"></i></a></div>
+<div class="tsmain9"><a href="<!-- |field_16| -->"><i class="th th-list" title="tracker"></i></a></div>
+<div class="tsmain9"><a href="http://inourname.jcink.net/index.php?act=Msg&CODE=04&MID=<!-- |poster_id| -->" title="send message"><i class="th th-envelope"></i></a></div>
+</div> </td>  </tr></table>  </div>
+
+<div class="tsmain10"><div class="tsawards"><!-- |awards| --></div>  </div>
+  
+  
+</td></tr></table>  
+  
+</div>
+
+<style>
+.tsmainp0 {
+width: 830px; height: 480px; background: var(--backgrounded); box-sizing: border-box; position: relative; 
+}
+.tsminmg {
+height: 425px; position: absolute; top: 25px; left: 25px; z-index: 1;
+}
+.tsmain1 {
+font: 40px/150% hijrnotes; position: absolute; top: 3px; right: 15px; text-align: right; color: var(--accent1); text-transform: lowercase;
+}
+.tsmainline {
+width: 65%; height: 1px; background: var(--light); position: absolute; top: 50px; right: 0px; 
+}
+.tsmain2 {
+position: absolute; bottom: 100px; right: 20px; text-align: right; color: var(--light); width: 475px; height: 300px;
+background: var(--backgrounded); border: 20px solid transparent; box-sizing: border-box; 
+}
+.tsmain3 {
+border-bottom: 1px solid var(--accent1); width: 200px; text-align: left;
+text-transform: uppercase; font: 12px/140% poppins;
+}
+.tsmain4 {
+text-align: right; margin-top: 5px; font: 11px/140% poppins;
+}
+.tsmain5 {
+width: 225px; text-align: center; border-bottom: 1px solid var(--accent1);
+text-transform: uppercase; font: 20px/18px poppins;
+}
+.tsmain6 {
+text-align: center; text-transform: uppercase; font: 12px/14px poppins; margin-top: 5px;
+}
+.tsmain7 {
+padding: 5px; background: var(--dark); border: 1px solid var(--accent1);
+width: 100px; height: 100px;
+}
+.tsmain7 img {
+width: 100px; height: 100px; 
+}
+.tsmain8 {
+width: 200px; position: absolute; right: 0px; bottom: 0px;
+text-align: center;  display: flex; flex-flow:row wrap; align-content: center;
+}
+.tsmain9 { 
+width: 5px; height: 5px; color: var(--dark); 
+font-size: 30px; text-align: center; padding: 10px; margin: 10px;
+}
+.tsmain9 a {
+text-decoration: none; color: var(--accent1);
+}
+
+.tsmain10 {
+width: 500px; position: absolute; right: 0px; bottom: 0px;
+text-align: center; padding: 30px 0px; display: flex; flex-flow:row wrap; align-content: center;
+}
+
+
+.tsawards { 
+	margin: 10px 0px 0px; 
+	text-align: center; 
+	color: #f9f9f9; 
+	font-size: 0px;
+	overflow: auto;
+ }
+.tsawards img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+	padding: 0px 2px; 
+	transition: all, 1s; 
+	-webkit-transition: all, 1s; 
+	-moz-transition: all, 1s;
+}
+
+.tsawards img:hover { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+
+</style></item>
+ <item name='board_stats'><div class="tsbs0"><div class="statit">&nbsp;&nbsp;board statistics</div>
+<div class="tsbs1"><div class="bstatita">online now</div><div class="bstatitb"><!-- |total_guests| --> guests // <!-- |total_anons| --> anons // <!-- |total_mems| --> members</div>
+<div class="tsbsbox" style="height: 60px;"><!-- |online_list| --></div></div>
+<div class="tsbs2"><div class="bstatita">online today</div><div class="tsbsbox"><!-- |online_today_list| --></div></div>
+
+<div class="tsbs3">
+<table style="position: absolute; top: 0px; left: 0px;"><tr>
+<td><inf><!-- |total_posts| --></inf></td>
+<td><info>total posts made</info></td>
+</tr><tr>
+<td><inf><!-- |total_mem_reg| --></inf></td>
+<td><info>registered members</info></td>
+
+</tr></table>
+<table style="position: absolute; top: 0px; right: 10px;"><tr><td><inf><a href="/index.php?act=Online&amp;CODE=listall&amp;sort_key=click"><span class="th th-mushroom" title="last clicked"></span></a></inf></td>
+<td><inf><a href="/index.php?act=Members&max_results=10&sort_key=posts&sort_order=desc"><span class="th th-sunflower" title="top posters"></span></a></inf></td>
+</tr><tr><td><inf><a href="/index.php?act=Stats&CODE=leaders"><span class="th th-rose" title="mod team"></span></a></inf></td>
+<td><inf><a href="/index.php?act=Members"><span class="th th-aloe-vera" title="member list"></span></a></inf></td></tr></table>
+</div>
+  
+<div class="tsbs4"><div class="bstatita">recent topics</div><div class="tsbsbox"><div id='recent-topics-clip'></div>
+</div></div>
+<div class="tsbs5"><div class="bstatita">newest member</div><!-- |newest_member| --></div>
+</div>
+<style>
+.tsbs0 {
+width: 625px; height: 190px; padding: 100px; background: var(--dark); position: relative; margin-left: 5px;
+}
+.statit {
+position: absolute; top: 20px; left: 20px; height: 70px; font: 48px/90% hijrnotes; background: var(--accent1);
+padding: 10px 50px 5px 5px; width: 450px; box-sizing: border-box; 
+}
+.tsbs1, .tsbs2, .tsbs3, .tsbs4, .tsbs5, .tsbs6 {
+border: 10px solid transparent; box-sizing: border-box; background: var(--dark); 
+font: 12px/130% poppins; text-align: justify; color: var(--light);
+}
+.tsbs1 {
+position: absolute; top: 90px; left: 20px; 
+width: 460px; height: 125px; 
+}
+.tsbs2 {
+position: absolute; top: 220px; left: 20px;
+width: 250px; height: 150px; font: 10px/130% poppins; 
+}
+.tsbs3 {
+position: absolute; top: 20px; right: 20px; 
+width: 300px; height: 110px; text-align: center;
+}
+.tsbs3 inf {
+width: 22px; height: 22px; color: var(--accent1);
+font: 18px/100% poppins; padding: 10px; background: var(--dark); 
+display: inline-block; text-align: center;
+}
+.tsbs3 info {
+width: 80px; height: 22px; color: var(--light);
+font: 12px/100% poppins; padding: 10px; background: var(--dark); 
+display: inline-block; text-align: center;
+}
+.tsbs3 inf a {
+color: var(--accent1); text-decoration: none; font-size: 24px; 
+}
+.tsbs4 {
+position: absolute; bottom: 20px; right: 20px; 
+width: 500px; height: 150px; 
+}
+.tsbs5 {
+position: absolute; top: 150px; right: 20px; 
+width: 300px; height: 55px; font: 12px/180% poppins; text-align: right; 
+}
+.tsbs5 a {
+color: var(--light);
+}
+.bstatita {
+color: var(--accent1); border-bottom: 1px solid var(--accent1); 
+font: 14px/130% poppins; text-transform: uppercase; text-align: left;
+}
+.bstatitb {
+color: var(--light); font: 10px/130% poppins; text-transform: uppercase; text-align: right; margin-bottom: 5px;
+}
+.tsbsbox {
+height: 100px; overflow: auto; border: 5px solid transparent; padding-right: 10px;
+}
+
+#recent-topics a:link, #recent-topics a:visited, #recent-topics a:active { 
+font: 10px/110% poppins;
+}
+#recent-topics strong {
+font: 10px/110% poppins;
+color: var(--light);
+}
+#recent-topics .maintitle {
+display: none;
+}
+#recent-topics .row4 {
+background: 0 0;
+vertical-align: top;
+}
+#recent-topics {
+border: 0;
+letter-spacing: 0;
+padding: 0px 10px;
+text-align: left;
+text-transform: uppercase;
+}
+#recent-topics .recent-topics-date {
+display: none;
+}
+.recent-topics-date a:active, .recent-topics-date a:link, .recent-topics-date a:visited {
+padding-top: 0;
+vertical-align: top;
+}
+#recent-topics tr .recent-topics-info {
+color: var(--light);
+padding-top: 12px;
+border-bottom: 1px solid var(--accent1);
+display: block;
+width: auto;
+vertical-align: top;
+text-align: justify;
+font: 10px/110% poppins;
+}
+
+@font-face {
+font-family: castle;
+src: url(https://files.jcink.net/uploads/queskin3/Bouncy_Castle.ttf);
+}
+</style></item>
+ <item name='forum_row'><tr class='forum-row'><td>
+
+<div class="tsfr0">
+<div class="tsfr1"><!-- |name| --></div>
+<div class="tsfr2"><!-- |topics| --> topics // <!-- |replies| --> replies</div>
+<div class="tsfr3"><!-- |description| --></div>
+<div class="tsfr4">by: <!-- |last_poster| --><br> in: <!-- |last_topic| --><br>on: <!-- |last_post| --><br>
+<div class="subforums"><!-- |subforums| --></div></div>
+  
+  
+</div>
+
+</td></tr>
+
+<style>
+.tsfr0 {
+width: 625px; height: 100px; padding: 100px; background: var(--dark); position: relative;
+}
+.tsfr1 {
+position: absolute; top: 75px; left: 75px;
+box-sizing: border-box;
+}
+.tsfr1 a {
+color: var(--accent1); font: 26px/150% poppins; text-transform: uppercase; text-decoration: none;
+}
+.tsfr2 {
+position: absolute; top: 100px; right: 100px; font: 16px/150% poppins; border-bottom: 1px solid var(--accent1); 
+width: 300px; text-align: right; box-sizing: border-box;
+}
+.tsfr3 {
+position: absolute; top: 130px; left: 100px; width: 280px; height: 100px; overflow: auto; padding-right: 10px;
+font: 12px/120% poppins; text-align: justify; box-sizing: border-box;
+}
+.tsfr4 {
+position: absolute; top: 150px; right: 150px; font: 12px/120% poppins; 
+width: 200px; box-sizing: border-box; text-align: right;
+}
+
+.subforums { 
+font: 12px/120% poppins; text-align: left; text-transform: lowercase;
+}
+.subforums strong, b { 
+font-weight: 400; 
+}
+.subforums a { 
+color: var(--accent1); 
+}
+
+</style></item>
+ <item name='cat_head'><div class="tableborder category" id="cat-<!-- |cat_id| -->">
+ <div class='catit<!-- |collapsed_class| -->' align='left'>
+
+<{CAT_IMG}><!-- |cat_name| --></div>
+<div id='cat_<!-- |cat_id| -->' style="<!-- |collapsed_style| -->">
+     <table width="100%" border="0" cellspacing="1" cellpadding="4">
+       <tr class='forum-subheader'>
+         
+       </tr>
+<% FORUM_ROWS %>
+<tr> 
+
+       </tr>
+     </table>
+</div>
+</div>
+<br class='cat-lb' />
+
+<style>
+.catit {
+text-align: left; padding: 30px 30px 25px; font: 62px/90% hijrnotes; text-transform: lowercase; color: var(--light);
+}
+</style></item>
+ <item name='topic_row'> <!-- Begin Topic Entry <!-- |tid| --> -->
+   <tr><td class='row4'>
+
+<div class="tstr0">
+
+<div class="tstr1">
+<div class="tstr6"><i class="th th-chat-bubble"></i></div>
+<div class="tstr3"><a href='<!-- |topic_url| -->' title='This topic was started: <!-- |start_date| -->'><!-- |topic| --></a></div>
+<div class="tstr6" style="margin-top: 10px"><i class="th th-information-o"></i></div>
+<div class="tstr4"><!-- |topic_desc| --></div>
+</div>
+
+<div class="tstr5"><p><br><!-- |replies| --> POSTS<br><br><!-- |mod_checkbox| --></div>
+
+<div class="tstr2">
+<div class="tstr6"><i class="th th-paper-plane"></i></div>
+<div class="tstr3">Started by <!-- |starter| --></div>
+<div class="tstr6" style="margin-top: 10px"><i class="th th-pencil"></i></div>
+<div class="tstr4">LAST POST BY: <!-- |last_poster| --><br><!-- |last_post| --></div>
+</div>
+
+</div>   
+  
+</td></tr>
+   <!-- End Topic Entry <!-- |tid| --> -->
+
+
+<style>
+
+.tstr0 {
+width: 850px;
+height: 140px;
+position: relative;
+left: -25px;
+}
+.tstr0 a:link, .tstr0 a:visited, .tstr0 a:active {
+text-decoration: none;
+color: var(--dark);
+}
+.tstr0 a:hover {
+color: var(--accent1);
+text-decoration: none;
+}
+.tstr1 {
+width: 310px;
+height: 75px;
+text-align: center;
+padding: 20px;
+position: absolute; top: 10px; left: 5px;
+font: 10px/100% poppins;
+background: var(--backgrounded);
+}
+.tstr2 {
+width: 310px;
+height: 75px;
+text-align: center;
+padding: 20px;
+position: absolute; top: 10px; right: 5px;
+font: 10px/100% poppins;
+background: var(--backgrounded);
+}
+.tstr3 {
+float: left;
+width: 235px;
+height: 24px;
+background: var(--light);
+padding-top: 10px;
+padding-right: 10px;
+padding-left: 10px;
+vertical-align: middle;
+text-align:center;
+overflow: hidden;
+text-align: center;
+color: var(--darken);
+text-transform: uppercase;
+font: 11px/100% poppins;
+margin-left: 10px;
+}
+.tstr4 {
+float: left;
+width: 235px;
+height: 23px;
+background: var(--light);
+padding-top: 10px;
+padding-right: 10px;
+padding-left: 10px;
+text-align:center;
+overflow: hidden;
+color: var(--darken);
+text-transform: uppercase;
+font: 10px/100% poppins;
+margin-top: 10px;
+margin-left: 10px;
+}
+.tstr5 {
+width: 76px;
+height: 80px;
+text-align: center;
+padding: 15px 20px;
+font: 14px/120% poppins;
+color: var(--dark);
+background: var(--light);
+position: absolute; left: 365px; top: 12px;
+text-transform: uppercase;
+}
+.tstr6 {
+float: left;
+width:33px;
+height:28px;
+background: var(--darken);
+padding-top: 6px;
+padding-left: 2px;
+text-align:center;
+color: var(--light);
+font-size: 18px;
+}
+
+</style></item>
+
+		</templates>
+		
+		</skin>

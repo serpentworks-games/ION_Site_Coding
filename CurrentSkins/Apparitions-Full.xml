@@ -1,0 +1,2818 @@
+<?xml version="1.0"?>
+		<skin>
+
+		<skinname>Apparitions</skinname>
+		<date>Tuesday 12th of January 2021 11:01:54 PM</date>
+
+		<stylesheet>
+		/*=============================================== *
+* Jcink.com Forum Hosting Stylesheet
+* ==============================================
+* #Version:	1.0.2
+*=============================================== */
+
+html { overflow-x: auto; } 
+form { display:inline; }
+
+/****************************************
+Body Background & Text Style
+*****************************************/
+
+@font-face {
+    font-family: lunaregular;
+    src: url(https://files.jcink.net/uploads/inourname/luna_webfont.ttf);
+    src: url('https://files.jcink.net/uploads/inourname/luna_webfont.ttf') format('truetype'),
+        url('https://files.jcink.net/uploads/inourname/luna_webfont.eot') format('embedded-opentype'),
+        url('https://files.jcink.net/uploads/inourname/luna_webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: latoregular;
+    src: url(https://files.jcink.net/uploads/inourname/lato_regular_webfont.ttf);
+    src: url('https://files.jcink.net/uploads/inourname/lato_regular_webfont.ttf') format('truetype'),
+        url('https://files.jcink.net/uploads/inourname/lato_regular_webfont.eot') format('embedded-opentype'),
+        url('https://files.jcink.net/uploads/inourname/lato_regular_webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: vidalokaregular;
+    src: url(https://files.jcink.net/uploads/inourname/vidaloka_regular_webfont.ttf);
+    src: url('https://files.jcink.net/uploads/inourname/vidaloka_regular_webfont.ttf') format('truetype'),
+        url('https://files.jcink.net/uploads/inourname/vidaloka_regular_webfont.eot') format('embedded-opentype'),
+        url('https://files.jcink.net/uploads/inourname/vidaloka_regular_webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { 
+  font-family: 'latoregular', sans-serif; 
+  font-size: 12px; 
+  color: #c2c4c4; 
+       margin:0px;
+  padding:0px; 
+       background-color:black; 
+  text-align:center;
+       background-image: url(https://78.media.tumblr.com/211c0ea61620106be0b0ae7a65e270b9/tumblr_p9dh6eZHXp1w9k5uao1_400.png);
+       background-attachment: fixed;
+}
+
+body b { color:#36A99A; }
+
+body::-webkit-scrollbar {width: 7px;}
+body::-webkit-scrollbar-track {background:#030305;}
+body::-webkit-scrollbar-thumb {background: #032A31;}
+body::-webkit-scrollbar-thumb:hover {background: #36A99A;}
+
+/****************************************
+  Table Styles
+*****************************************/
+
+table, tr, td {
+font-family: 'latoregular', sans-serif; 
+font-size: 12px; 
+color: #c2c4c4; 
+}
+
+/****************************************
+  Board Width
+*****************************************/
+
+#wrapper { 
+text-align:left;
+       width:950px;
+       margin: 50px auto 30px;
+       background: #030305;
+       padding-bottom: 5px;
+       outline: 15px solid rgba(3, 42, 49, 0.5);
+}
+
+#innerwrapper { 
+padding: 0 10px;
+}
+
+/****************************************
+  Link colors
+*****************************************/
+
+a:link, a:visited, a:active { 
+text-decoration: none;
+color: #36A99A; 
+}
+a:hover { 
+color: #A9CFD0; 
+text-decoration: none; 
+}
+
+
+/****************************************
+  Profile styles 
+*****************************************/
+
+#profilename { 
+font-size:28px;
+font-weight:bold; 
+}
+
+#photowrap { 
+padding:6px; 
+}
+
+#phototitle { 
+font-size:24px; 
+border-bottom:1px solid #1c1c1c;
+}
+
+#photoimg   { 
+text-align:center; margin-top:15px; 
+} 
+
+/****************************************
+  UserCP/My Controls styles
+*****************************************/
+
+#ucpmenu { 
+line-height:150%;
+width:22%; 
+border:1px solid #1c1c1c;
+background-color: #030305;
+}
+
+#ucpmenu p  { 
+padding:2px 5px 6px 9px; 
+margin:0px;  
+}
+
+#ucpcontent { 
+background-color: #030305; 
+line-height:150%; width:auto; 
+}
+
+#ucpcontent p  { 
+padding:10px;
+margin:0px; 
+}
+
+/****************************************
+ Logo Strip
+*****************************************/
+
+#logostrip { 
+background-image: url(https://files.jcink.net/uploads/inourname//galaxy.jpg);
+background-size:cover;
+height: 350px;
+width: 700px;
+position: relative;
+z-index: 1;
+left: 125px;
+margin-bottom: 20px;
+}
+
+#title { 
+text-align: center; 
+position: absolute;
+z-index: 2;
+height: 150px;
+width: 700px;
+background: none;
+left: 125px;
+}
+
+
+.logo-large, .logo-large a, .logo-large a:hover { 
+font-size: 70px; 
+text-decoration: none;
+color: #36A99A;
+font-family: lunaregular;
+padding: 0px;
+position: relative;
+left: 0%;
+text-align: center;
+top: 195px;
+z-index: 3;
+text-shadow: 1px 1px #fff;
+}
+
+.logounder {
+font-size: 15px; 
+text-decoration: none;
+font-weight: bold; 
+color: #F2FDF7; 
+background: #030305;
+font-family: 'latoregular', sans-serif;
+text-transform:uppercase;
+letter-spacing: 10px;
+padding: 5px;
+position: relative;
+left: 0%;
+top: 165px;
+text-align: center;
+font-style:italic;
+}
+
+/****************************************
+ Search Bar 
+*****************************************/
+
+#searchbar {
+display: block;	
+float: right;
+position: absolute;
+right: 10px;
+top: 8px;
+       z-index: 2;
+}
+
+#searchbar .search-container {
+   background-color: #032A31;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.4) inset;
+   border: 1px solid #030305;
+   display: block;
+   height: 26px;
+   position: relative;
+   width: 200px;
+}
+
+#searchbar .search-input {
+background: none repeat scroll 0 0 transparent;
+border: 0;
+color: #030305;
+font-size: 12px;
+width: 192px;
+height: 26px;
+font-family: Arial, sans-serif;
+padding: 1px 0 0 8px;
+}
+
+#searchbar .search-input:focus {
+   color: #000000;
+}
+
+#searchbar .search-button {
+background: #030305 url(http://files.b1.jcink.com/themes/default/magnifying-glass.png) no-repeat 50% 50%;
+border: 0;
+bottom: 0;
+margin: 0;
+border-radius: 0;
+display: block;
+height: 26px;
+padding: 0;
+position: absolute;
+right: 0;
+text-indent: -3000em;
+top: 0;
+width: 26px;
+cursor: pointer;
+box-shadow: none;
+}
+
+/****************************************
+ Navigation Bar / Submenu
+*****************************************/
+
+#submenu  {
+font-size: 13px;
+border: solid #1c1c1c;
+       border-width: 1px 0;
+      background-color: #032A31;
+       background-position: center center;
+       margin-bottom: 3px;
+       display:none;
+}
+
+#submenu img { 
+display: none; 
+}
+
+#submenu a:link, #submenu a:visited, #submenu a:active { 
+text-decoration: none;
+color: #36A99A !important; 
+       padding: 7px 7px;
+       font-weight: bold;
+}
+
+#submenu a:hover { 
+color: #A9CFD0 !important; 
+text-decoration: underline; 
+}
+
+#navi br { 
+display: none; 
+}
+
+#navstrip  { 
+font-weight:bold;
+padding:2px 0px 16px 15px; 
+       height: 5px;
+       position: fixed;
+       background: #030305;
+       border-bottom: 7px solid rgba(3, 42, 49, 0.5);
+       width: 100%;
+       z-index: 300;
+       margin-top: -5px;
+       text-transform: uppercase;
+}
+
+/****************************************
+  Calendar styling
+*****************************************/
+
+.caldate   { 
+text-align:right;
+font-weight:bold;
+font-size:11px;
+color:#1c1c1c;
+background-color:#030305;
+padding:4px; margin:0px; 
+       display: none;
+}
+
+#calendarname { 
+font-size:22px;
+font-weight:bold; 
+}
+
+#padandcenter { 
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+padding:14px 0px 14px 0px; 
+}
+
+
+/**************************************************
+User Links Menu (Messages / View new posts / etc )
+***************************************************/
+
+#userlinks { 
+border: 1px solid #1c1c1c; 
+background-color: #032A31; 
+list-style: none; 
+width: 950px; 
+margin: 0 auto; 
+       display: none;
+}
+
+#userlinks td { 
+color: #F2FDF7; 
+}
+
+#userlinks a { 
+text-decoration: underline; padding: 1px; 
+}
+
+#userlinks a:hover { 
+text-decoration: none; 
+}
+
+
+/****************************************
+  Topic View styles
+*****************************************/
+
+.activeuserstrip { 
+background-color: #032A31;
+       padding:6px 
+}
+
+.normalname { 
+font-size: 12px; 
+font-weight: bold; 
+color: #F2FDF7; 
+}
+
+.normalname a { 
+font-size: 12px;
+       color: #A9CFD0;
+}
+
+.unreg { 
+font-size: 11px; 
+font-weight: bold; 
+color: #900; 
+}
+
+.post1 { 
+background-color: #030305; 
+}
+
+.post2 { 
+background-color: #030305; 
+}
+
+.postdetails { 
+font-size: 12px; 
+}
+
+.postcolor   { 
+font-size: 12px; line-height: 160%; 
+}
+
+.postlinksbar {
+       padding: 1px 5px; 
+background-color:#030305;
+padding:1px;
+margin-top:1px;
+font-size:10px;
+}
+
+.signature   { 
+font-size: 10px; 
+color: #339; 
+line-height:150%;  
+}
+
+
+/*******************************
+Pagination e.g. [1],2,3 ...
+*******************************/
+
+.pagination .pagination_current, .pagination a {
+    padding: 2px 5px;
+}
+
+.pagination a:link, .pagination a:visited, .pagination a:active {
+    border: 1px solid #032A31;
+    border-radius:3px;
+    background-color:#032A31;
+    padding-left:6px;
+    padding-right:6px;
+    color:#36A99A;
+    text-decoration:none;
+    box-shadow: 0pt 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.pagination a:hover {
+background: #032A31;
+text-decoration: none;
+color:#A9CFD0;
+box-shadow: 0pt 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.pagination .pagination_current {
+    background: none repeat scroll 0% 0% #030305;
+    border: 1px solid #030305;
+    border-radius:3px;
+    padding-left:6px;
+    padding-right:6px;
+}
+
+.pagination_first, .pagination_last, .pagination_page {
+    background: none repeat scroll 0% 0% #030305;
+    border: 1px solid #030305;
+}
+
+.pagination_pagetxt {
+   display:none;
+}
+
+/****************************************
+  Global general table/div row styles
+*****************************************/
+
+.row1,.row3,.row4,.row2 { 
+background-color: #030305;
+padding: 5px;
+}
+
+#boardstats .row2 { 
+text-align: center; 
+}
+
+.darkrow1 { 
+background-color: #030305; color:#F2FDF7; 
+}
+
+.darkrow2 { 
+background-color: #030305; color:#F2FDF7; 
+}
+
+td.darkrow2 { 
+display: none; 
+}
+
+.darkrow3 { 
+background-color: #030305; 
+color: #F2FDF7; 
+padding: 3px; 
+}
+
+.hlight { background-color: #030305; }
+.dlight { background-color: #030305; }
+
+/****************************************
+  Top table bars / gradient holders 
+*****************************************/
+
+.maintitle { 
+background-color: #032A31;
+padding: 8px; 
+color: #030305;
+       font-size: 30px;
+       font-family: 'latoregular', sans-serif;
+       text-align: left;
+       margin: 2px;
+       border: 1px solid #030305;
+       outline: 2px solid #032A31;
+       letter-spacing: 6px;
+       text-transform: uppercase;
+}
+
+.maintitle a:link, .maintitle  a:visited, .maintitle  a:active { 
+text-decoration: none; color: #36A99A !important; 
+}
+
+.maintitle a:hover { 
+text-decoration: underline;  
+}
+
+/****************************************
+ Bar directly below the maintitles 
+*****************************************/
+
+.titlemedium { 
+font-weight:bold; color:#A9CFD0; 
+padding: 2px 6px; margin:0px;
+background-color: #030305;
+}
+
+.titlemedium  a:link, .titlemedium  a:visited, .titlemedium  a:active  { 
+text-decoration: none; 
+color: #222; 
+}
+
+/****************************************
+ Table & Div Borders 
+*****************************************/
+
+.tableborder { 
+background-color: #030305; 
+border:1px solid #1c1c1c; padding:0px; margin:0; 
+}
+
+.tablefill { 
+background-color: #030305;
+border:1px solid #030305; 
+padding:6px; 
+}
+
+.tablepad {
+background-color: #030305; 
+padding:6px;
+}
+
+.tablebasic {
+width:100%; padding:0; margin:0px; border:0px; 
+}
+
+.plainborder { 
+border:1px solid #1c1c1c; 
+background-color: #030305; 
+}
+
+/****************************************
+ QUOTE and CODE BBCode boxes
+*****************************************/
+
+#QUOTE { 
+white-space:normal; 
+font-family: Arial, sans-serif; 
+font-size: 11px; 
+color: #F2FDF7; 
+background-color: #030305; 
+border: 0px; 
+padding:2px;
+border:1px solid #1c1c1c; 
+margin-top:2px; 
+}
+
+/****************************************
+CODE AREA CSS
+*****************************************/
+
+#CODE  { 
+white-space:normal; 
+font-family: Courier, Courier New, Verdana, Arial;  
+font-size: 11px; 
+color: #c2c2c2; 
+background-color: #030305; 
+padding: 30px;
+border:1px solid #1c1c1c; 
+margin-top:2px; 
+    word-break: break-word;
+}
+
+.code-scroll {
+max-height: 250px;
+overflow: auto;
+padding-right: 5px;
+}
+
+.code-scroll::-webkit-scrollbar { background-color: #032A31; }
+.code-scroll::-webkit-scrollbar-thumb { background-color: #36A99A; }
+
+.code-top {
+background-color: #032A31;
+margin: 0;
+padding: 0;
+text-align: center;
+overflow: hidden;
+color: #f1f1f1;
+}
+.code-highlight {
+font: normal normal normal 8px/100% 'Arial', sans-serif; color:#111; 
+padding: 4px 6px 2px; margin:0px;
+background-color:#36A99A;
+text-align: center; 
+text-transform: uppercase;
+color: #666;
+letter-spacing: 1px;
+cursor: crosshair;
+}
+
+.code-top .code-title {
+margin: 20px;
+font: italic normal 300 20px/100% 'Playfair Display', sans-serif;
+text-transform: lowercase; 
+}
+
+.code-toggle {
+cursor: crosshair;
+}
+
+.code-scroll.auto-code {
+height: auto; 
+max-height: none;
+}
+
+#CODE-WRAP.nicole-code { border-collapse: collapse; }
+
+
+/**********************************************
+ Input buttons, e.g. submit, text input, etc
+***********************************************/
+
+.button-large {
+background: #032A31;  
+       padding: 5px 12px;
+text-align:center;
+margin:0px 5px 10px 5px;
+       color: #36A99A;
+font-weight: bold;
+       min-width: 75px;
+       display: inline-block;
+       outline: 2px solid #032A31;
+       border: 1px solid #030305;
+}
+
+.button-large:hover {
+color: #A9CFD0;
+}
+
+
+.button-small {
+background: #032A31;
+color: #36A99A;
+font-weight: bold;
+font-size: 11px;
+margin: 6px;
+padding: 4px 7px;
+text-decoration: none;
+       min-width: 50px;
+       max-width: 80px;
+       outline: 2px solid #032A31;
+       border: 1px solid #030305;
+}
+
+
+.button-small:hover {
+color: #A9CFD0;
+}
+
+.post-buttons-top { margin-top: 3px; }
+
+.button-large.closed {
+background: #032A31;
+       padding: 7px 12px;
+text-align:center;
+margin:0px 5px 0px 5px;
+       outline: 2px solid #032A31;
+       border: 1px solid #030305;
+       color: #36A99A; 
+font-weight: bold;
+}
+
+.forminput, .codebuttons, .textinput, .radiobutton, .checkbox {
+border-radius: 2px;
+background: #F2FDF7; border: 1px solid #1c1c1c;
+color: #000;
+font-family: Arial, sans-serif;
+font-size: 12px;
+padding: 2px;
+vertical-align: middle;
+box-shadow: 0 1px 3px rgba(0,0,0,0.4) inset;
+}
+
+
+input[type=submit], input[type=button], input[type=reset] {
+background: #36A99A;
+border-radius:3px;
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+color: #F2FDF7;
+font-size: 11px;
+font-weight: bold;
+margin: 3px;
+padding: 2px 6px;
+text-decoration: none;
+border: none; 
+}
+
+.codebuttons  { 
+font-size: 10px; 
+}
+
+
+/****************************************
+ Form table cell styles, left/right/top
+*****************************************/
+
+.pformstrip {
+background-color: #030305; 
+color:#F2FDF7; font-weight:bold;
+padding: 2px 5px;
+margin-top:1px 
+}
+
+.pformleft  { 
+background-color: #030305; 
+padding:6px; 
+margin-top:1px;width:25%; 
+border-top:1px solid #1c1c1c; 
+border-right:1px solid #1c1c1c; 
+}
+
+.pformleftw { 
+background-color: #030305; padding:6px; 
+margin-top:1px;width:40%; 
+border-top:1px solid #030305; 
+border-right:1px solid #030305; 
+}
+
+.pformright { 
+background-color: #030305; 
+padding:6px; margin-top:1px;
+border-top:1px solid #030305; 
+}
+
+
+/****************************************
+Tabs on the portal profiles + sections
+*****************************************/
+
+.opentab {
+color: #FFF;
+padding:8px;float: left; width: auto;
+background-color: #36A99A;
+margin-top:3px;
+margin-right:2px;
+font-size:11px;
+border: #1c1c1c 1px solid;	
+}
+
+.closedtab {
+color: #FFF;
+padding:7px;float: left;width: auto;
+background-color: #800000;
+       background-image: url(//files.jcink.net/themes/default/red-gradient.png);
+margin-top:6px;
+margin-right:2px;
+font-size:11px;
+border-top:   #1c1c1c 1px solid;
+border-right: #1c1c1c 1px solid;
+border-left:  #1c1c1c 1px solid;
+}
+
+.positiontab { 
+height: 34px; margin-left: 2px;
+}
+
+/****************************************
+  Delete all cookies / mark read
+*****************************************/
+
+#delcookiesrow, #mark-as-read-subto {
+background-color: #030305;
+border: 1px solid #1c1c1c;
+font-size: 10px;
+padding: 5px;
+       width: 260px;
+       float: right;
+       margin-top:-3px;
+       padding-left:1px;
+}
+
+#mark-as-read-subto {
+float: none;
+padding-top: 3px;
+}
+
+
+/*******************************
+    Board Statistics Links
+*******************************/
+
+.toplinks a {
+color: #36A99A;
+font-size: 11px;
+text-decoration: none;
+}
+
+.toplinks {
+margin: 0 11px -37px 0;
+text-align: right;
+color: transparent;
+}
+
+/*******************************
+Mini Profile Seperators
+*******************************/
+
+.postbit { 
+border-bottom: solid 1px #1c1c1c; 
+color: #F2FDF7;
+background: #030305;
+font-size: 11px;
+       padding: 6px 7px;
+}
+
+/********************************
+Miscellaneous
+********************************/
+
+/* image tag styles */
+img        { vertical-align:middle; border:0px }
+img.attach { border:2px outset #1c1c1c;padding:2px }
+
+/* Forum Descriptions */
+.desc { font-size:11px; color: #c2c2c2; }
+
+/* Edited by text */
+.edit { font-size: 9px }
+
+/* Topic Macros */
+
+.wrapmini { float: left; }
+
+/* Warning CSS */
+.warngood { color:green }
+.warnbad  { color:red }
+
+/* Skin selector dropdown */
+#skin_selector { 
+margin: 10px 0; 
+}
+
+
+/* Online users list row */
+.thin { 
+padding:6px 0px 6px 0px;
+line-height:140%;
+margin:2px 0px 2px 0px;
+border-top:1px solid #1c1c1c;
+border-bottom:1px solid #1c1c1c;
+}
+
+/* Latest news area */
+.newstext { 
+background-color: #030305; 
+border: 1px solid #1c1c1c; 
+padding: 6px 6px 2px 6px; 
+margin-bottom: 10px; 
+       display: none;
+}
+
+/* Highlighted text in search */
+.searchlite { 
+color:#F00;
+font-weight:bold;  
+background-color:#FF0; 
+}
+
+/****************************************
+Mobile-specific Styles
+*****************************************/
+
+#mobile { 
+background-color: #FBFBFB;
+}
+
+/****************************************
+Miniprofile
+*****************************************/
+
+#hsabminiprof {
+height: 400px;
+width: 250px;
+border: 5px solid #030305;
+outline: 2px solid #032A31;
+z-index: 1;
+background:;
+overflow: hidden;
+line-height: 100%;
+margin:2px;
+}
+
+.hsab-avi {
+height: 400px;
+width: 250px;
+background-size: cover;
+position: absolute;
+z-index: 2;
+}
+
+.hsab-hover {
+display: hidden;
+width: 250px;
+height: 400px;
+background: #030305;
+z-index: 5;
+position: absolute;
+opacity: 0;
+transition-duration: 0.8s;  
+-moz-transition-duration: 0.8s;  
+-webkit-transition-duration: 0.8s;  
+-o-transition-duration: 0.8s;
+}
+
+#hsabminiprof:hover .hsab-hover {
+opacity: 1;
+}
+
+
+.hsab-elementbox {
+width: 240px;
+height: 27.5px;
+float: left;
+margin: 5px;
+margin-top: 8px;
+margin-left: 4px;
+background: #032A31;
+position: relative;
+top: 0px;
+margin-bottom: 0px;
+border: 1px solid #030305;
+outline: 2px solid #032A31;
+text-transform: uppercase;
+overflow: hidden;
+text-align: left;
+}
+
+.hsab-elementtext {
+font-family: 'latoregular', sans-serif;
+color: #F2FDF7;
+font-size: 10px;
+display: inline-block;
+position: relative;
+top: 1.5px;
+left: 1.5px;
+width: 93.6%;
+height: 79%;
+padding-left: 5px;
+padding-right: 5px;
+float: left;
+line-height: 250%;
+letter-spacing: 2px;
+}
+
+.hsab-elementtext .hsab-elementtext2 {
+font-family: 'vidalokaregular', serif;
+color: #A9CFD0;
+font-size: 10px;
+display: inline-block;
+float: right;
+line-height: 250%;
+letter-spacing: 0px;
+padding-left: 5px;
+padding-right: 0px;
+}
+
+
+.hsab-gif {
+width: 240px;
+height: 130px;
+border: 1px solid #032A31;
+float: right;
+background-size: cover;
+margin-left: 4px;
+position: absolute;
+top: 266px;
+left: 0px;
+z-index: 6;
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hsab-factionstuff {
+background: #032A31;
+border: 1px solid #030305;
+outline: 2px solid #032A31;
+margin: 2px;
+width: 258px;
+height: 30px;
+text-align: center;
+font-size: 13px;
+font-family: 'vidalokaregular', serif;
+color: #36A99A;
+line-height: 240%;
+text-transform: uppercase;
+}
+
+.hsab-buttons {
+   width: 54px;
+   height: 25px;
+   background: #032A31;
+   float: left;
+   margin:6px;
+   border: 1px solid #030305;
+   color: #36A99A;
+   font-size: 20px;
+   padding-top: 5px;
+   outline: 2px solid #032A31;
+}
+
+.hsab-buttons:hover {
+color: #A9CFD0;
+animation: shake;
+animation-duration: 1s;
+}
+
+.hsab-awardbox {
+width: 240px;
+height: 130px;
+border: 1px solid #032A31;
+float: right;
+background-size: cover;
+margin-left: 4px;
+position: absolute;
+top: 266px;
+left: 0px;
+z-index: 6;
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hsab-awards {  
+	text-align: center; 
+	color: #f9f9f9; 
+	font-size: 0px;
+	
+ }
+.hsab-awards img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+	padding: 0px 2px; 
+	transition: all, 1s; 
+	-webkit-transition: all, 1s; 
+	-moz-transition: all, 1s;
+}
+
+.hsab-awards img:hover { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+
+
+/***********************************
+Main Profile
+************************************/
+
+#mainprofile {
+   width: 800px;
+   border: 5px solid #032A31;
+   height: 450px;
+   line-height: 150%;
+   overflow: hidden;
+ }
+ 
+ .mp-avatar {
+   height: 400px;
+   width: 250px;
+   float: right;
+   margin-right:20px;
+   margin-top: 10px;
+   outline: 2px solid #032A31;
+   border: 5px solid #030305;
+ }
+ 
+ .mp-avatar img {
+   width: 250px;
+   height: 400px;
+ }
+ 
+ .mp-namebox {
+   border-bottom: 2px solid #032A31;
+   font-family: 'vidalokaregular', serif;
+   color: #36A99A;
+   font-size: 40px;
+   margin-top: 10px;
+   text-transform: uppercase;
+   line-height: 110%;
+ }
+
+ .mp-underneathtext {
+   font-family: 'latoregular', sans-serif;
+   line-height: 150%;
+   font-size: 10px;
+   color: #A9CFD0;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+ }
+ 
+ .mp-firstgif {
+   height: 100px;
+   width: 150px;
+   float: left;
+   margin-left: 20px;
+   margin-top: 10px;
+   border: 5px solid #030305;
+   box-shadow: 0 0 1pt 1pt #032A31; 
+   box-shadow: 0 0 0 1pt #032A31;
+background-size: cover;
+ }
+ 
+ .mp-boxes {
+   width: 300px;
+   height: 30px;
+   float: right;
+   margin-right: 20px;
+   margin-top: 12.5px;
+background: #032A31;
+overflow: hidden;
+text-align: left;
+border: 1px solid #030305;
+outline: 2px solid #032A31;
+text-transform: uppercase;
+ }
+ 
+.mp-elementtext {
+font-family: 'latoregular', sans-serif;
+color: #F2FDF7;
+font-size: 13px;
+display: inline-block;
+position: relative;
+padding-left: 5px;
+padding-right: 5px;
+float: left;
+line-height: 200%;
+letter-spacing: 2px;
+top: 1.5px;
+left: 1.5px;
+width: 95%;
+height: 79%;
+}
+
+.mp-elementtext .mp-elementtext2 {
+font-family: 'vidalokaregular', serif;
+color: #A9CFD0;
+font-size: 13px;
+display: inline-block;
+float: right;
+line-height: 200%;
+letter-spacing: 0px;
+padding-left: 5px;
+padding-right: 0px;
+}
+
+ 
+ .mp-linkbox {
+   width: 170px;
+   height: 112px;
+   position: absolute;
+   top: 200px;
+   left: 16px;
+ }
+ 
+ .mp-buttons {
+   width: 41px;
+   height: 32px;
+   background: #032A31;
+   float: left;
+   margin:6px;
+   border: 1px solid #030305;
+   color: #36A99A;
+   font-size: 23px;
+   padding-top: 11px;
+   outline: 2px solid #032A31;
+ }
+
+   .mp-buttons:hover {
+   animation-name: shake;
+   animation-duration: 1s;
+   color: #A9CFD0;
+ }
+ 
+ .mp-info {
+color: #F2FDF7;
+line-height: 120%;
+letter-spacing: 1px;
+width: 160px;
+font-family: 'latoregular', sans-serif;
+text-transform: uppercase;
+font-size: 12px;
+text-align: justify;
+font-style: italic;
+float: left;
+margin:5px;
+margin-left; 0px;
+height: 110px;
+overflow: hidden;
+margin-top:15px;
+}
+
+.mp-info .mp-infostuff {
+ font-style: normal;
+ color: #36A99A;
+ font-family: 'vidalokaregular', serif;
+}
+
+.mp-awardbox {
+  height: 100px;
+   width: 150px;
+   float: left;
+   margin-left: 20px;
+   margin-top: 5px;
+   border: 5px solid #030305;
+   box-shadow: 0 0 1pt 1pt #032A31; 
+   box-shadow: 0 0 0 1pt #032A31;
+background-size: cover;
+overflow: auto;
+}
+
+.mp-awards {  
+	text-align: center; 
+	color: #f9f9f9; 
+	font-size: 0px;
+	
+ }
+.mp-awards img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+	padding: 0px 2px; 
+	transition: all, 1s; 
+	-webkit-transition: all, 1s; 
+	-moz-transition: all, 1s;
+}
+
+.mp-awards img:hover { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+
+@keyframes shake {
+ 
+ 20%, 80% {
+   transform: translate3d(1px, -1px, 0);
+ }
+
+ 30%, 50%, 70% {
+   transform: translate3d(-1px, 1px, 0);
+ }
+
+ 40%, 60% {
+   transform: translate3d(1px, -1px, 0);
+ }
+}
+
+
+/***********************************
+Sidebar
+************************************/
+
+#sidebar {
+ width:250px;
+ height: 100%;
+ background: #030305;
+ border-right: 3px solid rgba(3, 42, 49, 0.5);
+border-bottom: 3px solid rgba(3, 42, 49, 0.5);
+ padding-bottom: 20px;
+ position: fixed;
+z-index: 100;
+padding-top:57px;
+}
+
+.sb-icon {
+ height: 130px;
+ width: 130px;
+ background-size: cover;
+ position: relative;
+ margin: auto;
+ border-radius: 100%;
+     border: 5px solid #030305;
+   box-shadow: 0 0 2pt 2pt #36A99A; 
+   box-shadow: 0 0 0 2pt #36A99A;
+z-index: 1;
+margin-top: -25px;
+}
+ 
+.sb-welcome {
+ font-family: lunaregular;
+ color: #36A99A;
+ font-size: 17px;
+ text-align: center;
+ padding-top: 5px;
+ margin-bottom: -5px;
+position: relative;
+z-index: 2;
+}
+
+.cbox-box {
+ width: 220px;
+ margin: 10px;
+margin-top: 20px;
+ height: 360px;
+ border: 5px solid #030305;
+ outline: 2px solid #032A31; 
+}
+
+
+
+*{margin-top:0px;}
+
+.open{
+font-size:45px;
+text-align:center;
+background: none;
+display:inline-block;
+float:left;
+z-index:3;
+width:50px;
+height:50px;
+margin-top: -5px;
+}
+
+.shut{
+font-size:40px;
+background-color:#030305;  
+text-align:left;
+padding-left:10px;
+float:left;
+display:none;
+width:240px;
+height:50px;;
+position: relative;
+z-index: 100;
+background: none;
+margin-top: -5px;
+}
+
+.slide{
+width:250px;
+vertical-align:top;
+background-color:#030305;
+position:absolute;
+display:none;
+z-index:90;
+margin-top: -5px;
+}
+
+body{
+margin:0px;
+margin-top: 35px;
+}
+
+#wrapper { 
+text-align:left;
+position:relative;       
+width:950px;
+margin: 25px;
+background: #030305;
+box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+padding-bottom: 5px;
+horizontal-align: center;
+display:inline-block;
+margin-top: 35px;
+}
+
+/***********************************
+Top Links
+************************************/
+#toplinks {
+  width: 930px;
+  height: 35px;
+  background: #030305;
+  padding:10px;
+  padding-top: 15px;
+}
+
+.tl-buttons {
+  background: #032A31;
+  height: 26px;
+  width: 94px;
+  margin: 7px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float: left;
+  border: 1px solid #030305;
+  outline: 2px solid #032A31;
+}
+
+
+.tl-buttontext, .tl-buttontext a {
+  font-family: 'latoregular', sans-serif;
+  color: #36A99A;
+  line-height: 280%;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tl-buttontext a:hover {
+  color: #A9CFD0;
+}
+
+/***********************************
+Staff Scroll
+************************************/
+
+#staff-links {
+ width: 105px;
+ background: #030305;
+ height: 190px;
+ padding: 10px;
+float: left;
+padding-top: 0px;
+z-index: 1;
+}
+
+.img-box {
+ height: 342px;
+ width: 100px;
+ overflow:auto;
+ margin-left: 3px;
+ text-align: left;
+display: inline-block;
+}
+ 
+.img-es {
+ float: left;
+ height: 166px;
+ width: 91px;
+ border: 2px solid #032A31;
+ z-index: 2;
+}
+
+.staff-undertext {
+font-size: 20px; 
+text-decoration: none;
+color: #36A99A;
+font-family: lunaregular;
+position: absolute;
+text-align: center;
+z-index: 8;
+line-height: 20%;
+top: 340px;
+}
+
+.img-overlay {
+ background: rgba(3, 3, 5, 0.7);
+ height: 28px;
+ width: 91px;
+ display: block;
+ position: relative;
+ z-index:3;
+ color: #F2FDF7;
+ font-size: 10px;
+ text-align: center;
+ text-transform:uppercase;
+ font-family: 'latoregular', sans-serif;
+ letter-spacing: 3px;
+ line-height: 280%;
+ top: 114px;
+}
+
+.img-overlay a, .img-overlay a:hover {
+ color: #F2FDF7;
+}
+
+.img-box::-webkit-scrollbar {width: 4px;}
+.img-box::-webkit-scrollbar-track {display: none;}
+.img-box::-webkit-scrollbar-thumb {background: #032A31;}
+.img-box::-webkit-scrollbar-thumb:hover {background: #36A99A;}
+
+/***********************************
+Site Updates
+************************************/
+
+#updates {
+ width: 105px;
+ background: #030305;
+ height: 185px;
+ padding: 10px;
+padding-top: 5px;
+z-index: 1;
+position: relative;
+float: right;
+text-align: center;
+
+}
+
+.updates-box {
+ width: 100px;
+ height: 100px;
+ border: 2px solid #032A31;
+ margin-bottom: 15px;
+ margin-top: -5px;
+}
+
+.updates-boxtext {
+ font-family: 'latoregular', sans-serif;
+ color: #F2FDF7;
+ line-height: 120%;
+ overflow: auto;
+ text-align: justify;
+ font-size: 9px;
+ height: 80px;
+ width: 80px;;
+ position: relative;
+ top: 10px;
+ left: 10px;
+ padding-right: 5px;
+}
+
+.updates-boxtext::-webkit-scrollbar {width: 4px;}
+.updates-boxtext::-webkit-scrollbar-track {display: none;}
+.updates-boxtext::-webkit-scrollbar-thumb {background: #032A31;}
+.updates-boxtext::-webkit-scrollbar-thumb:hover {background: #36A99A;}
+
+
+/***********************************
+Top Bar
+************************************/
+
+#topbar { display: none; }
+
+.mcp-0, .acp-0, .m-2 { display: none; } 
+.g-2 { display: block !important; }
+.mcp-2, .acp-2, .mcp-1, .acp-1 { display: inline-block !important; }
+
+
+#tb {   
+background: #030305;
+ height: 34px;
+ width: 100%;
+ position: fixed;
+ z-index: 300;
+margin-top: -35px; 
+}
+.guestlinks, .guestlinks a { 
+color: #36A99A;
+ font-family: 'latoregular', sans-serif;
+ display: inline-block;
+ text-align: left;
+ font-size: 11px;
+ margin: 15px;
+ margin-right: 0px;
+ letter-spacing: 2px;
+text-transform:uppercase;}
+
+.adminlinks, .adminlinks a { color: #36A99A;
+ font-family: 'latoregular', sans-serif;
+ display: inline-block;
+ text-align: left;
+ font-size: 11px;
+ margin: 15px;
+ margin-right: 0px;
+ letter-spacing: 2px;
+text-transform:uppercase;}
+.adminlinks a:hover {   color: #A9CFD0; }
+
+.namestuff, .namestuff a {
+color: #36A99A;
+ font-family: 'latoregular', sans-serif;
+ display: inline-block;
+ text-align: left;
+ font-size: 11px;
+ margin: 15px;
+ margin-right: 0px;
+ letter-spacing: 2px;
+text-transform:uppercase; }
+.linkstuff a:hover { color: #A9CFD0; }
+
+.linkstuff, .linkstuff a {
+float:right; 
+margin-top: -55px;
+ color: #36A99A;
+ font-family: 'latoregular', sans-serif;
+ font-size: 11px;
+ margin: 15px;
+ margin-right: 0px;
+ letter-spacing: 2px;
+text-transform:uppercase;}
+.linkstuff a:hover {   color: #A9CFD0; }
+
+
+/***********************************
+Board Stats
+************************************/
+
+#boardstats {
+ width: 928px;
+ height: 300px;
+ padding-top:25px;
+}
+
+
+.bs-toptitle {
+ width: 928px;
+ height: 50px;
+ background: #032A31;
+ border:1px solid #030305;
+ outline: 2px solid #032A31;
+}
+
+.bs-toptitlea {
+ font-family: lunaregular;
+ color: #36A99A;
+ font-size: 30px;
+ display:inline-block;
+}
+
+.bs-toptitleb {
+ float: right;
+ font-family: 'vidalokaregular', serif;
+ color: rgba(3, 3, 5, 0.8);
+ display:inline-block;
+ text-transform: uppercase;
+ line-height: 350%;
+ margin-right: 20px;
+ font-size: 15px;
+}
+
+.bs-usersbox {
+ width: 250px;
+ height: 140px;
+ border: 2px solid #032A31;
+ border-top: 25px solid #032A31;
+ float:left;
+margin-top: 25px;
+margin-left: 15px;
+}
+
+.bs-userstitle {
+ font-family: lunaregular;
+ color: #36A99A;
+ font-size: 20px;
+ position: absolute;
+ top: -32px;
+}
+
+.bs-userslist {
+ height: 120px;
+ width: 230px;
+ text-align: justify;
+ overflow: auto;
+ color: #F2FDF7;
+ margin-left: 10px;
+ margin-top: 10px;
+ font-size: 12px;
+ font-family: 'latoregular', sans-serif;
+ text-transform: uppercase;
+}
+
+.bs-linkboxes {
+width: 140px;
+height: 30px;
+float: left;
+display: block;
+margin-left: 18px;
+margin-top: 27px;
+background: #032A31;
+overflow: hidden;
+text-align: center;
+border: 1px solid #030305;
+outline: 2px solid #032A31;
+text-transform: uppercase;
+ }
+
+.bs-linktext a {
+color: #36A99A;
+font-family: 'latoregular', sans-serif;
+text-align: center;
+line-height: 300%;
+font-size: 10px;
+}
+
+.bs-linktext a:hover {
+color: #A9CFD0;
+}
+
+.bs-box {
+background: #032A31;
+height: 110px;
+width: 617px;
+border: 1px solid #030305;
+outline: 2px solid #032A31;
+margin:20px;
+float: right;
+margin-top: 18px;
+}
+
+.bs-onlinetoday {
+height: 70px;
+margin: 10px;
+width: 250px;
+border: 10px solid #030305;
+overflow: auto;
+background: #030305;
+color: #A9CFD0;
+font-size: 10px;
+text-align: justify;
+font-family: 'latoregular', sans-serif;
+text-transform: uppercase;
+display: inline-block;
+position: relative;
+}
+
+.bs-facts {
+float: left;
+margin-left: 15px;
+margin-top: 10px;
+margin-right: 5px;
+width: 140px;
+display: inline-block;
+}
+
+.bs-factsbuttons {
+height: 10px;
+width: 130px;
+padding: 5px;
+border: 1px solid #030305;
+text-align: justify;
+line-height: 100%;
+text-transform: uppercase;
+color: #36A99A;
+font-size: 10px;
+font-family: 'latoregular', sans-serif;
+float: left;
+margin-bottom: 2px;
+}
+
+.bs-welcome {
+font-family: lunaregular;
+font-size: 28px;
+color: #36A99A;
+text-align: center;
+display: inline-block;
+top: 35px;
+right: 15px;
+position: absolute;
+line-height: 70%;
+max-width: 170px;
+}
+
+.bs-welcome .bs-welcomename {
+font-family: 'latoregular', sans-serif;
+font-size: 13px;
+text-transform: uppercase;
+margin-left: 15px; 
+}
+
+/***********************************
+Post Row
+************************************/
+
+
+#postheader {
+ width: 916px;
+ height: 120px;
+ background: #032A31;
+ border: 1px solid #030305;
+ outline: 5px solid #032A31;
+margin: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.ph-icon {
+ background-size: cover;
+ border-radius: 100%;
+ border: 5px solid #032A31;
+ box-shadow: 0 0 1pt 1pt #030305; 
+ box-shadow: 0 0 0 1pt #030305;
+ height: 100px;
+ width: 100px;
+ position: relative;
+ margin: 5px;
+ margin-left: 10px;
+ display: inline-block;
+ float: left;
+}
+
+.ph-name {
+ font-family: lunaregular;
+ color: #A9CFD0;
+ float: left;
+ margin-left: 13px;
+ font-size: 40px;
+ margin-top: 10px;
+
+}
+
+.ph-badges {
+ height: 20px;
+ width: 260px;
+ margin-top: 2px;
+ position: absolute;
+right: 10px;
+text-align: left;
+}
+
+.ph-badges img {
+height: 20px;
+width: 20px;
+margin-top: -30px;
+}
+
+
+.ph-aliasbuttons {
+height: 10px;
+width: 170px;
+padding: 5px;
+border: 1px solid #032A31;
+background: #030305;
+outline: 2px solid #030305;;
+text-align: center;
+line-height: 100%;
+text-transform: uppercase;
+color: #36A99A;
+font-size: 10px;
+font-family: 'latoregular', sans-serif;
+float: left;
+margin: 6px;
+margin-top: 10px;
+letter-spacing: 5px;
+}
+
+.ph-quotebox {
+ width: 250px;
+ height: 60px;
+ margin-right: 25px;
+ padding: 5px;
+ overflow: auto;
+ position: absolute; 
+ right: -5px;
+ top: 40px;
+}
+
+.ph-quote {
+ color: #36A99A;
+ font-size: 11px;
+ font-family: 'latoregular', sans-serif;
+ text-align: justify;
+ text-transform: uppercase;
+ font-style: italic;
+}
+
+/***********************************
+Forum Rows
+************************************/
+
+
+ #forumrow {
+   width: 908px;
+   height: 110px;
+   background: #030305;
+   padding: 10px;
+   border: 1px solid #032A31;
+ }
+ 
+ .fr-title {
+   position: absolute;
+   font-family: 'latoregular',sans-serif;
+   text-transform: uppercase;
+   font-size: 30px;
+   position: relative;
+   width: 500px;
+   height: 60px;
+   color: #36A99A;
+   text-align: center;
+   top: 20px;
+   left:20px;
+   letter-spacing: 3px;
+line-height: 20px;
+ }
+ 
+ .fr-undertext:before {
+   content: "";
+   background: #032A31;
+   display: block;
+   height: 2px;
+margin-top: 10px;
+ }
+ 
+ .fr-undertext {
+   font-size: 15px;
+   color: #c2c2c2;
+   font-family: 'vidalokaregular', serif;
+line-height: 10px;
+ }
+ 
+ .fr-buttons {
+   height: 30px;
+width: 50px;
+padding: 5px;
+border: 1px solid #030305;
+background: #032A31;
+outline: 2px solid #032A31;
+text-align: center;
+line-height: 150%;
+text-transform: uppercase;
+color: #36A99A;
+font-size: 10px;
+font-family: 'latoregular', sans-serif;
+position: absolute;
+left: 540px;
+top: 10px;
+}
+
+.fr-descriptions {
+ height: 70px;
+ border: 10px solid #032A31;
+ background: #032A31;
+ width: 235px;
+ position: absolute;
+ right: 20px;
+ top: 10px;
+ font-family: 'latoregular', sans-serif;
+ color: #030305;
+ font-size: 13px;
+ overflow: auto;
+ line-height: 110%;
+}
+
+/***********************************
+Bottom Credits - DO NOT REMOVE
+************************************/
+
+#bottomcreds {
+text-align: center;
+font-size: 30px;
+letter-spacing: 3px;
+color: #032A31;
+padding: 10px;
+text-transform: uppercase;
+font-family: 'latoregular', sans-serif;
+}
+
+/***********************************
+Affiliate Table
+************************************/
+
+#affilietable {
+  width: 900px;
+  height: auto;
+  background: #030305;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+#affilietable img {
+  width: 88px;
+  height: 31px;
+  margin: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #030305;
+  outline: 2px solid #36A99A;
+  float: left;
+  transition-duration: 0.3s;  
+-moz-transition-duration: 0.3s;  
+-webkit-transition-duration: 0.3s;  
+-o-transition-duration: 0.3s;
+}
+
+#affilietable img:hover {
+  outline: 2px solid #A9CFD0;
+}
+
+/***********************************
+Topic Rows
+************************************/
+
+#topicrows {
+ width: 908px;
+ height: 85px;
+ padding: 10px;
+ background: #030305;
+ border: 1px solid #032A31;
+margin-top: 6px;
+}
+
+.tc-threadtitle {
+     position: absolute;
+   font-family: 'latoregular',sans-serif;
+   text-transform: uppercase;
+   font-size: 20px;
+   position: relative;
+   width: 800px;
+   height: 60px;
+   color: #36A99A;
+   text-align: center;
+   top: 10px;
+   left:20px;
+   letter-spacing: 3px;
+line-height: 10px;
+}
+
+.tc-undertext:before {
+   content: "";
+   background: #032A31;
+   display: block;
+   height: 2px;
+margin-top: 4px;
+ }
+ 
+ .tc-undertext {
+   font-size: 10px;
+   color: #c2c2c2;
+   font-family: 'vidalokaregular', serif;
+line-height: 10px;
+ }
+ 
+   .tc-buttons {
+   height: 20px;
+width: 40px;
+padding: 5px;
+border: 1px solid #030305;
+background: #032A31;
+outline: 2px solid #032A31;
+text-align: center;
+line-height: 110%;
+text-transform: uppercase;
+color: #36A99A;
+font-size: 10px;
+font-family: 'latoregular', sans-serif;
+position: absolute;
+left: 840px;
+top: 7px;
+}
+
+/***********************************
+Copyright: Removal is against Terms
+************************************/
+
+.copyright { 
+font-size: 10px; line-height: 12px; 
+}
+ 
+
+/*************************************
+/* Dice Roller Styles
+*************************************/
+
+.dice-roll{ 
+  display: grid;
+  grid: 5px;
+  white-space: nowrap; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 14px; 
+  color: #c2c4c4!important; 
+  text-align: center;
+  border: 0px; 
+  padding:  5px;
+  border: 2px solid #c2c4c4!important; 
+  margin-top: 2px; }
+
+
+/***********
+Site Set CSS
+***********/
+
+
+.ion-site * {   box-sizing: border-box; }
+
+.ion-site {
+
+  margin: 2px auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #c2c4c4;
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: none;
+
+}
+
+.ion-site h1 {
+  color: #36A99A;
+  letter-spacing: normal;
+line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+  text-align: left;
+}
+
+.ion-site h2 {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  text-align: right;
+  text-transform: none;
+}
+
+.ion-post-content {
+  padding: 10px;
+  font-size: 13px;
+  font-family: 'Lato';
+  margin: 10px;
+  text-align: justify;
+  line-height: 120%;
+  width:95%;
+}
+
+.ion-post-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ion-site h3 {
+  padding: 2px;
+  text-transform: lowercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-color: #fff;
+  font-style: italic;
+  text-align: center;
+  line-height: 80%;
+}
+
+.ion-site h4 {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #36A99A;
+  font-style:bold;
+}
+
+.profile-name {
+  color: #36A99A;
+  letter-spacing: normal;
+line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.ion-site b {
+  color: #36A99A;
+}
+
+.ion-post-content p:last-child {
+  margin-bottom: 0;
+}
+
+.ion-halfwidth {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.ion-fullwidth {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.ion-triwidth {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.ion-site a {
+  font-weight: bold;
+color:  #00b359;
+}
+
+.ion-site ul {
+  list-style: none;
+}
+.ion-site li {
+ line-height: 150%;
+}
+
+.ion-site ul li::before {
+  content: "x";
+  color: #36A99A;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+}
+
+.ion-site ol {
+	list-style:none;
+	counter-reset: ion-counter;
+}
+
+.ion-site ol li {
+	counter-increment: ion-counter;
+}
+
+.ion-site ol li::before{
+	content: counter(ion-counter) ". ";
+	color: #36A99A;
+	font-weight: bold;
+}
+
+.ion-toc{
+ max-width: 400px;
+ text-align: justify;
+padding-left: 175px;
+}
+
+.ion-site hr {
+  border: 1px;
+  height: 1px;
+  margin: 10%;
+  background-color: #36A99A;
+}
+
+.ion-site.ion-response {
+  max-width: 400px;
+}
+
+.textblock {
+  padding-left: 20px;
+}
+.ion-site table {
+border-collapse: separate;
+border-spacing: 5px 10px;
+table-layout: auto;
+width: 90%;
+text-align: left;
+}
+.ion-site td {
+padding: 5px;
+border-bottom: 1px solid #36A99A;
+
+}
+
+
+.ion-site-headimg img {
+	width: 100%;
+	height: auto;
+}
+
+.ion-spoiler-border 
+{
+	background: #f0f0f0;
+}
+
+.ion-spoiler-toggle
+{
+	align: left;
+	padding: 5px;
+	background: #032A31;
+}
+
+.ion-spoiler-content
+{
+	display:none;
+	background: #030305;
+	padding: 10px;
+}
+
+
+
+		</stylesheet>
+
+		<wrappers>
+								<!DOCTYPE html>
+<html>
+    <head> 
+	<title><% TITLE %></title> 
+	<% CSS %> 
+	<% JAVASCRIPT %> 
+<script type="text/javascript" src="http://voidpc.jcink.net/uploads/voidpc/brownie.js?v=2.1"></script>
+<link href="https://fonts.googleapis.com/css?family=Vidaloka|Lato" rel="stylesheet">
+<link href="//dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet">
+<script>
+$(function(){
+
+$(".open").click(function(){
+$(".shut").show();
+});
+
+$(".open").click(function(){
+$(".slide").show();
+});
+
+$(".open").click(function(){
+$(".open").hide();
+});
+
+$(".shut").click(function(){
+$(".open").show();
+});
+
+$(".shut").click(function(){
+$(".shut").hide();
+});
+
+$(".shut").click(function(){
+$(".slide").hide();
+});
+
+});
+</script>
+
+    </head> 
+
+<div class="g-<!-- |g_id| -->" style="display: none;" align='left'><div id='tb'><div class='guestlinks' style="margin-top:-3px;"><a href='/index.php?act=Login&CODE=00' target="_blank"><span class="sf sf-enter-o"></span> LOG IN</a> <a href='/index.php?act=Reg&CODE=00'><span class="sf sf-pencil"></span> REGISTER</a></div></div><% NAVIGATION %></div>
+
+<div class="m-<!-- |g_id| -->" align='left'><div id='tb'>
+<div class='adminlinks' style="margin-top:-3px;"><a href="admin.php" target="_blank" class="acp-<!-- |g_access_cp| -->" style="display: none;"><span class="sf sf-wrench-1-o"></span> admin</a> <a href="index.php?act=modcp" class="mcp-<!-- |g_is_supmod| -->" style="display: none;"><span class="sf sf-magic-wand-o"></span> mod</a> <span style="margin-left:20px;"><span class="sf sf-arrow-right"></span> Logged in as:<a href='index.php?showuser=<!-- |id| -->'><!-- |name| --></a></span> <div class='namestuff' style="margin-top:-3px; margin-left: 0px;"><span style="margin-left:10px;"><span class='subaccounts'><% SUBACCOUNTS %></span></div> <a href="index.php?act=Login&CODE=03&key=<!-- |auth_key| -->"><span class="sf sf-exit-o"></span> log out</a></div>
+
+<div class='linkstuff' align='right' style="margin-top:-3px; margin-left:0px; margin-right: 30px;"><a href='index.php?act=Msg&CODE=01'><span class="sf sf-envelope-3-o"></span> (<!-- |new_msg| -->) messages</a> <a href="index.php?act=Search&CODE=getnew"><span class="sf sf-new-label"></span> new posts</a> <a href="/index.php?act=UserCP&amp;CODE=alerts"><span class="sf sf-bell-o"></span> <!-- |new_alerts| --> alerts</a><a href='index.php?act=UserCP'><span class="sf sf-cog-o"></span> Controls</a> </div>
+</div><% NAVIGATION %>
+   
+   
+</div></div>
+</div></div>
+
+
+  <body>
+	<div id="wrapper"><div style="position: relative">
+<div id="toplinks">
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="http://inourname.net/index.php?showtopic=27">RULES</a></div>
+  </div>
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="http://inourname.net/index.php?showforum=28">SETTING</a></div>
+  </div>
+<div class="tl-buttons">
+    <div class="tl-buttontext"><a href="http://inourname.net/index.php?showforum=27">FACTIONS</a></div>
+  </div>
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="http://inourname.net/index.php?showtopic=110">MASTERLIST</a></div>
+  </div>
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="">---</a></div>
+  </div>
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="/index.php?act=store">STORE</a></div>
+  </div>
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="http://inourname.net/index.php?showtopic=23">APPLICATION</a></div>
+  </div>
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="http://inourname.net/index.php?showforum=15">PLOTTHREADS</a></div>
+  </div>
+  <div class="tl-buttons">
+    <div class="tl-buttontext"><a href="https://discord.gg/W3NrdCB">DISCORD</a></div>
+  </div>
+</div>
+
+
+<div id="staff-links"><div style="position: relative"><div class="img-box">
+<div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/SiteAdminImage.png)">
+<div class="img-overlay"><a href="http://inourname.net/index.php?showuser=157" title="All purpose account for staff to use">ION CREW</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/SiteAdminImage.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=9" title="Site Admin">Scowling</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/SiteAdminImage.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=6" title="Site Admin">Daekie</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/CCLImage.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=106" title="Community Care Liaison">Fiction1119</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ShopkeeperImage.png)">
+    <div class="img-overlay"><a href="///" title="Shopkeeper">N/A</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ProjectManagerImage.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=15" title="Project Manager">Meighei</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ProjectManagerImage.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=x" title="Project Manager">N/A</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/OrderLeadImage.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=212" title="Order Lead">Ivynian</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/ChaosLeadImage.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=10" title="Chaos Lead">AMItotic</a>
+  </div></div>
+  <div class="img-es" style="background-image: url(http://disgruntled.storm-dragon.com/ForumRPs/ION/SiteImages/CivilianLead.png)">
+    <div class="img-overlay"><a href="http://inourname.net/index.php?showuser=296" title="Civilian Lead">Carhop Cavalier</a>
+  </div></div>
+  <div class="staff-undertext">Staff</div>
+</div></div></div>
+
+
+	    <a href="index.php"><div id="title">
+		<div class="logo-large">In Our Name</div>
+<div class="logounder">An AU Sailor Moon Roleplay</div></div></a>
+            </div>
+<div id="updates">
+  <div class="updates-box"><div class="updates-boxtext">
+
+
+    
+  </div></div>
+  <div class="staff-undertext" style="top:102px; left:30px;">Plot</div>
+  <div class="updates-box" style="margin-top:16px;"><div class="updates-boxtext">
+
+  </div></div>
+  <div class="staff-undertext" style="top:222px; left:15px;">Updates</div>
+
+<div class="updates-box" style="margin-top:16px;"><div class="updates-boxtext">
+    
+    Skin credits go to Monty @ Candyland Couture, Caution to the Wind, Shadowplay, and Shine. Cbox toggle credits go to hobgoblin @ CTTW, and code toggle credits go to Nicole @ CTTW. Header Image: <a href="https://www.freepik.com/free-photos-vectors/background">kjpargeter - www.freepik.com</a>
+    
+  </div></div>
+  <div class="staff-undertext" style="top:342px;left:25px;">Credits</div>
+</div>
+
+	    <% BOARD HEADER %>
+
+	    <div id="innerwrapper"> 
+	    	<div id="navi">
+		    
+	    	</div>
+	    	<% BOARD %> 
+	    	<div id="skin_selector">
+	    	    <% SKIN_SELECTOR %>
+	    	</div>
+<div class="maintitle">Affiliates</div>
+
+<div id="affilietable">
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  <a href="" target="_blank"><img src="http://placehold.it/88x31"></a>
+  
+  
+</div>
+
+<div id="bottomcreds">Skinned by Monty at <a href="http://candylandcouture.jcink.net/index.php?showuser=8346">CC</a>, <a href="http://cttw.jcink.net/index.php?showuser=18033">CTTW</a>, <a href="https://shine.jcink.net/index.php?showuser=29205">Shine</a>, and <a href="https://shadowplayers.jcink.net/index.php?showuser=2355">SP</a></div>
+	    	<% COPYRIGHT %>
+	    	<script>$('#logo a img[src="style_images/1/spacer.gif"]').replaceWith('<!-- |board_name| -->');</script>
+	    </div>
+	</div>
+</div>
+</body> 
+
+<script type="text/javascript">
+// CODE AREA SCRIPT BY NICOLE/THUNDERSTRUCK OF CTTW @ JCINK
+// thank you to stackoverflow for the selectText function
+
+$('table#CODE-WRAP').addClass('nicole-code');
+$('table#CODE-WRAP').attr('cellpadding', '0');
+$('table#CODE-WRAP #CODE').wrapInner('<div class="code-scroll"></div>');
+$('table.nicole-code #CODE').parent('tr').prev('tr').children('td').html('<div class="code-top"><div class="code-title">Code <span class="code-toggle">• toggle height</span></div> <div class="code-highlight">click here to highlight code</div></div>');
+
+$('table.nicole-code .code-scroll').each(function() {
+if ($(this).height() < 250) {
+    $(this).closest('tr').prev('tr').children('td').children('.code-top').children('.code-title').children('.code-toggle').hide();
+} else {}
+});
+
+$('table.nicole-code .code-toggle').click( function () {
+    if ($(this).closest('tr').next('tr').children('td').children('.code-scroll').hasClass('auto-code')) {
+        $(this).closest('tr').next('tr').children('td').children('.code-scroll').removeClass('auto-code');
+    } else {
+        $(this).closest('tr').next('tr').children('td').children('.code-scroll').addClass('auto-code');
+    }
+});
+
+jQuery.fn.selectText = function(){
+var doc = document
+    , element = this[0]
+    , range, selection
+;
+if (doc.body.createTextRange) {
+    range = document.body.createTextRange();
+    range.moveToElementText(element);
+    range.select();
+} else if (window.getSelection) {
+    selection = window.getSelection();        
+    range = document.createRange();
+    range.selectNodeContents(element);
+    selection.removeAllRanges();
+    selection.addRange(range);
+}
+};
+
+$(function() {
+$('table.nicole-code .code-highlight').click(function() {
+    $(this).closest('tr').next('tr').children('td').children('.code-scroll').selectText();
+});
+});
+
+// END CODE AREA SCRIPT
+</script>
+<script>
+/* Jcink Dice Roll BBCode Button */
+$("#bbcode-buttons").append('<input type="button" class="codebuttons" onclick="jBBCode.addTag(\'[roll]1d6[/roll]\');" value="DICE" title="Roll Dice" />');
+</script>
+
+
+<script type="text/javascript">
+//MULTI QUOTE CODE
+// By VoidPC
+var quote = "<img src='http://voidpc.jcink.net/uploads/voidpc/plus.gif' />",
+   noquote = "<img src='http://voidpc.jcink.net/uploads/voidpc/minus.gif' />";
+if (/showtopic=|act=ST/i.test(location.href)) {
+    brownie.mod('http://voidpc.jcink.net/uploads/voidpc/multiquote_2_0.js');
+}
+if (/Replying in|Posting New Topic/i.test(document.title)) {
+   var m = brownie.get('multiquote');
+   if (m) {
+       for (var i = 0, a = m.split(','), b = a.length; i < b; i++) {
+           document.REPLIER.Post.value += brownie.get('multiquote-p' + a[i]);
+           brownie.del('multiquote-p' + a[i]);
+       }
+       brownie.del('multiquote');
+   }
+}
+</script>
+
+</html>
+
+		
+		
+		
+		</wrappers>
+
+		<macros>
+		<item name='B_PIN'><span class="sf sf-push-pin"></span></item>
+			<item name='B_NORM'><span class="sf sf-stars-o"></span></item>
+			<item name='B_NEW'><span class="sf sf-stars"></span></item>
+			<item name='B_MOVED'><span class="sf sf-arrow-right"></span></item>
+			<item name='B_LOCKED'><span class="sf sf-lock"></span></item>
+			<item name='B_HOT_NN'><span class="sf sf-stars-o"></span></item>
+			<item name='A_LOCKED_B'><div class='button-large closed'>Closed</div></item>
+			<item name='B_HOT'><span class="sf sf-stars"></span></item>
+			<item name='A_STAR'><img src='//files.jcink.net/themes/default/red-pip.png' /></item>
+			<item name='A_POLL'><div class='button-large'>New Poll</div></item>
+			<item name='A_REPLY'><div class='button-large'>Add Reply</div></item>
+			<item name='A_POST'><div class='button-large'>New Topic</div></item>
+			<item name='A_POLLONLY_B'><div class='button-large closed'>Closed</div></item>
+			<item name='A_MOVED_B'><div class='button-large closed'>Moved</div></item>
+			<item name='B_POLL'><span class="sf sf-graph-1"></span></item>
+			<item name='B_POLL_NN'><span class="sf sf-graph-3"></span></item>
+			<item name='B_HOT_DOT'><span class="sf sf-stars"></span></item>
+			<item name='B_NEW_DOT'><span class="sf sf-stars"></span></item>
+			<item name='B_HOT_NN_DOT'><span class="sf sf-stars"></span></item>
+			<item name='B_NORM_DOT'><span class="sf sf-stars-o"></span></item>
+			<item name='B_POLL_DOT'><span class="sf sf-graph-1"></span></item>
+			<item name='B_POLL_NN_DOT'><span class="sf sf-graph-3"></span></item>
+			<item name='C_LOCKED'><span class="sf sf-stars-o"></span></item>
+			<item name='C_OFF'><span class="sf sf-stars-o"></span></item>
+			<item name='C_OFF_CAT'><span class="sf sf-stars-o"></span></item>
+			<item name='C_OFF_RES'><span class="sf sf-stars-o"></span></item>
+			<item name='C_ON'><span class="sf sf-stars"></span></item>
+			<item name='C_ON_CAT'><span class="sf sf-stars"></span></item>
+			<item name='C_ON_RES'><span class="sf sf-stars"></span></item>
+			<item name='F_ACTIVE'><span class="sf sf-users"></span></item>
+			<item name='F_NAV_SEP'>&nbsp;&rarr;&nbsp;</item>
+			<item name='F_NAV'> &raquo; </item>
+			<item name='F_STATS'><span class="sf sf-graph-4"></span></item>
+			<item name='NO_PHOTO'><img src='https://78.media.tumblr.com/52418ee6447faf5246ea6d114142eab2/tumblr_p9dzr1YCLC1w9k5uao1_400.jpg'></item>
+			<item name='CAMERA'>View</item>
+			<item name='M_READ'><span class="sf sf-constellation-o"></span></item>
+			<item name='M_UNREAD'><span class="sf sf-constellation"></span></item>
+			<item name='P_AOL'><span class='button-small'>AIM</span></item>
+			<item name='P_DELETE'><span class='button-small'>Delete</span></item>
+			<item name='P_EDIT'><span class='button-small'>Edit</span></item>
+			<item name='P_EMAIL'><span class='button-small'>Email</span></item>
+			<item name='P_ICQ'><span class='button-small'>GTalk</span></item>
+			<item name='P_MSG'><span class='button-small'>PM</span></item>
+			<item name='P_QUOTE'><span class='button-small'>Quote</span></item>
+			<item name='P_WEBSITE'><span class='button-small'>Website</span></item>
+			<item name='P_YIM'><span class='button-small'>YIM</span></item>
+			<item name='P_REPORT'><span class='button-small'>Report</span></item>
+			<item name='P_MSN'><span class='button-small'>MSN</span></item>
+			<item name='CAT_IMG'></item>
+			<item name='NEW_POST'><img src="//files.jcink.net/themes/default/double-arrow.gif" /></item>
+			<item name='LAST_POST'><img src="//files.jcink.net/themes/default/double-arrow.gif" /></item>
+			<item name='BR_REDIRECT'><span class="sf sf-arrow-right"></span></item>
+			<item name='INTEGRITY_MSGR'><span class='button-small'>Skype</span></item>
+			<item name='ADDRESS_CARD'><span class='button-small'>Card</span></item>
+			<item name='T_QREPLY'><div class='button-large'>Fast Reply</div></item>
+			<item name='T_OPTS'><div class='button-large'>Topic Options</div></item>
+			<item name='CAL_NEWEVENT'><div class='button-large'>Add Event</div></item>
+			<item name='F_RULES'><img src='//files.jcink.net/html/acp/rules.png' alt='Forum Rules'></item>
+			<item name='WARN_0'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_1'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_2'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_3'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_4'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/gray-block.png'> </item>
+			<item name='WARN_5'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> <img src='//files.jcink.net/themes/default/red-block.png'> </item>
+			<item name='WARN_ADD'><img src='//files.jcink.net/themes/default/red-block-plus.png'></item>
+			<item name='WARN_MINUS'><img src='//files.jcink.net/themes/default/red-block-minus.png'></item>
+			<item name='LOGO'><img width='207' height='57' src="style_images/1/spacer.gif" /><!-- You can insert a logo image here in place of the white spacer --></item>
+			<item name='CUST_PROF'><div class="postbit"><div align='center'><!-- |avatar| --><br><!-- |title| --><br></div></div><div class="postbit"><img src='//files.jcink.net/themes/default/users.png'> Group: <!-- |member_group| --> </div><div class="postbit"><img src='//files.jcink.net/themes/default/posts.png'> Posts: <!-- |posts| --></div><div class="postbit"><img src='//files.jcink.net/themes/default/joined.png'> Joined: <!-- |member_joined| --></div><div class="postbit">Age: <!-- |age| --><br>Location: <!-- |location| --><br>Status: <!-- |status| --><br></div><br><div style="margin-left: 14px;"><!-- |warn_text| --> <!-- |warn_minus| --><!-- |warn_img| --><!-- |warn_add| --></div></item>
+			<item name='B_PLUS_SHOW'><img alt='Expand' title='Expand' src='//files.jcink.net/themes/default/cat-expand.png' /></item>
+			<item name='B_MINUS_HIDE'><img alt='Collapse' title='Collapse' src='//files.jcink.net/themes/default/cat-collapse.png' /></item>
+			
+		</macros>
+
+		<templates>
+		 <item name='memberlist_row'></item>
+ <item name='profile'><center>
+  
+  <div id="mainprofile"><div style="position:relative">
+    
+    <div class="mp-avatar" style="background-image: url(<!-- |field_5| -->);"><!-- |avatar| --></div>
+    <div class="mp-namebox"><!-- |name| --></div>
+    <div class="mp-underneathtext">◈ <!-- |field_20| --> ◈ <!-- |field_21| --> ◈ <!-- |field_22| --> ◈ <!-- |field_4| --> ◈ </div>
+
+<div class="mp-awardbox"><div class="mp-awards"><!-- |awards| --></div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">age</div> <!-- |field_6| --></div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">status</div> <!-- |field_23| --></div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">sexuality</div> <!-- |field_24| --></div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">occupation</div> <!-- |field_25| --></div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">pronouns</div> <!-- |field_26| --></div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">faction</div> <!-- |field_11| --></div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">group</div> <!-- |g_title| --> </div></div>
+<div class="mp-boxes"><div class="mp-elementtext"><div class="mp-elementtext2">stage</div> <!-- |field_12| --></div></div>
+<div class="mp-linkbox">
+  <a href="<!-- |pm| -->" title="SEND MESSAGE"><div class="mp-buttons" style="margin-left: 7px;"><span class="sf sf-paper-plane-o"></span></div></a>
+  <a href="/index.php?act=Search&CODE=getalluser&mid=<!-- |id| -->" title="FIND ALL POSTS"><div class="mp-buttons"><span class="sf sf-beating-heart-o"></span></div></a>
+  <a href="/index.php?act=Search&CODE=getalluser&mid=<!-- |id| -->&type=topics" title="FIND ALL TOPICS"><div class="mp-buttons"><span class="sf sf-list"></span></div></a>
+  <a href="<!-- |field_14| -->" title="PROFILE"><div class="mp-buttons" style="margin-left: 7px;"><span class="sf sf-diamond-o"></span></div></a>
+  <a href="<!-- |field_15| -->" title="PLOT THREAD"><div class="mp-buttons"><span class="sf sf-lightbulb-o"></span></div></a>
+  <a href="<!-- |field_16| -->" title="TRACKER"><div class="mp-buttons"><span class="sf sf-flame-o"></span></div></a>
+  <div class="mp-info">
+ <div style="display:inline-block"><span class="mp-infostuff">Joined:</span> <!-- |joined| --></div><p>
+  <div style="display:inline-block"><span class="mp-infostuff">Posts:</span> <!-- |posts| --></div><p>
+     <div style="display:inline-block"><span class="mp-infostuff">Currently:</span> <!-- |status| --> <!-- |activity| --></div>
+
+  
+</div></div>
+  </div></div>
+  
+</center></item>
+ <item name='mini_profile'><center>
+<div id="hsabminiprof"><div style="position: relative;">
+
+  
+  <div class="hsab-avi" style="background-image: url(<!-- |field_5| -->);">
+    <div class="hsab-hover">
+      <div class="hsab-elementbox" style="margin-top: 4px;">
+	<div class="hsab-elementtext">
+	<div class="hsab-elementtext2">age</div> <!-- |field_6| --></div></div>
+      <div class="hsab-elementbox">
+	<div class="hsab-elementtext">
+	<span class="hsab-elementtext2">status</span> <!-- |field_23| --></div></div>
+      <div class="hsab-elementbox">
+	<div class="hsab-elementtext">
+	<div class="hsab-elementtext2">sexuality</div> <!-- |field_24| --></div></div>
+      <div class="hsab-elementbox">
+	<div class="hsab-elementtext">
+	<div class="hsab-elementtext2">occupation</div> <!-- |field_25| --></div></div>
+      <div class="hsab-elementbox">
+	<div class="hsab-elementtext">
+	<div class="hsab-elementtext2">pronouns</div> <!-- |field_26| --></div></div>
+      <div class="hsab-elementbox">
+	<div class="hsab-elementtext">
+	<div class="hsab-elementtext2">stage</div> <!-- |field_12| --></div></div>
+      <div class="hsab-elementbox">
+	<div class="hsab-elementtext">
+	<div class="hsab-elementtext2">faction</div> <!-- |field_11| --></div></div>
+      <div class="hsab-awardbox">
+	<div class="hsab-awards"><!-- |awards| --></div></div>
+    </div>
+<!-- |avatar| -->
+  </div> </div></div>
+  
+<div class="hsab-factionstuff"><!-- |field_13| --> <!-- |field_27| --></div>
+    <a href="<!-- |field_14| -->" title="PROFILE"><div class="hsab-buttons" style="margin-left: 2px;"><span class="sf sf-diamond-o"></span></div></a>
+<a href="<!-- |field_15| -->" title="PLOT THREAD"><div class="hsab-buttons"><span class="sf sf-lightbulb-o"></span></div></a>
+<a href="<!-- |field_16| -->" title="TRACKER"><div class="hsab-buttons"><span class="sf sf-flame-o"></span></div></a>
+<a href="" title=""><div class="hsab-buttons" style="margin-right: 0px;"><span class="sf sf-beating-heart-o"></span></div></a>
+
+</center></item>
+ <item name='post_row'><div id="postheader">
+	<div style="position: absolute"><a name='entry<!-- |pid| -->'></a>
+ 		<div class="ph-icon" style="background-image: url(<!-- |field_18| -->)"></div>
+  		<div class="ph-aliasbuttons" style="margin-left: 15px;">
+			<!-- |field_21| -->
+		</div>
+  		<div class="ph-aliasbuttons">
+			<!-- |field_20| -->
+		</div>
+  		<div class="ph-aliasbuttons">
+			<!-- |field_22| -->
+		</div>
+ 		<div class="ph-aliasbuttons">
+			<!-- |field_4| -->
+		</div>
+  		<div class="ph-name">
+			<!-- |name| --><br>
+		</div>
+		<div class="ph-quotebox">
+			<div class="ph-quote">
+				<!-- |field_19| -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="position: relative; width: 630px; padding: 10px; background: #030305;display:inline-block; margin-top: 0px;min-height: 450px;height:450px;padding-left: 20px;padding-top: 20px;">
+	<div id="pid_<!-- |pid| -->">
+		<!-- THE POST <!-- |pid| --> -->
+			<div class='postcolor'>
+				<!-- |post| -->
+			</div>
+		<!-- |signature| --><!-- THE POST --><!-- |attachments| --> 
+	</div>
+</div>
+
+<div style="position: absolute;display:inline-block;"><!-- |mini_profile| --></div> <div style="margin: 20px;"></div>
+
+<!-- |edit_button| --> <!-- |quote_button| -->  <!-- |report_link| --> <!-- |delete_button| --> <a href="<!-- |permalink| -->"><span class="button-small" style="width: auto;">Permalink</span></a> <span class="button-small"><!-- |post_date| --></span> <!-- |mod_checkbox| --> 
+<div style="margin: 20px;"></div>
+</item>
+ <item name='board_stats'><div id="boardstats">
+  <div class="bs-toptitle">
+    <div class="bs-toptitlea">Board Statistics</div>
+    <div class="bs-toptitleb"><!-- |total_guests| --> Guests and <!-- |total_mems| --> Members Online Now </div>
+  </div>
+  <div class="bs-usersbox"><div style="position: relative">
+    <div class="bs-userstitle">Users Online</div>
+    <div class="bs-userslist"> <!-- |online_list| --> </div>
+  </div></div>
+  <div class="bs-linkboxes"><div class="bs-linktext"><a href="index.php?act=Search&amp;CODE=getactive">Today's Active Topics</a></div></div>
+<div class="bs-linkboxes"><div class="bs-linktext"><a href="index.php?act=Stats&CODE=leaders">Moderators</a></div></div>
+<div class="bs-linkboxes"><div class="bs-linktext"><a href="index.php?act=Stats">Today's Top 10 Posters</a></div></div>
+<div class="bs-linkboxes"><div class="bs-linktext"><a href="index.php?act=Members&max_results=10&sort_key=posts&sort_order=desc">Overall Top 10 Posters</a></div></div>
+
+<div class="bs-box"><div style="position:relative">
+<div class="bs-onlinetoday"><!-- |online_today_list| --></div><div class="bs-userstitle" style="top:85px;left:170px;"><!-- |online_today| -->  Online Today</div>
+<div class="bs-facts"><div class="bs-factsbuttons"><span class="sf sf-user-o"></span> <!-- |total_mem_reg| --> members</div> <div class="bs-factsbuttons"><span class="sf sf-edit-o"></span> <!-- |total_posts| --> posts</div> <div class="bs-factsbuttons" style="height: 30px;">The most users online was <!-- |most_online_oneday| --> on <!-- |most_online_oneday_date| --></div></div>
+<div class="bs-welcome">Welcome,<br> <span class="bs-welcomename"><!-- |newest_member| --></span></div>
+
+</div></div>
+  
+</div></item>
+ <item name='forum_row'><div id="forumrow"><div style="position: relative">
+  <div class="fr-title"> <!-- |name| --> 
+  <span class="fr-undertext">Last post in <!-- |last_topic| --><br>
+    By <!-- |last_poster| --> 
+  </span></div>
+  
+  <div class="fr-buttons"><!-- |topics| --><br>Topics</div>
+  <div class="fr-buttons" style="top: 60px;"><!-- |replies| --><br>Replies</div>
+  <div class="fr-descriptions"><!-- |description| --> </div>
+</div></div></item>
+ <item name='cat_head'> <div style="margin-bottom: 50px;"><div class="maintitle"><!-- |cat_name| --></div>    
+<% FORUM_ROWS %></div></item>
+ <item name='topic_list_head'><div class="maintitle"><!-- |forum_name| --> </div>    
+<% TOPIC_ROWS %>
+ <!-- |mod_form_end| -->
+<!-- |forum_active| --> 
+<!-- |sort_options| --> </item>
+ <item name='topic_row'><div id="topicrows"><div style="position: relative">
+  <div class="tc-threadtitle"> <!-- |go_new_post| --> <!-- |topic| --> <!-- |pages| --> 
+  <span class="tc-undertext"><!-- |topic_desc| --><br>
+  Started by  <!-- |starter| --><br>
+  Last Post By: by <!-- |last_poster| --> on <!-- |last_post| --> </span></div>
+  <div class="tc-buttons"><!-- |replies_int| --><br> Replies</div>
+  <div class="tc-buttons" style="top: 49px;"><div style="margin:5px;"><!-- |mod_checkbox| --></div></div>
+
+</div></div></item>
+ <item name='subf_head'><% FORUM_ROWS %> <div style="margin-bottom: 30px;"></div></item>
+
+		</templates>
+		
+		</skin>

@@ -1,0 +1,1748 @@
+<?xml version="1.0"?>
+		<skin>
+
+		<skinname>CASCADE</skinname>
+		<date>Tuesday 12th of January 2021 11:01:56 PM</date>
+
+		<stylesheet>
+		/*=============================================== *
+ * Jcink.com Forum Hosting Stylesheet
+ * ==============================================
+ * #CASCADE by Bonbon. http://bonbonskins.com/
+ *=============================================== */
+
+#ucpmenu .maintitle { width: 100%; }
+#ucpcontent .maintitle { width: 100%; }
+
+#credit { border-top: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; background-color: #fbfbfb; margin: 15px 0px; text-align: center; padding: 10px; text-transform: uppercase; font-size: 10px; font-family: times; font-weight: bold; font-style: italic; letter-spacing: 2px;}
+
+html { overflow-x: auto; } 
+form { display:inline; }
+.normalname { display: none; }
+
+.topic-title-row { padding: 5px; text-transform: uppercase; font-style: italic; font-size: 9px; font-weight: bold; color: #999; border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin: 2px 0px; }
+
+::-webkit-scrollbar, .post2 ::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track, .post2 ::-webkit-scrollbar-track { background-color: #f9f9f9; }
+::-webkit-scrollbar-thumb, .post2 ::-webkit-scrollbar-thumb { background-color: #555; }
+
+/****************************************
+Miniprofile
+*****************************************/
+.miniP-BG {
+	height: 555px;
+	width: 275px;
+	background: url('http://i.imgur.com/KNtJv8W.jpg') 500px; 
+	background-size: 1000px; 
+	display: block;
+	z-index:1; 
+}
+.miniP-cont { 
+	height: 410px; 
+	width: 250px; 
+	display: block;
+	padding: 5px;
+	z-index:1; 
+}
+.miniP-ava { 
+	border: 3px solid #f9f9f9; 
+	height: 400px; 
+	width: 250px; 
+	margin: 5px;
+	z-index: 2; 
+	background-size: cover;
+	position: absolute;
+}
+
+
+.miniP-hoverInfo { 
+	text-align: center; 
+	background-color: #f9f9f9; 
+	display: block;
+	padding: 10px;
+	margin: 5px;
+	z-index: 10; 
+	height: 230px;
+	width: 210px;
+	position: absolute;
+}
+.miniP-hoverInfo h1 { 
+	text-transform: uppercase; 
+	margin: 0px auto; 
+	font-style: italic; 
+	border-bottom: 1px solid #eee; 
+	width: 90%; }
+
+.miniP-hoverInfo h1 a { font-family: helvetica!important; }
+
+
+.miniP-hoverInfo-cont { 
+	display: hidden;
+	height: 300px; 
+	width: 240px;
+	opacity: 0; 
+	z-index: 5;
+	position: absolute;
+	transition-duration: 0.5s;  
+	-moz-transition-duration: 0.5s;  
+	-webkit-transition-duration: 0.5s;  
+	-o-transition-duration: 0.5s; }
+
+.miniP-hoverInfo-panel {
+
+	height: 390px; 
+	width: 240px;
+	text-align: center; 
+	background-color: rgba(249, 249, 249, 0.8); 
+	display: block; 
+	padding: 5px;
+	position: absolute;
+	
+}
+.miniP-hoverInfo-cont:hover{ opacity:1; }
+
+.miniP-bottominfo { 
+	text-align: center; 
+	background-color: #f9f9f9; 
+	display: block;
+	padding: 10px;
+	margin: 5px 10px 10px 10px;
+	z-index: 10; 
+	height: 100px;
+	width: 235px;
+	position: absolute;
+}
+.miniP-bottominfo h1 { 
+	text-transform: uppercase; 
+	margin: 0px auto; 
+	font-style: italic; 
+	border-bottom: 1px solid #eee; 
+	width: 95%; }
+
+.miniP-bottominfo h1 a { font-family: helvetica!important; }
+
+.quote { 
+	font-family: times; 
+	font-style: italic; 
+	color: #666; 
+	font-size: 12px; 
+	padding-bottom: 10px; }
+.short { 
+	background-color: #fff; 
+	margin: 1px; 
+	width: 90%; 
+	display: inline-block; 
+	padding: 4px; 
+	text-transform: uppercase; 
+	font-family: helvetica; 
+	font-size: 10px; 
+	letter-spacing: 1px; 
+	color: #666; }
+.short a { font-family: helvetica!important; }
+.long { 
+	font-family: times; 
+	padding-top: 10px; 
+	font-style: italic; 
+	font-size: 12px; 
+	color: #666; }
+.memberg { 
+	font-family: helvetica; 
+	text-transform: uppercase; 
+	font-weight: bold; 
+	letter-spacing: 3px; 
+	background-color: #f9f9f9; 
+	text-align: center;
+	padding: 10px 0px; 
+	display: block; 
+	margin-top: 5px; 
+	color: #666; }
+
+.awards { 
+	padding: 20px 0px 0px 0px;
+	margin: 10px 0px 0px; 
+	text-align: center; 
+	color: #f9f9f9; 
+	font-size: 0px;
+	overflow: auto;
+ }
+.awards img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+	padding: 0px 2px; 
+	transition: all, 1s; 
+	-webkit-transition: all, 1s; 
+	-moz-transition: all, 1s;
+}
+
+.awards img:hover { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+.special { 
+	margin: auto; 
+	color: #666; 
+}
+.special h1 { 
+	font-size: 9px; 
+	padding-top: 5px; 
+	padding-bottom: 5px; 
+	font-style: normal!important; 
+	font-weight: normal; 
+	font-family: helvetica; 
+	letter-spacing: 2px; }
+.special h2 { 
+	margin: 3px; 
+	font-size: 12px; 
+	font-weight: normal; 
+	letter-spacing: 1px; 
+	font-family: times; 
+	font-style: italic; }
+.buttons {
+   	width: 54px;
+   	height: 25px;
+	background: url('http://i.imgur.com/KNtJv8W.jpg') 500px; 
+	background-size: 1000px; 
+	display: inline-block;  
+	margin: 6px;
+	border: 1px solid #f9f9f9;
+	color: #5bd5de;
+	font-size: 20px;
+	padding-top: 5px;
+	outline: 2px solid #f9f9f9;
+}
+
+
+/****************************************
+ Body Background & Text Style
+*****************************************/
+
+body { 
+	font-family: Arial, sans-serif; 
+	font-size: 12px; 
+	color: #666; margin:0px;
+	padding:0px; 
+ 	background: #f5f5f5 no-repeat center 20px fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	text-align:center;
+}
+
+/****************************************
+top table
+*****************************************/
+
+.topt, .featured { border: 1px solid #eee; padding: 10px 0px; }
+.tav { width: 200px; padding: 10px; border-right: 1px solid #eee; }
+.tav1 { border: 3px solid #eee; padding: 2px; border-radius: 200px; -moz-border-radius: 200px; -webkit-border-radius: 200px; width: 150px; height: 150px; margin-left: 20px; }
+.tav2 { background: url(http://i.imgur.com/HSd78O0.png) -105px -35px; width: 150px; height: 150px; border-radius: 200px; -moz-border-radius: 200px; -webkit-border-radius: 200px; }
+.tav2 img { border-radius: 200px; -moz-border-radius: 200px; -webkit-border-radius: 200px; width: 150px; height: 150px; }
+.mainta { text-align: center; padding: 0px 10px; border-right: 1px solid #eee; font-size: 11px; font-family: helvetica; color: #666; line-height: 15px; }
+.mainta b { text-transform: uppercase; font-style: italic; color: #6fadbb; }
+.mainc h1 { margin: 0px; display: inline; text-transform: uppercase; font-family: helvetica; font-size: 12px; font-style: italic; color: #6fadbb; }
+.usern { color: #666; border-bottom: 1px solid #eee; }
+.mainc h2 { margin: 0px; display: inline; text-transform: lowercase; font-style: italic; color: #999; font-size: 10px; }
+.mainc p { text-align: justify; margin: 0px; padding-top: 15px; padding-bottom: 5px; }
+.mainc hr { background-color: #eee; border: 0px; height: 1px; margin-bottom: -3px; }
+
+.implinks { width: 200px; padding-left: 10px; padding-top: 10px; }
+.implinks a { font-weight: normal!important; display: block; text-align: center; margin: 1px auto 10px; font-size: 9px; letter-spacing: 2px; border-bottom: 1px solid #eee; width: 80%; padding-bottom: 2px; color: #777!important;}
+.implinks a:hover { letter-spacing: 4px; color: #ddd!important; }
+
+.featured { margin-top: 10px; height: 100px; }
+.feat { width: 666px; padding: 0px 10px; }
+.feat img { width: 660px; height: 100px; position: relative; z-index: 0;  }
+.feat2:hover { opacity: 1; -moz-opacity: 1; -webkit-opacity: 1; }
+.feat2 { position: absolute; width: 638px; text-align: justify; font-size: 11px;  color: #666; padding: 10px; margin-top: -100px; z-index: 1; opacity: 0; -moz-opacity: 0; -webkit-opacity: 0; transition: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s; background: rgba(255,255,255,0.9); height: 78px; overflow: auto; line-height: 15px; border: 1px solid #eee; }
+
+.resourceaf { border-left: 1px solid #eee; padding-left: 10px; height: 100px; overflow: auto; display: block; }
+.resourceaf img { border: 1px solid #eee; padding: 1px; margin: 1px; }
+.resourceaf a img { opacity: 0.6; -moz-opacity: 0.6; -webkit-opacity: 0.6; transition: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s; }
+.resourceaf a:hover img { opacity: 1; -moz-opacity: 1; -webkit-opacity: 1; }
+
+/****************************************
+footer
+*****************************************/
+
+
+.header .row4 { background: transparent; border: 0px; }
+.footer1 { display: none; }
+.footer2 { background-color: #fff; padding: 15px; line-height: 40px; }
+.cbox { text-align: right; width: 600px; }
+.credits { background-color: #f9f9f9; display: block; width: 189px; color: #666; font-family: helvetica; text-transform: uppercase; font-size: 9px; letter-spacing: 1px; line-height: 15px; text-align: justify!important; padding: 10px;  }
+.credits a { color: #e34e76!important; }
+.credits b, .belowcont b { color: #52adb7; text-transform: uppercase;}
+.footer2 a img { border: 3px solid #eee; opacity: 0.7; -moz-opacity: 0.7; -webkit-opacity: 0.7; transitin: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s; padding: 1px; }
+.footer2 a:hover img { opacity: 1; -moz-opacity: 1; -webkit-opacity: 1; }
+.footer2 .row4 { border: 0px; background-color: #f9f9f9; margin-top: 5px; }
+.footer2 .row4 a { color: #53790a!important; }
+
+
+/****************************************
+CFS
+*****************************************/
+
+.mboard { background-color: #fff; padding: 0px 50px; border-top: 0px; border-bottom: 1px solid #f5f5f5; }
+.mforum { width: 480px; text-align: justify; padding-right: 30px; }
+.mtitle { font-family: times; font-size: 17px; letter-spacing: -1px; display: inline-block; margin: 5px; padding-top: 6px; }
+.mtitle a { color: #a17cb7!important; transition: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s; text-transform: uppercase!important; font-weight: bold; font-size: 10px; line-height: 0px; letter-spacing: 3px; border-bottom: 1px solid #eee;}
+.mtitle a:hover { padding-left: 15px; color: #000!important; }
+.mdescrip { display: block; text-align: justify!important; padding: 6px 0px; font-size: 11px; font-family: helvetica, arial; line-height: 16px; color: #777; padding-left: 3px; position: relative;  }
+.msub { font-family: helvetica; padding: 10px 0px 0px 4px; font-size: 10px; text-transform: uppercase;  text-shadow: 1px 1px 0px #fff; font-size: 0px; margin: 0px 0px 10px 0px; }
+.mtopics { float: right; border-top: 0px!important; border-bottom: 0px!important; text-transform: uppercase; font-size: 8px; letter-spacing:2px; color: #999!important; margin-top: 20px; display: block; z-index: 0; height: 8px; overflow: hidden;  padding: 0px; }
+.msub a { color: #a17cb7!important; padding-bottom: 5px; padding-right: 10px; display: inline-block; transition: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s; font-size: 10px; font-weight: 100!important; letter-spacing: 2px; font-family: times; font-size: 9px;}
+.mlast { width: 140px; background-color: #fbfbfb; border-top: 10px solid #fff; border-bottom: 10px solid #fff; color: #888; padding: 10px 20px; text-align: center; text-transform: uppercase; font-family: helvetica, arial; font-size: 8px; line-height: 13px; letter-spacing: 1px; }
+.mlast a { color: #a17cb7!important; transition: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s; font-family: times; border-bottom: 1px solid #eee; font-size: 9px; }
+.mlast a:hover { color: #000!important; }
+
+
+
+
+.mstats { border: 0px solid #eee; margin-top: 5px; padding: 10px 40px; background-color: #fff; }
+.welcome { width: 200px; margin-left: -10px; display: block; }
+.welcome h1 { font-family: helvetica; text-transform: lowercase; font-weight: normal; color: #666; font-style: italic; font-size: 11px; text-align: center; margin: 1px auto; }
+.welcome h2 { margin: 0px; }
+.welcome h2 a { font-family: helvetica!important; text-align: center; font-style: italic; margin: 0px; display: block; }
+.snormal { width: 150px; display: block; margin: auto; font-size: 10px; font-family: helvetica; color: #666; text-align: justify; border-top: 1px solid #eee; padding-top: 15px; padding-bottom: 10px; }
+.snormal b { color: #ea8094; }
+
+.current { width: 480px; padding-right: 40px; font-size: 10px; border-left: 1px solid #eee; border-right: 1px solid #eee; padding-left: 30px;}
+.today { width: 200px; padding: 0px 10px; height: 170px; overflow: auto; }
+
+.current h1, .today h1 { font-family: helvetica; font-style: italic; font-weight: normal; text-transform: lowercase; color: #666; margin: 0px; font-size: 11px; border-bottom: 1px solid #eee; padding-bottom: 5px; padding-left: 10px; margin-bottom: 10px; width: 100%; }
+.current h1 a { text-transform: lowercase; color: #444; font-size: 10px; }
+.current a, .today a { font-size: 10px; font-weight: normal; font-family: helvetica!important; }
+
+
+.mtopics1 { border-bottom: 1px solid #f5f5f5; padding: 10px 23px; }
+.topict { text-align: center; padding: 0px 0px 5px 20px; }
+.topict h1 { margin: 0px; width: 276px; border-bottom: 1px solid #eee; text-align: left; line-height: 12px; font-size: 12px; margin-top: 5px;}
+.topict h1 a { font-family: times; font-size: 10px; letter-spacing: 2px; margin: 0px;  }
+.topict h2 { font-family: times; font-style: italic; font-size: 12px; color: #666; font-weight: normal; margin: 0px; padding-top: 2px; text-align: right; }
+.topict h3 { margin: 2px; font-family: helvetica; text-transform: uppercase; font-weight: 100; color: #fff; text-align: right; font-size: 0px; }
+.topict h3 a { font-family: helvetica; border: 1px solid #ddd; font-size: 9px; padding: 0px 2px; display: inline-block; margin: 0px 2px; color: #999; }
+.topicrest { width: 160px; padding: 0px 80px 0px 100px; text-align: justify; color: #888; font-size: 10px; font-family: helvetica; letter-spacing: 1px; text-transform: lowercase; }
+.topicrest b { color: #77b5bb; }
+.topiclast { width: 245px;color: #666; font-family: times; font-size: 12px; font-style: italic; text-transform: lowercase; text-align: right; }
+.topiclast a { text-transform: lowercase!important; }
+
+/****************************************
+   Table Styles
+*****************************************/
+
+table, tr, td {
+	font-family: Arial, sans-serif; 
+	font-size: 12px; 
+	color: #666; 
+}
+
+/****************************************
+   Board Width
+*****************************************/
+
+#wrapper { 
+	text-align:left;
+        position: relative; width: 930px;
+        margin: 0px auto 20px; left: 140px;
+        padding: 0px; 
+}
+
+#wrapper2 { 
+	text-align:left;
+        position: relative; width: 930px;
+        margin: 0px auto 20px; left: 140px;
+        padding: 0px; 
+}
+
+#wrapper2 .row4 { background-color: transparent; padding-top: 30px; }
+
+#bwrap { width: 1200px; margin: 0px auto; position: relative; top: 0px;  }
+
+
+#sidebar { width: 260px; position: absolute; top: 0px; left: 0px; background-color: #fff;  }
+#sideimg { background-image: url('https://sig.grumpybumpers.com/host/adisgruntleddragon.gif'); background-size: 260px; background-repeat: no-repeat; height: 400px; }
+#sidecont a { display: block; padding: 20px 0px; border-bottom: 1px solid #f5f5f5; color: #888; font-weight: 100; font-family: times; letter-spacing: 3px; font-size: 9px; }
+#sidecont a:hover { color: #9e75b2; letter-spacing: 5px; }
+#sidecont p { padding: 20px 35px; margin: 0px; border-bottom: 1px solid #f5f5f5; text-align: justify; font-family: helvetica; color: #888; font-size: 11px; line-height: 20px; text-transform: lowercase; }
+#sidecont p b { color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px; }
+#sidecont p a { color: #a571b7!important; display: inline; font-weight: bold; font-size: 10px; border-bottom: 1px solid #eee; padding: 0px;}
+#sidecont p a:hover { font-style: italic; letter-spacing: 3px; }
+.affs p.affs { border-bottom: 1px solid #f5f5f5; text-align: center; line-height: 35px; padding: 10px 0px; }
+.affs p.affs a { border-bottom: 0px; }
+.affs p.affs a img { opacity: 0.6; border: 2px solid #eee; padding: 1px; margin: 2px; transition: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s; }
+.affs p.affs a img:hover { opacity: 1; }
+
+.affs { padding: 10px 50px; }
+
+#innerwrapper { 
+	padding: 15px 0px 10px;background-color: #fefefe;
+}
+
+#staffsection {
+	padding: 20px 35px;
+	text-align: left;
+	margin: 0px; 
+	border-bottom: 1px solid #f5f5f5; 
+	font-family: helvetica; 
+	color: #888; 
+	font-size: 11px; 
+	line-height: 20px; 
+	text-transform: lowercase;	
+}
+#staffsection a { display: block; padding: 20px 0px; border-bottom: 1px solid #f5f5f5; color: #888; font-weight: 100; font-family: times; letter-spacing: 3px; font-size: 9px; }
+#staffsection p b { color: #db5472; font-family: times; text-transform: uppercase;  letter-spacing: 2px; font-size: 9px; }
+#staffsection p a { color: #a571b7!important; display: inline; font-weight: bold; font-size: 10px; border-bottom: 1px solid #eee; padding: 0px;}
+#staffsection p a:hover { font-style: italic; letter-spacing: 3px; }
+
+/****************************************
+   Link colors
+*****************************************/
+
+a:link, a:visited, a:active { 
+	text-decoration: none;
+	color: #a17cb7; text-transform: uppercase; font-weight: bold; transition: all, 1s; -moz-transition: all, 1s; -webkit-transition: all, 1s;
+}
+a:hover { 
+	color: #666; 
+	text-decoration: none; 
+}
+
+
+/****************************************
+   Profile styles 
+*****************************************/
+
+#profilename { 
+	font-size:20px; text-transform: uppercase; border-bottom: 1px solid #eee; margin-bottom: 5px;
+	font-weight:bold; 
+}
+
+#photowrap { 
+	padding:6px; 
+}
+
+#phototitle { 
+	font-size:24px; 
+	border-bottom:1px solid black;
+}
+
+#photoimg   { 
+	text-align:center; margin-top:15px; 
+} 
+
+/****************************************
+   UserCP/My Controls styles
+*****************************************/
+
+#ucpmenu { 
+	line-height:150%;
+	width:22%; 
+	border:1px solid #ddd;
+	background-color: #f9f9f9;
+}
+
+#ucpmenu p  { 
+	padding:2px 5px 6px 9px; 
+	margin:0px;  
+}
+
+#ucpcontent { 
+	border:1px solid #ddd;
+	background-color: #f9f9f9;
+	line-height:150%; width:auto; 
+}
+
+#ucpcontent p  { 
+	padding:10px;
+	margin:0px; 
+}
+
+/****************************************
+  Logo Strip
+*****************************************/
+
+#logostrip { 
+	display: none;
+}
+
+#logo { 
+	min-height: 60px; 
+	text-align: left; 
+	margin-top: 5px; 
+	padding: 20px 20px 5px; 
+}
+
+
+#logo a, #logo a:hover { 
+	font-size: 36px; 
+	text-decoration: none;
+	font-weight: bold; 
+	color: #800000; 
+}
+
+/****************************************
+  Search Bar 
+*****************************************/
+
+#searchbar {
+	display: block;	
+	float: right;
+	position: relative;
+	right: 10px;
+	top: 8px;
+}
+
+#searchbar .search-container {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4) inset;
+    border: 1px solid #D8D8D8;
+    display: block;
+    height: 26px;
+    position: relative;
+    width: 200px;
+}
+
+#searchbar .search-input {
+	background: none repeat scroll 0 0 transparent;
+	border: 0;
+	color: #808080;
+	font-size: 12px;
+	width: 192px;
+	height: 26px;
+	font-family: Arial, sans-serif;
+	padding: 1px 0 0 8px;
+}
+
+#searchbar .search-input:focus {
+    color: #000000;
+}
+
+#searchbar .search-button {
+	background: #800000 url(http://files.b1.jcink.com/themes/default/magnifying-glass.png) no-repeat 50% 50%;
+	border: 0;
+	bottom: 0;
+	margin: 0;
+	border-radius: 0;
+	display: block;
+	height: 26px;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-indent: -3000em;
+	top: 0;
+	width: 26px;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+/****************************************
+  Navigation Bar / Submenu
+*****************************************/
+
+#submenu  {
+display: none;
+}
+
+#submenu img { 
+	display: none; 
+}
+
+#submenu a:link, #submenu a:visited, #submenu a:active { 
+	text-decoration: none;
+	color: #fff !important; 
+        padding: 7px 7px;
+        font-weight: bold;
+}
+
+#submenu a:hover { 
+	color: #fff !important; 
+	text-decoration: underline; 
+}
+
+#navi br { 
+	display: none; 
+}
+
+#navstrip  { 
+width: 930px; font-family: helvetica; text-transform: uppercase; font-size: 8px; letter-spacing: 2px; margin-top: -27px; margin-bottom: 15px; left: 261px; position: relative; font-weight: normal!important; color: transparent; 
+}
+#navstrip a { color: #666!important; font-weight: normal!important;  padding: 3px 5px 2px 6px; background-color: #fff;}
+#navstrip a:hover { font-style: italic; }
+
+/****************************************
+   Calendar styling
+*****************************************/
+
+.caldate   { 
+	text-align:right;
+	font-weight:bold;
+	font-size:11px;
+	color:#555;
+	background-color:#F2F2F2;
+	padding:4px; margin:0px; 
+}
+
+#calendarname { 
+	font-size:22px;
+	font-weight:bold; 
+}
+
+#padandcenter { 
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:14px 0px 14px 0px; 
+}
+
+
+/**************************************************
+ User Links Menu (Messages / View new posts / etc )
+***************************************************/
+
+#userlinks { 
+	list-style: none; background: transparent; padding: 5px 10px; width: 930px; position: absolute; top: 0px;
+	margin: 0 auto; background-color: transparent; z-index: 5; background-color: #fff; 
+}
+
+#userlinks td {  margin: 0px!important; padding: 0px ;
+	color: #777; font-family: times; font-weight: 100!important; text-transform: uppercase; font-size: 8px; letter-spacing: 1px;
+}
+
+#userlinks a { 
+	color: #e34e76; padding: 1px; 
+}
+
+#userlinks a:hover { 
+	text-decoration: none; 
+}
+
+
+/****************************************
+   Topic View styles
+*****************************************/
+
+.activeuserstrip { 
+	padding:6px; font-size: 10px; font-style: italic; font-family: times; letter-spacing: 1px; text-align: center; text-transform: lowercase;
+}
+
+.normalname { 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #003; 
+}
+
+.normalname a { 
+	font-size: 12px;
+}
+
+.unreg { 
+	font-size: 11px; 
+	font-weight: bold; 
+	color: #900; 
+}
+
+.post1 { 
+	background-color: #fff; padding: 10px; border-bottom: 1px solid #f5f5f5;
+}
+
+.post2 { 
+	 background-color: #fff; padding: 10px; border-bottom: 1px solid #f5f5f5;
+}
+
+.postdetails { 
+	font-size: 10px; 
+}
+
+.postcolor   { 
+	font-size: 12px; line-height: 160%; 
+}
+
+.postlinksbar {
+        padding: 1px 12px; 
+	margin-top:1px;
+	font-size:10px;
+}
+
+.signature   { 
+	font-size: 10px; 
+	color: #666; 
+	line-height:150%;  
+}
+
+
+/*******************************
+ Pagination e.g. [1],2,3 ...
+*******************************/
+
+.pagination .pagination_current, .pagination a {
+     padding: 2px 5px;
+}
+
+.pagination a:link, .pagination a:visited, .pagination a:active {
+     border: 1px solid #ddd;
+     border-radius:3px;
+     background-color:#eee;
+     padding-left:6px;
+     padding-right:6px;
+     color:#777;
+     text-decoration:none;
+}
+
+.pagination a:hover {
+	background: #EFEEEE;
+	text-decoration: none;
+	color:#555;
+}
+
+.pagination .pagination_current {
+     background: none repeat scroll 0% 0% #eee;
+     border: 1px solid #ddd;
+     border-radius:3px;
+     padding-left:6px;
+     padding-right:6px;
+}
+
+.pagination_first, .pagination_last, .pagination_page {
+     background: none repeat scroll 0% 0% #ddd;
+     border: 1px solid #bbb;
+}
+
+.pagination_pagetxt {
+    display:none;
+}
+
+/****************************************
+   Global general table/div row styles
+*****************************************/
+
+.row1,.row3,.row4,.row2 { 
+	border-top: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; background-color: #fff; font-size: 11px; font-family: helvetica; color: #888;
+}
+
+#boardstats .row2 { 
+	text-align: center; 
+}
+
+
+
+.darkrow1 { 
+	 color:#666; 
+}
+
+.darkrow2 { 
+	 color:#666; font-family: times; text-transform: lowercase; font-style: italic; text-align: center; font-size: 10px; letter-spacing: 1px;
+}
+
+td.darkrow2 { 
+	display: none; 
+}
+
+.darkrow3 { 
+	color: #666; 
+	padding: 3px; 
+}
+
+.hlight { background-color: #EFEFEF; }
+.dlight { background-color: #EFEFEF; }
+
+/****************************************
+   Top table bars / gradient holders 
+*****************************************/
+
+.maintitle { text-transform: uppercase; color: #fff; text-shadow: 0px 0px 6px #6bafde, 0px 0px 3px #6bafde, 1px 1px 16px #6bafde, -1px -1px 16px #6bafde; padding: 10px 0px 10px 40px; border-top: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; text-decoration: none;  font-family: times!important;font-weight: bold; background: url('http://i.imgur.com/KNtJv8W.jpg') 1030px; background-size: 1030px;
+}
+
+.maintitle a:link, .maintitle  a:visited, .maintitle  a:active { 
+	text-decoration: none; color: #fff!important; font-family: times!important;  letter-spacing: 3px;
+}
+
+.maintitle a:hover { 
+	text-decoration: none;  
+}
+
+/****************************************
+  Bar directly below the maintitles 
+*****************************************/
+
+.titlemedium { 
+	font-weight:bold; color:#666; font-size: 8px; text-transform: uppercase;
+	padding: 2px 6px; margin:0px;
+	background-color:#efefef; border-top: 1px solid #eee; border-bottom: 1px solid #eee;
+ }
+
+.titlemedium  a:link, .titlemedium  a:visited, .titlemedium  a:active  { 
+	text-decoration: none; 
+	color: #555; 
+}
+
+/****************************************
+  Table & Div Borders 
+*****************************************/
+
+.tableborder {  padding:0px; margin:0;
+}
+
+.tablefill { 
+	border: 1px solid #eee; background-color: #f9f9f9;
+	padding:6px; 
+}
+
+.tablepad {
+	background-color: #f9f9f9; 
+	padding:6px;
+}
+
+.tablebasic {
+	width:100%; padding:0px 20px; margin:0px; border:0px; 
+}
+
+.plainborder { 
+	border:1px solid #eee; 
+	background-color: #fff; 
+}
+
+/****************************************
+  QUOTE and CODE BBCode boxes
+*****************************************/
+
+#QUOTE { 
+	white-space:normal; 
+	font-family: Arial, sans-serif; 
+	font-size: 11px; 
+	color: #333; 
+	background-color: #fff; 
+	border: 0px; 
+	padding:5px;
+	border:1px solid #ddd; 
+	margin-top:2px; 
+}
+
+#CODE  { max-height: 100px; max-width: 500px; margin: auto auto 10px auto; display: block; overflow: auto;
+	white-space:normal; 
+	font-family: Courier, Courier New, Verdana, Arial;  
+	font-size: 11px; 
+	color: #777; 
+	background-color: #fefefe; 
+	border: 0px; 
+	padding:5px;
+	border:1px solid #ddd; 
+	margin-top:2px; 
+}
+
+
+/**********************************************
+  Input buttons, e.g. submit, text input, etc
+***********************************************/
+
+.button-large {
+	background: #f9f9f9;  
+        padding: 5px 12px;
+	text-align:center;
+	margin:0px 20px 0px 20px;
+        color: #666;
+	font-weight: bold;
+        min-width: 75px; border: 1px solid #eee;
+        display: inline-block;
+}
+
+
+.button-small {
+	color: #666;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 5px 7px;
+	text-decoration: none;
+        min-width: 50px;
+        max-width: 80px;
+}
+
+.post-buttons-top { margin-top: 3px; }
+
+.button-large.closed {
+	background: url(http://files.b1.jcink.com/themes/default/white-gradient.png);
+        padding: 7px 12px;
+	text-align:center;
+	margin:0px 5px 0px 5px;
+        border: 1px solid #d8d8d8;
+        color: #660000; 
+	font-weight: bold;
+}
+
+.forminput, .codebuttons, .textinput, .radiobutton, .checkbox {
+	background: #fff; border: 1px solid #eee;
+	color: #666;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+
+input[type=submit], input[type=button], input[type=reset] {
+	background: #f9f9f9;
+	color: #777;
+	font-size: 11px;
+	font-weight: bold; border: 1px solid #eee;
+	margin: 3px 20px; text-transform: lowercase;
+	padding: 2px 6px;
+	text-decoration: none;
+}
+
+.codebuttons  { 
+	font-size: 10px; 
+}
+
+
+/****************************************
+  Form table cell styles, left/right/top
+*****************************************/
+
+.pformstrip {
+	border-top: 1px solid #eee; border-bottom: 1px solid #eee; background-color: #fbfbfb;
+	color:#666; font-weight:bold;
+	padding: 2px 5px;
+	margin-top:1px 
+}
+
+.pformleft  { 
+	border: 0px solid #eee; background-color: #fbfbfb;
+	padding:6px; 
+	margin-top:1px;width:25%; 
+}
+
+.pformleftw { 
+	border: 0px solid #eee; background-color: #fbfbfb; padding:6px; 
+	margin-top:1px;width:40%; 
+}
+
+.pformright { 
+	border: 0px solid #eee; background-color: #fbfbfb;
+	padding:6px; margin-top:1px;
+}
+
+
+/****************************************
+ Tabs on the portal profiles + sections
+*****************************************/
+
+.opentab {
+	color: #FFF;
+	padding:8px;float: left; width: auto;
+	background-color: #800000;
+        background-image: url(http://files.b1.jcink.com/themes/default/red-gradient.png);
+	margin-top:3px;
+	margin-right:2px;
+	font-size:11px;
+	border: #545454 1px solid;	
+}
+
+.closedtab {
+	color: #FFF;
+	padding:7px;float: left;width: auto;
+	background-color: #800000;
+        background-image: url(http://files.b1.jcink.com/themes/default/red-gradient.png);
+	margin-top:6px;
+	margin-right:2px;
+	font-size:11px;
+	border-top:   #545454 1px solid;
+	border-right: #545454 1px solid;
+	border-left:  #545454 1px solid;
+}
+
+.positiontab { 
+	height: 34px; margin-left: 2px;
+}
+
+/****************************************
+   Delete all cookies / mark read
+*****************************************/
+
+#delcookiesrow, #mark-as-read-subto {
+	border: 1px solid #eee; background-color: #fbfbfb;
+	font-size: 10px;
+	padding: 5px;
+        width: 260px;
+        float: right;
+        margin-top:-3px;
+        padding-left:1px;
+}
+
+#mark-as-read-subto {
+	float: none;
+	padding-top: 3px;
+}
+
+
+/*******************************
+     Board Statistics Links
+*******************************/
+
+.toplinks a {
+	color: #999;
+	font-size: 9px; letter-spacing: 1px; 
+	text-decoration: none;
+}
+
+.toplinks {
+	margin: 0px 30px 0px;
+	text-align: right;
+	color: transparent;
+}
+
+/*******************************
+ Mini Profile Seperators
+*******************************/
+
+.postbit { 
+	border-bottom: solid 1px #C0C0C0; 
+	color: #666;
+	background: #EFEFEF;
+	font-size: 11px;
+        padding: 6px 7px;
+}
+
+/********************************
+	Miscellaneous
+********************************/
+
+/* image tag styles */
+img        { vertical-align:middle; border:0px }
+img.attach { border:2px outset #555;padding:2px }
+
+/* Forum Descriptions */
+.desc { font-size:11px; color: #666; }
+
+/* Edited by text */
+.edit { font-size: 9px }
+
+/* Topic Macros */
+
+.wrapmini { float: left; margin-left: 30px; padding: 10px; background-color: #f9f9f9; text-align: right; font-size: 11px; text-transform: lowercase; line-height: 20px; }
+
+/* Warning CSS */
+.warngood { color:green }
+.warnbad  { color:red }
+
+/* Skin selector dropdown */
+#skin_selector { 
+	margin: 10px 30px; 
+}
+
+
+/* Online users list row */
+.thin { 
+	padding:6px 0px 6px 0px;
+	line-height:140%;
+	margin:2px 0px 2px 0px;
+	border-top:1px solid #545454;
+	border-bottom:1px solid #545454;
+}
+
+/* Latest news area */
+.newstext { 
+display: none;
+}
+
+/* Highlighted text in search */
+.searchlite { 
+	color:#F00;
+	font-weight:bold;  
+	background-color:#FF0; 
+}
+
+/****************************************
+ Mobile-specific Styles
+*****************************************/
+
+#mobile { 
+	background-color: #FBFBFB;
+}
+
+/****************************************
+/* Pseudo Topic "Tags" by kjSage of CTTW & RPG Initiative */
+*****************************************/
+
+.blood{color:green; font-weight: bold;}
+.trigger{color:yellow; font-weight: bold;}
+.smut{color:gray; font-weight: bold;}
+.nsfw{color:red; font-weight: bold;}
+
+/*************************************
+/* Dice Roller Styles
+*************************************/
+
+.dice-roll{ 
+	display: grid;
+	grid: 5px;
+	white-space: nowrap; 
+	font-family: Arial, sans-serif; 
+	font-size: 14px; 
+	color: #333; 
+	text-align: center;
+	background-color: #fff; 
+	border: 0px; 
+	padding:  5px;
+	border: 2px solid #ddd!important; 
+	margin-top: 2px; }
+
+/*************************
+/* Main Profile
+*************************/
+
+.ion-mp {
+	height: 500px;
+	width: 900px;
+	background: url('http://i.imgur.com/KNtJv8W.jpg'); 
+	background-size: 1000px; 
+	margin: 0 auto; 
+	overflow: hidden; 
+	position: relative;
+	border: 3px solid #eee; 
+}
+
+.ion-mp-avatar { 
+	border: 3px solid #f9f9f9; 
+	height: 400px; 
+	width: 250px; 
+	overflow: hidden;
+	margin: 10px 0 0 10px;
+}
+.ion-mp-user { 
+	width: 585px;
+	height: 90px;
+	text-align: center; 
+	background-color: #f9f9f9; 
+	position: absolute;
+	margin: 10px 0 0 10px; 
+	padding: 10px 10px;
+	display: block; 
+}
+.ion-mp-user h1 { 
+	text-transform: uppercase; 
+	margin: 0px auto; 
+	font-style: italic; 
+	border-bottom: 1px solid #eee; 
+	width: 90%; 
+}
+.ion-mp-user h1 a { font-family: helvetica!important; }
+
+.ion-mp-quote { 
+	font-family: times; 
+	font-style: italic; 
+	color: #666; 
+	font-size: 12px; 
+	padding-bottom: 10px; 
+}
+.ion-mp-oocinfo { 
+	background-color: #fff; 
+	margin: 1px; 
+	width: 90%; 
+	display: inline-block; 
+	padding: 4px; 
+	text-transform: uppercase; 
+	font-family: helvetica; 
+	font-size: 13px; 
+	letter-spacing: 1px; 
+	color: #666; 
+}
+
+.ion-mp-powered { 
+	font-family: helvetica; 
+	text-transform: uppercase; 
+	font-weight: bold; 
+	letter-spacing: 3px; 
+	background-color: #f9f9f9; 
+	text-align: center; 
+	padding: 10px 10px; 
+	display: block; 
+	margin-top: 5px; 
+	color: #666; 
+}
+
+.ion-mp-quotebox { 
+	height: 40px;
+	width: 73%;
+	font-family: helvetica; 
+	text-transform: uppercase; 
+	font-weight: bold; 
+	letter-spacing: 3px; 
+	background-color: #f9f9f9; 
+	text-align: center; 
+	padding: 10px 10px; 
+	display: block; 
+	margin-top: 5px; 
+	color: #666; 
+	position: absolute;
+	top: 425px;
+	left: 15px;
+}
+
+.ion-mp-details {
+	width: 400px;
+	position: absolute;
+	top: 135px;
+	left: 285px;
+	background-color: #f9f9f9;
+	padding: 5px; 
+
+}
+
+.ion-mp-detailbox { 
+	background-color: #fff; 
+	margin: 2px; 
+	width: 96%; 
+	display: inline-block;
+	padding: 5px; 
+	text-transform: uppercase; 
+	font-family: helvetica; 
+	font-size: 14px; 
+	letter-spacing: 1px; 
+	color: #666; 
+}
+.ion-mp-detailbox a { font-family: helvetica!important; }
+
+
+.ion-mp-awardcont{
+	height: 355px;
+	width: 175px;
+	position: absolute;
+	top: 125px;
+	left: 701px;
+	margin: 10px; 
+	text-align: center; 
+	color: #f9f9f9; 
+	font-size: 0px;
+	background-color: #f9f9f9;
+	overflow: auto;
+}
+.ion-mp-awards { 
+	background-color: #fff;
+	height: 97%;
+	width: 95%;
+	margin: 5px;
+ }
+.ion-mp-awards img { 
+	opacity: 0.6; 
+	-moz-opacity: 0.6; 
+	-webkit-opacity: 0.6; 
+	padding: 0px 2px; 
+	transition: all, 1s; 
+	-webkit-transition: all, 1s; 
+	-moz-transition: all, 1s;
+}
+
+.ion-mp-awards img:hover { 
+	opacity: 1; 
+	-moz-opacity: 1; 
+	-webkit-opacity: 1; 
+}
+
+.ion-mp-buttons {
+   	width: 50px;
+   	height: 20px;
+	background: url('http://i.imgur.com/KNtJv8W.jpg') 500px; 
+	background-size: 1000px; 
+	display: inline-block;  
+	margin: 1px;
+	color: #5bd5de;
+	font-size: 20px;
+	padding: 5px;
+}
+
+
+
+/***********************************
+ Copyright: Removal is against Terms
+************************************/
+
+.copyright { 
+	font-size: 10px; line-height: 12px; 
+}
+
+/***********
+Site Set CSS
+***********/
+
+
+.ion-site * {   box-sizing: border-box; }
+
+.ion-site {
+  width: 600px;
+  margin: 2px auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #666;
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: none;
+
+}
+
+.ion-site h1 {
+  color: #a17cb7;
+  letter-spacing: normal;
+line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+  text-align: left;
+}
+
+.ion-site h2 {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  text-align: right;
+  text-transform: none;
+}
+
+.ion-post-content {
+  padding: 10px;
+  font-size: 13px;
+  font-family: 'Lato';
+  margin: 10px;
+  text-align: justify;
+  line-height: 120%;
+  width:95%;
+}
+
+.ion-post-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ion-site h3 {
+  padding: 2px;
+  text-transform: lowercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-color: #fff;
+  font-style: italic;
+  text-align: center;
+  line-height: 80%;
+}
+
+.ion-site h4 {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #a17cb7;
+  font-style:bold;
+}
+
+.profile-name {
+  color: #a17cb7;
+  letter-spacing: normal;
+line-height: 1.1;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.ion-site b {
+  color: #36A99A;
+}
+
+.ion-post-content p:last-child {
+  margin-bottom: 0;
+}
+
+.ion-halfwidth {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.ion-fullwidth {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.ion-triwidth {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.ion-site a {
+  font-weight: bold;
+}
+
+.ion-site ul {
+  list-style: none;
+}
+.ion-site li {
+ line-height: 150%;
+}
+
+.ion-site ul li::before {
+  content: "x";
+  color: #a17cb7;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-top: -1.5em;
+}
+
+.ion-site ol {
+  list-style:none;
+  counter-reset: ion-counter;
+}
+
+.ion-site ol li {
+  counter-increment: ion-counter;
+}
+
+.ion-site ol li::before{
+  content: counter(ion-counter) ". ";
+  color: #a17cb7;
+  font-weight: bold;
+}
+
+.ion-toc{
+ max-width: 400px;
+ text-align: justify;
+padding-left: 175px;
+}
+
+.ion-site hr {
+  border: 1px;
+  height: 1px;
+  margin: 10%;
+  background-color: #a17cb7;
+}
+
+.ion-site.ion-response {
+  max-width: 400px;
+}
+
+.textblock {
+  padding-left: 20px;
+}
+
+.ion-site-headimg img {
+	width: 100%;
+	height: auto;
+}
+
+.ion-spoiler-border 
+{
+	background: #f0f0f0;
+}
+
+.ion-spoiler-toggle
+{
+	align: left;
+	padding: 5px;
+	background: #ddd;
+}
+
+.ion-spoiler-content
+{
+	padding: 10px;
+	display:none;
+	background: #fff;
+	border: 1px #ddd!important;
+}
+
+
+		</stylesheet>
+
+		<wrappers>
+		<!DOCTYPE html>
+<html>
+    <head> 
+	<title><% TITLE %></title> 
+	<% CSS %> 
+	<% JAVASCRIPT %> 
+<script type="text/javascript" src="http://voidpc.jcink.net/uploads/voidpc/brownie.js?v=2.1"></script>
+<script src="http://elegantexpressions.us/black/cfs.min.js"></script>
+<script src="https://kit.fontawesome.com/73d8fb96f8.js" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+<div id="bwrap">
+
+
+<div id="sidebar">
+<div id="sideimg">
+
+</div>
+
+<div id="sidecont">
+
+<p><b>Welcome</b> to <b>In Our Name</b>, an AU Sailor Moon Roleplay!</p>
+
+<span id='sub_bar_2' style="display:none;">
+<% SUBACCOUNTS %>
+</span>
+<span id='subacct_link_2'> · <a href='javascript:void(0);'  onclick="document.getElementById('subacct_link_2').innerHTML=document.getElementById('sub_bar_2').innerHTML;">Switch Account</a></span>
+
+<a href="/index.php?">Home</a>
+<a href="https://inourname.net/index.php?showforum=4">Rules</a>
+<a href="https://inourname.net/index.php?showforum=28">Setting</a>
+<a href="https://inourname.net/index.php?showforum=27">Factions</a>
+<a href="https://inourname.net/index.php?showtopic=110">Masterlist</a>
+<a href="https://inourname.net/index.php?showtopic=23">Application</a>
+<a href="https://inourname.net/index.php?showforum=15">Plot Threads</a>
+<a href="http://inourname.net/index.php?act=store">Store</a>
+<a href="https://discord.gg/W3NrdCB">Discord</a>
+</div>
+
+<div id="staffsection">
+<p><b>Our Staff</b><br>
+<b>Site Admins:</b><br>
+<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=9">Scowling Dragon</a> & <a href="http://inourname.net/index.php?showuser=6">daekie</a></span>
+<br>
+<b>Community Care Liasons</b><br>
+<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=106">Fiction1119</a></span><br>
+<b>Shop Keeper:</b><br>
+<span style="padding:20px; width: 80%"><a href="///">N/A</a></span><br>
+<b>Project Managers:</b> <br>
+<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=15">Meighei</a></span><br>
+<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=x">N/a</a></span><br>
+<b>Lore Leads:</b><br> 
+<span style="padding:20px; width: 80%"><a href="http://inourname.net/index.php?showuser=212">ivynian</a> (Order), <a href="http://inourname.net/index.php?showuser=10">AMItotic</a> (Chaos) & <a href="http://inourname.net/index.php?showuser=296">Carhop Cavalier</a> (Civilian)</span><br>
+</p>
+</div><div id="sidecont">
+<p style="border-top: 1px solid #f5f5f5;">Our <b>skins</b> are by <a href="http://bonbonskins.com/index.php">bonbon</a>. Mini Profile was modified by <b>ScowlingDragon</b>. Main Profile created by <b>ScowlingDragon</b>. Sailor Moon is copyrighted to <b>Naoko Takeuchi</b>. </p>
+
+</div>
+
+</div>
+
+<div id="wrapper2"><% BOARD HEADER %></div>
+
+    	<div id="navi">
+		    <% NAVIGATION %>
+	    	</div>
+
+	<div id="wrapper"> <div id="innerwrapper"> 
+
+
+	    	<div id="board"><% BOARD %></div>
+<script>
+customIndex.init({
+	page: "<!-- |input_act| -->",
+	html: "<table class='mboard' width='100%' cellspacing='0' cellpadding='0'><tr><td class='mforum'><div class='mtitle'>{%marker}{%link}</div><div class='mtopics'>{%topics} topics, {%replies} replies</div><div class='mdescrip'>{%description}</div><div class='msub'>{%subforumlist}</div></td><td class='mlast'><div class='mlast1'>Last post by {%lp-author} on {%lp-date} in {%lp-title}.</div></td></tr></table>",
+	conf: {
+		target:			"board",
+		subforumSeperator:	", ",
+		subforumNone:		"This forum has no subforums.",
+		addBefore:		false,
+		addAfter:		false,
+		dateDefault:		"--",
+		titleDefault:		"----",
+		authorDefault:		""
+	}
+});
+customStats.init({
+	html: "<table class='mstats' width='100%' cellspacing='0' cellpadding='0'><tr><td class='welcome'><h1>welcome to</h1><h2>{%stats#newest}</h2><h1>our newest member</h1><br><div class='snormal'>we currently have <b>{%stats#posts} posts</b> written by <b>{%stats#members} members</b>. the most users online at once was <b>{%stats#most}</b> on <b>{%stats#date}</b>.<br><br> there are currently <b>{%users} users</b> online. </div></td><td class='current' vAlign='top'><h1>currently online:: {%sort#activity}, {%sort#username}</h1> {%users#list} </td><td class='today' vAlign='top'><h1>online today</h1> {%online-today#list}</td></tr></table>"
+});
+customTopics.init({
+	html: "<table class='mtopics1' width='100%' cellspacing='0' cellpadding='0'><tr><td class='topict'><h1>{%folder} {%marker} {%title}</h1><h2>{%description}</h2><h3>{%pagination}</h3></td><td class='topicrest'>started by {%starter}, this topic has <b>{%replies} replies</b>.</td><td class='topiclast'>last post by {%author}, {%date}. {%checkbox}</td></tr></table>",
+	conf: {
+		target:			"board",
+		announcementsDefault:	"Announcements",
+		pinnedDefault:		"Important Topics",
+		regularDefault:		"Forum Topics",
+		noTopics:		"No topics were found. This is either because there are no topics in this forum, or the topics are older than the current age cut-off."
+	}
+});
+</script>
+
+<script>
+/* Jcink Dice Roll BBCode Button */
+$("#bbcode-buttons").append('<input type="button" class="codebuttons" onclick="jBBCode.addTag(\'[roll]1d6[/roll]\');" value="DICE" title="Roll Dice" />');
+</script>
+	    	<div id="skin_selector">
+	    	    <% SKIN_SELECTOR %>
+	    	</div>
+<div id="credit">skin by <a href="http://bonbonskins.com/index.php">bonbon</a>.</div>
+
+<% COPYRIGHT %>
+	    	<script>$('#logo a img[src="style_images/1/spacer.gif"]').replaceWith('<!-- |board_name| -->');</script>
+<script type="text/javascript">
+//MULTI QUOTE CODE
+// By VoidPC
+var quote = "<img src='http://voidpc.jcink.net/uploads/voidpc/plus.gif' />",
+   noquote = "<img src='http://voidpc.jcink.net/uploads/voidpc/minus.gif' />";
+if (/showtopic=|act=ST/i.test(location.href)) {
+    brownie.mod('http://voidpc.jcink.net/uploads/voidpc/multiquote_2_0.js');
+}
+if (/Replying in|Posting New Topic/i.test(document.title)) {
+   var m = brownie.get('multiquote');
+   if (m) {
+       for (var i = 0, a = m.split(','), b = a.length; i < b; i++) {
+           document.REPLIER.Post.value += brownie.get('multiquote-p' + a[i]);
+           brownie.del('multiquote-p' + a[i]);
+       }
+       brownie.del('multiquote');
+   }
+}
+</script>
+	    </div>
+	</div>
+    </body> 
+</html>
+
+
+		</wrappers>
+
+		<macros>
+		<item name='B_MINUS_HIDE'></item>
+			<item name='B_PLUS_SHOW'></item>
+			<item name='SIG_SEPARATOR'><center><hr style="background-color: #dedede; height: 1px; width: 100%; border: 0px; margin: 2px auto;"></center></item>
+			<item name='CUST_PROF'><div class="miniprof"><div class="avatar"><!-- |avatar| --></div><div class="user"><h1><!-- |name| --></h1><div class="quote"><!-- |field_2| --></div><div class="short">posts:</div><div class="short"><!-- |posts| --></div><div class="short">joined:</div><div class="short"><!-- |member_joined| --></div><div class="short">gallery:</div><div class="short"><a href="<!-- |field_1| -->">link</a></div><div class="special"><h1>specialty</h1><h2><!-- |field_3| --></h2></div></div><div class="memberg"><!-- |g_title| --></div><div class="awards"><!-- |awards| --></div></div></item>
+			<item name='LOGO'><img src="http://kuropeco.cursetin.com/Graphics/Assorted/jcink_header_02.png" /></item>
+			<item name='WARN_MINUS'><img src='http://files.b1.jcink.com/themes/default/red-block-minus.png'></item>
+			<item name='WARN_ADD'><img src='http://files.b1.jcink.com/themes/default/red-block-plus.png'></item>
+			<item name='WARN_5'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> </item>
+			<item name='WARN_4'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> </item>
+			<item name='WARN_3'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> </item>
+			<item name='WARN_2'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> </item>
+			<item name='WARN_1'> <img src='http://files.b1.jcink.com/themes/default/red-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> </item>
+			<item name='WARN_0'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> <img src='http://files.b1.jcink.com/themes/default/gray-block.png'> </item>
+			<item name='ADDRESS_CARD'><span class='button-small'>Card</span></item>
+			<item name='T_QREPLY'><div class='button-large'>Fast Reply</div></item>
+			<item name='T_OPTS'><div class='button-large'>Topic Options</div></item>
+			<item name='CAL_NEWEVENT'><div class='button-large'>Add Event</div></item>
+			<item name='F_RULES'><img src='http://files.b1.jcink.com/html/acp/rules.png' alt='Forum Rules'></item>
+			<item name='P_REPORT'><span class='button-small'>Report</span></item>
+			<item name='P_MSN'><span class='button-small'>MSN</span></item>
+			<item name='CAT_IMG'></item>
+			<item name='NEW_POST'></item>
+			<item name='LAST_POST'></item>
+			<item name='BR_REDIRECT'></item>
+			<item name='INTEGRITY_MSGR'><span class='button-small'>Skype</span></item>
+			<item name='P_ICQ'><span class='button-small'>GTalk</span></item>
+			<item name='P_MSG'><span class='button-small'>PM</span></item>
+			<item name='P_QUOTE'><span class='button-small'>Quote</span></item>
+			<item name='P_WEBSITE'><span class='button-small'>Website</span></item>
+			<item name='P_YIM'><span class='button-small'>YIM</span></item>
+			<item name='M_READ'></item>
+			<item name='M_UNREAD'>››</item>
+			<item name='P_AOL'><span class='button-small'>AIM</span></item>
+			<item name='P_DELETE'><span class='button-small'>Delete</span></item>
+			<item name='P_EDIT'><span class='button-small'>Edit</span></item>
+			<item name='P_EMAIL'><span class='button-small'>Email</span></item>
+			<item name='F_ACTIVE'></item>
+			<item name='F_NAV_SEP'>&nbsp;&rarr;&nbsp;</item>
+			<item name='F_NAV'> &raquo; </item>
+			<item name='F_STATS'></item>
+			<item name='NO_PHOTO'></item>
+			<item name='CAMERA'>View</item>
+			<item name='C_ON_RES'><span style="color: #000; padding: 2px; text-shadow: none!important; font-size: 12px!important;">››</span></item>
+			<item name='C_ON_CAT'><span style="color: #000; padding: 2px; text-shadow: none!important; font-size: 12px!important;">››</span></item>
+			<item name='B_HOT_NN_DOT'></item>
+			<item name='B_NORM_DOT'></item>
+			<item name='B_POLL_DOT'></item>
+			<item name='B_POLL_NN_DOT'></item>
+			<item name='B_HOT'></item>
+			<item name='A_LOCKED_B'><div class='button-large closed'>Closed</div></item>
+			<item name='A_MOVED_B'><div class='button-large closed'>Moved</div></item>
+			<item name='A_POLLONLY_B'><div class='button-large closed'>Closed</div></item>
+			<item name='C_LOCKED'><span style="color: #ddd; text-transform: uppercase; font-weight: bold;">closed:</span></item>
+			<item name='C_OFF'></item>
+			<item name='C_OFF_CAT'></item>
+			<item name='C_OFF_RES'></item>
+			<item name='C_ON'><span class="on" style="color: #000; padding: 2px; text-shadow: none!important; font-size: 12px!important;">››</span></item>
+			<item name='B_POLL_NN'></item>
+			<item name='B_HOT_DOT'></item>
+			<item name='B_NEW_DOT'>››</item>
+			<item name='A_REPLY'><div class='button-large'>Add Reply</div></item>
+			<item name='A_POST'><div class='button-large'>New Topic</div></item>
+			<item name='A_STAR'><img src='http://files.b1.jcink.com/themes/default/red-pip.png' /></item>
+			<item name='A_POLL'><div class='button-large'>New Poll</div></item>
+			<item name='B_HOT_NN'></item>
+			<item name='B_LOCKED'><span style="color: #ddd; text-transform: uppercase; font-weight: bold;">closed:</span></item>
+			<item name='B_MOVED'></item>
+			<item name='B_NEW'>››</item>
+			<item name='B_NORM'></item>
+			<item name='B_PIN'><span style="color: #ddd; text-transform: uppercase; font-weight: bold;">pinned:</span></item>
+			<item name='B_POLL'><span style="color: #ddd; text-transform: uppercase; font-weight: bold;">poll:</span></item>
+			
+		</macros>
+
+		<templates>
+		 <item name='topic_row'></item>
+ <item name='mini_profile'><div class="miniP-BG">
+<div class="miniP-cont">
+	<div style="position: relative;">
+		<div class="miniP-ava" style="background-image: url(<!-- |field_5| -->);">
+			<div class="miniP-hoverInfo-cont">
+				<div class="miniP-hoverInfo-panel">
+					<div class="miniP-hoverInfo"><h1><!-- |field_27| --><br></h1>
+						<div class="short">Age: <!-- |field_6| --></div>
+						<div class="short">Status: <!-- |field_23| --></div> 
+						<div class="short">Pronouns: <!-- |field_26| --></div> 
+						<div class="short">Sexuality: <!-- |field_24| --></div> 
+						<div class="short">Occupation: <!-- |field_25| --></div> 
+						<div class="short">Faction: <!-- |field_11| --></div> 
+						<div class="short">Stage: <!-- |field_12| --></div> 
+						<div class="short">Specialization: <!-- |field_13| --></div>
+						<div class="awards"><!-- |awards| --></div>
+					</div>
+				</div>
+			</div>
+		<!-- |avatar| -->
+		</div>
+	</div>
+</div>
+
+	<div class="miniP-bottominfo"><h1><!-- |name| --><br></h1>
+		<div class="special">
+			<center><a href="<!-- |field_14| -->" title="Profile"><div class="buttons"><span class="fas fa-address-card"></span></div></a>
+			<a href="<!-- |field_15| -->" title="Plot Thread"><div class="buttons"><span class="fab fa-leanpub"></span></div></a>
+			<a href="<!-- |field_16| -->" title="Tracker"><div class="buttons"><span class="fas fa-list"></span></div></a></center>
+		</div>
+		<div class="short">Played by: <!-- |field_21| --></div>
+	</div>
+</div></item>
+ <item name='profile'><div class="ion-mp">
+<table>
+<tr>
+<td>
+<div class="ion-mp-avatar" style="background-image: url(<!-- |field_5| -->);"></div></td>
+<td valign='top' style='min-width:400px'>
+<div class="ion-mp-user"><h1><!-- |name| --></h1>
+<div class="ion-mp-powered"><!-- |field_27| --></div>
+<div class="ion-mp-oocinfo"><b>Played by:</b> <!-- |field_21| --> | <!-- |field_20| --> | <!-- |field_22| --> | <!-- |field_4| --></div></div>
+
+<div class="ion-mp-details"><div class="ion-mp-detailbox"><b>Age:</b> <!-- |field_6| --></div>
+<div class="ion-mp-detailbox"><b>Status:</b> <!-- |field_23| --></div>
+<div class="ion-mp-detailbox"><b>Sexuality:</b> <!-- |field_24| --></div>
+<div class="ion-mp-detailbox"><b>Pronouns:</b> <!-- |field_26| --></div>
+<div class="ion-mp-detailbox"><b>Occupation:</b> <!-- |field_25| --></div>
+<div class="ion-mp-detailbox"><b>Faction:</b> <!-- |field_11| --></div>
+<div class="ion-mp-detailbox"><b>Stage:</b> <!-- |field_12| --></div>
+<div class="ion-mp-detailbox"><b>Specialization:</b> <!-- |field_13| --></div>
+<center><a href="<!-- |field_14| -->" title="Profile"><div class="ion-mp-buttons"><i class="fas fa-address-card"></i></div></a>
+<a href="<!-- |field_15| -->" title="Plot Thread"><div class="ion-mp-buttons"><i class="fab fa-leanpub"></i></div></a>
+<a href="<!-- |field_16| -->" title="Tracker"><div class="ion-mp-buttons"><i class="fas fa-list"></i></div></a>
+<a href="/index.php?act=Search&CODE=getalluser&mid=<!-- |id| -->" title="Posts"><div class="ion-mp-buttons"><i class="fas fa-archive"></i></div></a>
+   <a href="/index.php?act=Search&CODE=getalluser&mid=<!-- |id| -->&type=topics" title="Threads"><div class="ion-mp-buttons"><i class="fas fa-file-alt"></i></div></a>
+   <a href="<!-- |pm| -->" title="PM"><div class="ion-mp-buttons"><i class="fas fa-envelope"></i></div></a></center>
+</td>
+</tr>
+</table><div class="ion-mp-awardcont"><div class="ion-mp-awards"><!-- |awards| --></div></div>
+<div class="ion-mp-quotebox">"<!-- |field_19| -->"</div>
+</div>
+</div></item>
+ <item name='board_stats'></item>
+ <item name='post_row'></item>
+
+		</templates>
+		
+		</skin>
